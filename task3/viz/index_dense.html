@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oceanus Folk: Integrated Visual Analysis</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#f5f6fa;--panel:#ffffff;--border:#e0e3ea;--text:#2a2f3c;
+  --dim:#8590a2;--accent:#2f5ec4;--green:#18845a;--orange:#c06818;
+  --red:#bf3b48;--purple:#7041b5;--cyan:#0d7b88;
+  --shadow:0 1px 4px rgba(0,0,0,.05);
+}
+body{background:var(--bg);color:var(--text);font:13px/1.6 'Inter',system-ui,sans-serif}
+header{padding:14px 30px;background:var(--panel);border-bottom:1px solid var(--border);
+  box-shadow:var(--shadow);display:flex;align-items:center;gap:24px;position:sticky;top:0;z-index:50}
+header h1{font-size:15px;font-weight:700;letter-spacing:-.2px}
+nav{display:flex;gap:3px}
+nav a{color:var(--dim);text-decoration:none;font-size:12px;font-weight:500;
+  padding:5px 12px;border-radius:6px;transition:.15s}
+nav a:hover{color:var(--accent);background:rgba(47,94,196,.06)}
+nav a.active{color:var(--accent);background:rgba(47,94,196,.1)}
+.dashboard{max-width:1160px;margin:0 auto;padding:24px 20px 50px}
+section{margin-bottom:32px}
+.section-title{font-size:15px;font-weight:700;margin-bottom:2px}
+.section-sub{font-size:11px;color:var(--dim);margin-bottom:12px}
+.chart-box{background:var(--panel);border:1px solid var(--border);border-radius:10px;
+  padding:16px 18px;margin-bottom:16px;box-shadow:var(--shadow)}
+.chart-label{font-size:10.5px;color:var(--dim);margin-bottom:6px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.5px}
+.row-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tooltip{position:fixed;pointer-events:none;background:#fff;border:1px solid var(--border);
+  border-radius:8px;padding:9px 12px;font-size:11px;color:var(--text);max-width:340px;
+  z-index:999;opacity:0;transition:opacity .1s;box-shadow:0 4px 14px rgba(0,0,0,.1);line-height:1.55}
+.tooltip.show{opacity:1}
+svg text{font-family:'Inter',system-ui,sans-serif}
+.axis-label{fill:var(--dim);font-size:9.5px;font-weight:500}
+.legend-row{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:6px;align-items:center}
+.legend-item{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--dim);font-weight:500}
+.legend-sw{display:inline-block;width:16px;height:3px;border-radius:2px}
+.brush .selection{fill:rgba(47,94,196,.1);stroke:var(--accent);stroke-width:1}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Rising Star Analysis Workbench</h1>
+  <nav>
+    <a href="#compare" class="active">Compare Careers &amp; Influence</a>
+    <a href="#characterize">Characterization &amp; Predictions</a>
+  </nav>
+</header>
+
+<div class="dashboard">
+
+<section id="compare">
+  <div class="section-title">Visualize and Compare Three Artist Careers</div>
+  <div class="section-sub" id="compare-subtitle"></div>
+
+  <div class="chart-box">
+    <div class="chart-label">Career Timeline &mdash; Yearly OF Output + Cumulative Influence</div>
+    <div class="legend-row" id="timeline-legend"></div>
+    <div id="timeline-chart"></div>
+  </div>
+
+  <div class="chart-box">
+    <div class="chart-label">Comparison Artists Influence Network &mdash; Topology of Cumulative Influence</div>
+    <div class="section-sub" style="margin: 4px 0 8px 0; color: var(--dim); font-size: 11px;">
+      Each link = one raw MC1 influence edge (same types as the timeline), attributed to a single &ldquo;primary&rdquo; artist per endpoint (PerformerOf &gt; ComposerOf &gt; LyricistOf &gt; ProducerOf on songs; deterministic choice on albums).
+      Tooltip in/out counts remain song-level OF totals; summed link weights for a node should align with those totals when each OF song has one primary credit.
+      Node size = OF songs; non-comparison nodes are muted.
+    </div>
+    <div id="network-chart"></div>
+  </div>
+
+  <div class="chart-box">
+    <div class="chart-label">Radar Profile Overlay</div>
+    <div class="section-sub" style="margin: 0 auto 8px; max-width: 480px;">
+      Same six dimensions as Parallel Coordinates below: rank percentiles in the combined pool (prediction candidates + these three comparison artists).
+    </div>
+    <div id="radar-chart" style="max-width: 480px; margin: 0 auto;"></div>
+  </div>
+</section>
+
+<section id="characterize">
+  <div class="section-title">Rising Star Characterization &amp; 5-Year Predictions</div>
+  <div class="section-sub">Rising-star score is a nested product (not a flat weight table): joint √(dimension×trend) with one-sided damp, multiplied by profile coherence √(balance×consistency) and career-breadth credibility. Trend index uses a weighted geometric blend of momentum, recency, acceleration, and breadth before percentile ranking.</div>
+
+  <div class="chart-box">
+    <div class="chart-label">Parallel Coordinates &mdash; 6 Dimensions + Trend Score (rank percentile)</div>
+    <div class="legend-row" id="pcp-legend"></div>
+    <div id="pcp-chart"></div>
+  </div>
+
+  <div class="chart-box">
+    <div class="chart-label">Composite Score Landscape &mdash; X: trend %ile &ensp; Y: dimension strength %ile &ensp; Size: profile coherence (√(balance·consistency), muted)</div>
+    <div id="scatter-chart"></div>
+  </div>
+</section>
+
+</div>
+<div class="tooltip" id="tip"></div>
+
+<script>
+const W=1100, PAD={t:38,r:50,b:48,l:58};
+const tip=d3.select("#tip");
+const CC=["#d4a017","#c06818","#7041b5"];
+const PC=["#18845a","#bf3b48","#d4a017"];
+const GRAY="#c5cad6";
+const DC=["#d4a017","#c06818","#bf3b48","#18845a","#0d7b88","#7041b5"];
+let globalFocus=null;
+
+function showTip(ev,h){tip.html(h).classed("show",true)
+  .style("left",Math.min(ev.clientX+14,window.innerWidth-340)+"px")
+  .style("top",(ev.clientY-8)+"px");}
+function hideTip(){tip.classed("show",false);}
+function setFocus(name, opts){
+  const fromNetwork = opts && opts.fromNetwork;
+  globalFocus=globalFocus===name?null:name;
+  if(fromNetwork) return;
+
+  const neighbors = new Set();
+  if(globalFocus) {
+    neighbors.add(globalFocus);
+    d3.selectAll(".ae-link").each(function(){
+      const s = d3.select(this).attr("data-source");
+      const t = d3.select(this).attr("data-target");
+      if(s === globalFocus) neighbors.add(t);
+      if(t === globalFocus) neighbors.add(s);
+    });
+  }
+
+  d3.selectAll(".ae").each(function(){
+    const el=d3.select(this), n=el.attr("data-artist");
+    if(!globalFocus) {
+      el.transition().duration(150).style("opacity",null);
+    } else {
+      const isNode = el.classed("ae-node") || el.classed("text-node");
+      if(isNode) {
+        el.transition().duration(150).style("opacity", neighbors.has(n) ? 1 : 0.06);
+      } else {
+        el.transition().duration(150).style("opacity", n===globalFocus ? 1 : 0.06);
+      }
+    }
+  });
+
+  d3.selectAll(".ae-link").each(function(){
+    const el=d3.select(this);
+    if(!globalFocus) {
+      el.transition().duration(150).style("opacity", 0.22);
+    } else {
+      const s = el.attr("data-source");
+      const t = el.attr("data-target");
+      const isConnected = s === globalFocus || t === globalFocus;
+      el.transition().duration(150).style("opacity", isConnected ? 0.8 : 0.02);
+      if(isConnected) el.raise();
+    }
+  });
+}
+function cleanAxis(g,opts){
+  g.select(".domain").remove();
+  if(opts&&opts.noTicks) g.selectAll(".tick line").remove();
+  g.selectAll("text").attr("fill","var(--dim)").style("font-size","10px");
+}
+
+Promise.all([d3.json("data/artists.json"),d3.json("data/network.json")]).then(([ad,net])=>{
+  const comp=ad.comparison, preds=ad.predictions;
+  const cbn={};
+  comp.forEach((n,i)=>{cbn[n]=CC[i];});
+  preds.forEach((n,i)=>{cbn[n]=PC[i];});
+  const rbn={};
+  ad.ranking.forEach(r=>{rbn[r.name]=r;});
+  if(ad.comparison_scores) Object.assign(rbn,ad.comparison_scores);
+
+  document.getElementById("compare-subtitle").textContent=
+    comp.map(n=>`${n} (${ad.archetypes[n]||""})`).join("  vs  ");
+
+  drawTimeline(ad,comp,cbn);
+  drawRadar(ad,comp,cbn,rbn);
+  drawPcp(ad,comp,preds,cbn,rbn);
+  drawScatter(ad,comp,preds,cbn,rbn);
+  drawNetwork(net,comp,preds,cbn);
+
+  document.querySelectorAll("nav a").forEach(a=>{
+    a.addEventListener("click",e=>{e.preventDefault();
+      document.querySelector(a.getAttribute("href")).scrollIntoView({behavior:"smooth"});
+      document.querySelectorAll("nav a").forEach(x=>x.classList.remove("active"));
+      a.classList.add("active");});
+  });
+});
+
+/* ====== CAREER TIMELINE ====== */
+function drawTimeline(ad,comp,cbn){
+  const rowH=110, gap=8, labelW=120;
+  const H=PAD.t+comp.length*(rowH+gap)+PAD.b;
+  const svg=d3.select("#timeline-chart").append("svg")
+    .attr("viewBox",`0 0 ${W} ${H}`).style("width","100%");
+
+  let allYears=new Set();
+  comp.forEach(n=>{const cs=ad.career_series[n];
+    if(cs) cs.series.forEach(d=>allYears.add(d.year));});
+  const years=Array.from(allYears).sort((a,b)=>a-b);
+  if(!years.length) return;
+
+  const x=d3.scaleBand().domain(years).range([labelW+PAD.l,W-PAD.r]).padding(.15);
+
+  svg.append("g").attr("transform",`translate(0,${H-PAD.b})`)
+    .call(d3.axisBottom(x).tickValues(years.filter((_,i)=>i%Math.max(1,Math.ceil(years.length/20))===0)).tickSize(0))
+    .call(g=>cleanAxis(g,{noTicks:true}));
+
+  comp.forEach((name,ri)=>{
+    const cs=ad.career_series[name]; if(!cs) return;
+    const s=cs.series, smap={};
+    s.forEach(d=>{smap[d.year]=d;});
+
+    const top=PAD.t+ri*(rowH+gap);
+    const maxS=d3.max(s,d=>d.songs)||1;
+    const maxI=d3.max(s,d=>d.cum_inf)||1;
+    const yBar=d3.scaleLinear().domain([0,maxS+.5]).range([top+rowH-12,top+10]);
+    const yLine=d3.scaleLinear().domain([0,maxI*1.1]).range([top+rowH-12,top+10]);
+
+    svg.append("rect").attr("x",labelW+PAD.l-4).attr("y",top)
+      .attr("width",W-labelW-PAD.l-PAD.r+8).attr("height",rowH)
+      .attr("fill",cbn[name]).attr("fill-opacity",.03).attr("rx",4);
+
+    // Left labels — positioned well left of chart area
+    const shortName=name.length>14?name.slice(0,12)+"…":name;
+    svg.append("text").attr("x",labelW+PAD.l-12).attr("y",top+18)
+      .attr("text-anchor","end").attr("fill",cbn[name])
+      .style("font-size","11px").style("font-weight","700").text(shortName);
+    const arch=ad.archetypes[name]||"";
+    if(arch) svg.append("text").attr("x",labelW+PAD.l-12).attr("y",top+30)
+      .attr("text-anchor","end").attr("fill","var(--dim)")
+      .style("font-size","8px").text(arch);
+
+    [Math.ceil(maxS/2),maxS].forEach(v=>{
+      svg.append("text").attr("x",labelW+PAD.l-4).attr("y",yBar(v)+3)
+        .attr("text-anchor","end").attr("fill","#c8ccd4").style("font-size","7px").text(v);
+    });
+
+    years.forEach(yr=>{
+      const d=smap[yr]; if(!d) return;
+      if(d.songs>0){
+        svg.append("rect").attr("x",x(yr)).attr("y",yBar(d.songs))
+          .attr("width",x.bandwidth()).attr("height",yBar(0)-yBar(d.songs))
+          .attr("fill",cbn[name]).attr("fill-opacity",.22).attr("rx",1.5)
+          .attr("class","ae").attr("data-artist",name)
+          .on("mouseover",ev=>showTip(ev,`<b style="color:${cbn[name]}">${name}</b> (${yr})<br>Songs: ${d.songs} (notable: ${d.notable})<br>Cum. Pop: ${d.cum_pop}<br>Cum. Inf: ${d.cum_inf}`))
+          .on("mouseout",hideTip);
+        if(d.notable>0){
+          svg.append("rect").attr("x",x(yr)).attr("y",yBar(d.notable))
+            .attr("width",x.bandwidth()).attr("height",yBar(0)-yBar(d.notable))
+            .attr("fill",cbn[name]).attr("fill-opacity",.55).attr("rx",1.5)
+            .attr("class","ae").attr("data-artist",name);
+        }
+      }
+    });
+
+    const lineData=s.filter(d=>d.cum_inf>0);
+    if(lineData.length>1){
+      const line=d3.line().x(d=>x(d.year)+x.bandwidth()/2).y(d=>yLine(d.cum_inf)).curve(d3.curveMonotoneX);
+      svg.append("path").datum(lineData).attr("d",line)
+        .attr("fill","none").attr("stroke",cbn[name]).attr("stroke-width",2)
+        .attr("stroke-dasharray","6,3").attr("class","ae").attr("data-artist",name);
+    } else if(lineData.length===1){
+      const d=lineData[0], xc=x(d.year)+x.bandwidth()/2, yy=yLine(d.cum_inf);
+      svg.append("line").attr("x1",xc-Math.min(14,x.bandwidth())).attr("x2",xc+Math.min(14,x.bandwidth()))
+        .attr("y1",yy).attr("y2",yy)
+        .attr("fill","none").attr("stroke",cbn[name]).attr("stroke-width",2)
+        .attr("stroke-dasharray","6,3").attr("class","ae").attr("data-artist",name);
+    }
+    lineData.forEach(d=>{
+      svg.append("circle").attr("cx",x(d.year)+x.bandwidth()/2).attr("cy",yLine(d.cum_inf))
+        .attr("r",2.5).attr("fill",cbn[name]).attr("stroke","#fff").attr("stroke-width",.8)
+        .attr("class","ae").attr("data-artist",name);
+    });
+
+    // Milestones removed by request
+  });
+
+  const lg=d3.select("#timeline-legend");
+  comp.forEach(name=>{
+    const item=lg.append("span").attr("class","legend-item");
+    item.append("span").attr("class","legend-sw").style("background",cbn[name]);
+    item.append("span").text(name);
+  });
+  lg.append("span").attr("class","legend-item").html(
+    `<span style="display:inline-block;width:10px;height:8px;background:#888;opacity:.4;border-radius:1px"></span><span>bars = songs (dark=notable)</span>`);
+  lg.append("span").attr("class","legend-item").html(
+    `<span style="display:inline-block;width:14px;border-top:2px dashed #888"></span><span>line = cum. influence</span>`);
+}
+
+/* ====== RADAR (same 6 dims as PCP: dim_pct 0–1) ====== */
+function drawRadar(ad,comp,cbn,rbn){
+  const sz=360,cx=sz/2,cy=sz/2+8,R=sz/2-65;
+  const svg=d3.select("#radar-chart").append("svg")
+    .attr("viewBox",`0 0 ${sz} ${sz}`).style("width","100%");
+
+  const dims=ad.dimension_model.dimensions;
+  const keys=dims.map(d=>d.key);
+  const labels=dims.map(d=>d.label);
+  const n=keys.length, aSlice=Math.PI*2/n;
+
+  [.25,.5,.75,1].forEach(lv=>{
+    const pts=d3.range(n).map(i=>{const a=aSlice*i-Math.PI/2;
+      return [cx+Math.cos(a)*R*lv,cy+Math.sin(a)*R*lv];});
+    svg.append("polygon").attr("points",pts.map(p=>p.join(",")).join(" "))
+      .attr("fill","none").attr("stroke","#e4e7ed").attr("stroke-width",.7);
+  });
+  d3.range(n).forEach(i=>{
+    const a=aSlice*i-Math.PI/2;
+    svg.append("line").attr("x1",cx).attr("y1",cy)
+      .attr("x2",cx+Math.cos(a)*R).attr("y2",cy+Math.sin(a)*R)
+      .attr("stroke","#e4e7ed").attr("stroke-width",.7);
+    const lx=cx+Math.cos(a)*(R+22),ly=cy+Math.sin(a)*(R+22);
+    svg.append("text").attr("x",lx).attr("y",ly+3)
+      .attr("text-anchor","middle").attr("fill","var(--dim)")
+      .style("font-size","9px").style("font-weight","500").text(labels[i]);
+  });
+
+  comp.forEach(name=>{
+    const r=rbn[name];
+    if(!r||!r.dim_pct) return;
+    const pts=keys.map((k,i)=>{
+      const v=Math.min(1,Math.max(0,+r.dim_pct[k]||0));
+      const a=aSlice*i-Math.PI/2;
+      return [cx+Math.cos(a)*R*v,cy+Math.sin(a)*R*v];
+    });
+    svg.append("polygon").attr("points",pts.map(p=>p.join(",")).join(" "))
+      .attr("fill",cbn[name]).attr("fill-opacity",.07)
+      .attr("stroke",cbn[name]).attr("stroke-width",2)
+      .attr("class","ae").attr("data-artist",name).style("cursor","pointer")
+      .on("click",()=>setFocus(name))
+      .on("mouseover",ev=>{
+        let h=`<b style="color:${cbn[name]}">${name}</b><br><span style="font-size:10px;color:var(--dim)">Rank percentile (6 scoring dimensions)</span>`;
+        keys.forEach((k,i)=>{
+          const pct=(+r.dim_pct[k]||0)*100;
+          h+=`<br>${labels[i]}: ${pct.toFixed(0)}%ile`;
+          const raw=r.dims_raw&&r.dims_raw[k];
+          if(raw!==undefined&&raw!==null) h+=` &nbsp;·&nbsp; raw ${typeof raw==="number"?raw.toFixed(3):raw}`;
+        });
+        showTip(ev,h);
+      })
+      .on("mouseout",hideTip);
+    pts.forEach(([px,py])=>{
+      svg.append("circle").attr("cx",px).attr("cy",py).attr("r",3)
+        .attr("fill",cbn[name]).attr("stroke","#fff").attr("stroke-width",1)
+        .attr("class","ae").attr("data-artist",name);
+    });
+  });
+}
+
+/* ====== PARALLEL COORDINATES (full width, 7 axes including Trend Score) ====== */
+function drawPcp(ad,comp,preds,cbn,rbn){
+  const H=400;
+  const svg=d3.select("#pcp-chart").append("svg")
+    .attr("viewBox",`0 0 ${W} ${H}`).style("width","100%");
+
+  const dims=ad.dimension_model.dimensions, dk=dims.map(d=>d.key);
+  const allKeys=[...dk,"trend_score"];
+  const allLabels=[...dims.map(d=>d.label),"Trend Score"];
+
+  const xP=d3.scalePoint().domain(allKeys).range([56,W-40]).padding(.08);
+  const yP=d3.scaleLinear().domain([0,1]).range([H-PAD.b,PAD.t+8]);
+
+  allKeys.forEach((k,ki)=>{
+    const xx=xP(k);
+    svg.append("line").attr("x1",xx).attr("x2",xx)
+      .attr("y1",yP(0)).attr("y2",yP(1)).attr("stroke",k==="trend_score"?"#d0d4dc":"#dee1e8");
+    svg.append("text").attr("x",xx).attr("y",yP(1)-10)
+      .attr("text-anchor","middle").attr("fill","var(--text)")
+      .style("font-size","9px").style("font-weight","600").text(allLabels[ki]);
+    [0,.25,.5,.75,1].forEach(v=>{
+      svg.append("text").attr("x",xx-14).attr("y",yP(v)+3)
+        .attr("text-anchor","end").attr("fill","#c8ccd4").style("font-size","7px")
+        .text((v*100).toFixed(0)+"%");
+    });
+  });
+
+  svg.append("text").attr("x",4).attr("y",H/2)
+    .attr("text-anchor","middle").attr("fill","var(--dim)")
+    .style("font-size","9px").style("font-weight","500")
+    .attr("transform",`rotate(-90,4,${H/2})`).text("Rank Percentile");
+
+  const lineGen=d3.line().curve(d3.curveMonotoneX);
+
+  function getPts(r){
+    return allKeys.map(k=>{
+      let v;
+      if(k==="trend_score") v=r.trend_pct||r.trend_score||0;
+      else v=r.dim_pct[k]||0;
+      return [xP(k),yP(v)];
+    });
+  }
+
+  // Gray background lines
+  ad.ranking.forEach(r=>{
+    if(comp.includes(r.name)||preds.includes(r.name)) return;
+    const pts=getPts(r);
+    svg.append("path").datum(pts).attr("d",lineGen)
+      .attr("fill","none").attr("stroke","transparent").attr("stroke-width",8)
+      .style("cursor","pointer")
+      .on("mouseover",function(ev){
+        d3.select(this.nextSibling).attr("stroke-opacity",.65).attr("stroke-width",1.8);
+        let h=`<b>${r.name}</b> &nbsp; #${r.rank}<br>Score: ${r.score.toFixed(3)}`;
+        allKeys.forEach((k,ki)=>{
+          const v=k==="trend_score"?(r.trend_pct||0):(r.dim_pct[k]||0);
+          h+=`<br>${allLabels[ki]}: ${(v*100).toFixed(0)}%ile`;});
+        h+=`<br>OF: ${r.of_songs} songs, commit ${(r.of_commitment*100).toFixed(0)}%`;
+        showTip(ev,h);
+      })
+      .on("mouseout",function(){
+        d3.select(this.nextSibling).attr("stroke-opacity",.2).attr("stroke-width",.7);
+        hideTip();
+      })
+      .on("click",()=>setFocus(r.name));
+    svg.append("path").datum(pts).attr("d",lineGen)
+      .attr("fill","none").attr("stroke",GRAY).attr("stroke-width",.7).attr("stroke-opacity",.2)
+      .attr("class","ae").attr("data-artist",r.name).style("pointer-events","none");
+  });
+
+  // Highlighted lines
+  [...comp,...preds].forEach(name=>{
+    const r=rbn[name]; if(!r) return;
+    const pts=getPts(r);
+    const c=cbn[name]||GRAY;
+    const isPred=preds.includes(name);
+
+    svg.append("path").datum(pts).attr("d",lineGen)
+      .attr("fill","none").attr("stroke",c).attr("stroke-width",isPred?2.8:2.2)
+      .attr("stroke-dasharray",isPred?"":"6,3")
+      .attr("class","ae").attr("data-artist",name).style("cursor","pointer")
+      .on("mouseover",ev=>{
+        const rk=r.rank!=null?`#${r.rank}`:"(comparison)";
+        let h=`<b style="color:${c}">${name}</b> &nbsp; ${rk}<br>Score: ${r.score.toFixed(3)}`;
+        allKeys.forEach((k,ki)=>{
+          const v=k==="trend_score"?(r.trend_pct||0):(r.dim_pct[k]||0);
+          h+=`<br>${allLabels[ki]}: ${(v*100).toFixed(0)}%ile`;});
+        showTip(ev,h);
+      })
+      .on("mouseout",hideTip).on("click",()=>setFocus(name));
+
+    allKeys.forEach(k=>{
+      const v=k==="trend_score"?(r.trend_pct||r.trend_score||0):(r.dim_pct[k]||0);
+      svg.append("circle").attr("cx",xP(k)).attr("cy",yP(v))
+        .attr("r",isPred?4:3).attr("fill",c).attr("stroke","#fff").attr("stroke-width",1.2)
+        .attr("class","ae").attr("data-artist",name);
+    });
+  });
+
+  // Legend — predictions + gray others only
+  const lg=d3.select("#pcp-legend");
+  preds.forEach(name=>{
+    const item=lg.append("span").attr("class","legend-item");
+    item.append("span").attr("class","legend-sw").style("background",cbn[name]);
+    item.append("span").text(name+" (prediction)");
+  });
+  lg.append("span").attr("class","legend-item")
+    .html(`<span class="legend-sw" style="background:${GRAY}"></span>Other candidates (hover to inspect)`);
+
+  // Brushing
+  allKeys.forEach(k=>{
+    const xx=xP(k);
+    const brush=d3.brushY().extent([[xx-10,yP(1)],[xx+10,yP(0)]])
+      .on("brush end",function(ev){
+        if(!ev.selection){d3.selectAll(".ae").transition().duration(100).style("opacity",null);return;}
+        const [y0,y1]=ev.selection, lo=yP.invert(y1), hi=yP.invert(y0);
+        ad.ranking.forEach(r=>{
+          const val=k==="trend_score"?(r.trend_pct||0):(r.dim_pct[k]||0);
+          const match=val>=lo&&val<=hi;
+          d3.selectAll(`.ae[data-artist="${r.name}"]`)
+            .transition().duration(100).style("opacity",match?1:.04);
+        });
+      });
+    svg.append("g").attr("class","brush").call(brush);
+  });
+}
+
+/* ====== SCATTER (full-formula) ====== */
+function drawScatter(ad,comp,preds,cbn,rbn){
+  const H=440;
+  const plotB=PAD.b+50;
+  const svg=d3.select("#scatter-chart").append("svg")
+    .attr("viewBox",`0 0 ${W} ${H}`).style("width","100%");
+
+  const rows=ad.ranking;
+
+  // Size encodes profile coherence (geometric of balance percentiles), lightly — not a score term with fake % weights
+  function stab(r){ return Math.sqrt(Math.max((r.geo_pct||0)*(r.cons_pct||0), 1e-9)); }
+
+  const x=d3.scaleLinear().domain([0,1]).range([PAD.l+8,W-PAD.r-8]);
+  const y=d3.scaleLinear().domain([0,1]).range([H-plotB,PAD.t+8]);
+  const rSc=d3.scaleSqrt().domain([0,1]).range([3,9]);
+
+  // Grid
+  y.ticks(5).forEach(t=>{
+    svg.append("line").attr("x1",PAD.l+8).attr("x2",W-PAD.r-8)
+      .attr("y1",y(t)).attr("y2",y(t)).attr("stroke","#eceef3");
+  });
+  svg.append("g").attr("transform",`translate(0,${H-plotB})`)
+    .call(d3.axisBottom(x).ticks(8).tickFormat(d=>(d*100)+"%"))
+    .call(g=>{g.selectAll(".tick line").attr("stroke","#eef0f4");cleanAxis(g);});
+  svg.append("g").attr("transform",`translate(${PAD.l+8},0)`)
+    .call(d3.axisLeft(y).ticks(5).tickFormat(d=>(d*100)+"%")).call(g=>cleanAxis(g,{noTicks:true}));
+
+  // Axis labels
+  svg.append("text").attr("x",W/2).attr("y",H-plotB+32)
+    .attr("text-anchor","middle").attr("class","axis-label")
+    .text("Forward trend (pool percentile) →");
+  svg.append("text").attr("x",14).attr("y",(PAD.t+H-plotB)/2)
+    .attr("class","axis-label").attr("transform",`rotate(-90,14,${(PAD.t+H-plotB)/2})`)
+    .text("↑ Dimension strength (pool percentile)");
+
+  // Final score is non-linear in x/y; reference curves omitted to avoid misleading linear iso-lines
+
+  // Median cross-hairs
+  const midX=x(.5),midY=y(.5);
+  svg.append("line").attr("x1",midX).attr("x2",midX).attr("y1",PAD.t).attr("y2",H-plotB)
+    .attr("stroke","#d8dbe2").attr("stroke-dasharray","5,4");
+  svg.append("line").attr("x1",PAD.l+8).attr("x2",W-PAD.r-8).attr("y1",midY).attr("y2",midY)
+    .attr("stroke","#d8dbe2").attr("stroke-dasharray","5,4");
+
+  // Quadrant labels
+  [{t:"Legacy",tx:PAD.l+14,ty:PAD.t+14},{t:"Strong + Rising ★",tx:W-PAD.r-14,ty:PAD.t+14,a:"end"},
+   {t:"Low potential",tx:PAD.l+14,ty:H-plotB-6},{t:"Fast riser, thin resume",tx:W-PAD.r-14,ty:H-plotB-6,a:"end"}
+  ].forEach(q=>{
+    svg.append("text").attr("x",q.tx).attr("y",q.ty)
+      .attr("text-anchor",q.a||"start").attr("fill","#c0c5d0")
+      .style("font-size","8.5px").style("font-style","italic").text(q.t);
+  });
+
+  function tipAll(r,extra){
+    const s=stab(r);
+    const bp=((r.breadth_pct!=null?r.breadth_pct:0)*100).toFixed(0);
+    return `${extra||""}<br>Score: ${r.score.toFixed(3)} <span style="color:#888">(nested √(dim·trend)×…×breadth)</span><br>Trend %ile: ${((r.trend_pct||0)*100).toFixed(0)}<br>Dim %ile: ${((r.wds_pct||0)*100).toFixed(0)}<br>Breadth %ile: ${bp}<br>Profile coherence √(bal·cons): ${(s*100).toFixed(0)}<span style="color:#888"> (size)</span><br><span style="color:#888">┗ Balance ${((r.geo_pct||0)*100).toFixed(0)} · Consistency ${((r.cons_pct||0)*100).toFixed(0)}</span><br>OF: ${r.of_songs} songs`;
+  }
+
+  // Background candidates
+  rows.forEach(r=>{
+    if(preds.includes(r.name)||comp.includes(r.name)) return;
+    const tpct=r.trend_pct||r.trend_score||0, dpct=r.wds_pct||0, s=stab(r);
+    svg.append("circle")
+      .attr("cx",x(tpct)).attr("cy",y(dpct))
+      .attr("r",rSc(s)).attr("fill","#a8b4c8").attr("fill-opacity",.15)
+      .attr("stroke","#a8b4c8").attr("stroke-width",.5).attr("stroke-opacity",.2)
+      .attr("class","ae").attr("data-artist",r.name).style("cursor","pointer")
+      .on("mouseover",ev=>showTip(ev,tipAll(r,`<b>${r.name}</b> #${r.rank}`)))
+      .on("mouseout",hideTip).on("click",()=>setFocus(r.name));
+  });
+
+  // Comparison artists — dashed outline
+  comp.forEach(name=>{
+    const r=rbn[name]; if(!r) return;
+    const c=cbn[name]||"#888", s=stab(r);
+    const bx=x(r.trend_pct||0),by=y(r.wds_pct||0),rad=Math.max(rSc(s),5);
+    svg.append("circle").attr("cx",bx).attr("cy",by)
+      .attr("r",rad).attr("fill",c).attr("fill-opacity",.12)
+      .attr("stroke",c).attr("stroke-width",1.5).attr("stroke-dasharray","4,3")
+      .attr("class","ae").attr("data-artist",name).style("cursor","pointer")
+      .on("mouseover",ev=>showTip(ev,tipAll(r,`<b style="color:${c}">${name}</b> (comparison) #${r.rank}`)))
+      .on("mouseout",hideTip).on("click",()=>setFocus(name));
+    svg.append("text").attr("x",bx+rad+5).attr("y",by+3)
+      .attr("fill",c).style("font-size","8.5px").style("font-weight","500").text(name)
+      .attr("class","ae").attr("data-artist",name);
+  });
+
+  // Prediction artists — solid colored circles
+  preds.forEach((name,pi)=>{
+    const r=rbn[name]; if(!r) return;
+    const c=cbn[name], s=stab(r);
+    const bx=x(r.trend_pct||0),by=y(r.wds_pct||0),rad=Math.max(rSc(s),8);
+    svg.append("circle").attr("cx",bx).attr("cy",by)
+      .attr("r",rad).attr("fill",c).attr("fill-opacity",.8)
+      .attr("stroke","#fff").attr("stroke-width",2)
+      .attr("class","ae").attr("data-artist",name).style("cursor","pointer")
+      .on("mouseover",ev=>showTip(ev,tipAll(r,`<b style="color:${c}">${name}</b> ★ Predicted #${r.rank}`)))
+      .on("mouseout",hideTip).on("click",()=>setFocus(name));
+  });
+
+  // Prediction artists — labels (drawn after circles to ensure they are on top)
+  preds.forEach((name,pi)=>{
+    const r=rbn[name]; if(!r) return;
+    const c=cbn[name], s=stab(r);
+    const bx=x(r.trend_pct||0),by=y(r.wds_pct||0),rad=Math.max(rSc(s),8);
+    const off=[-14,0,14][pi];
+    svg.append("text").attr("x",bx+rad+5).attr("y",by+off+3)
+      .attr("fill",c).style("font-size","10px").style("font-weight","700").text("★ "+name)
+      .attr("class","ae").attr("data-artist",name)
+      .style("pointer-events","none");
+  });
+
+  // Bottom legend
+  const lgY=H-34;
+  preds.forEach((name,i)=>{
+    const lx=PAD.l+i*155;
+    svg.append("circle").attr("cx",lx).attr("cy",lgY)
+      .attr("r",5).attr("fill",cbn[name]).attr("fill-opacity",.8);
+    svg.append("text").attr("x",lx+9).attr("y",lgY+3.5)
+      .attr("fill","var(--dim)").style("font-size","8px").text(name);
+  });
+
+  const szLgX=PAD.l+preds.length*155+16;
+  svg.append("text").attr("x",szLgX).attr("y",lgY+3.5)
+    .attr("fill","var(--dim)").style("font-size","8px").style("font-weight","600")
+    .text("Circle size ∝ √(balance·consistency) (visual only):");
+  [.25,.5,.85].forEach((v,i)=>{
+    const rad=rSc(v), cx2=szLgX+260+i*44+rad;
+    svg.append("circle").attr("cx",cx2).attr("cy",lgY)
+      .attr("r",rad).attr("fill","none").attr("stroke","#aaa").attr("stroke-width",.8);
+    svg.append("text").attr("x",cx2).attr("y",lgY+rad+10)
+      .attr("text-anchor","middle").attr("fill","#aaa").style("font-size","7px")
+      .text((v*100).toFixed(0)+"%");
+  });
+}
+
+/* ====== NETWORK ====== */
+function drawNetwork(net,comp,preds,cbn){
+  const NW=1080,NH=560;
+  const svg=d3.select("#network-chart").append("svg")
+    .attr("viewBox",`0 0 ${NW} ${NH}`).style("width","100%");
+
+  const maxScore=d3.max(net.nodes,d=>d.score)||1;
+  const scoreC=d3.scaleSequential(d3.interpolateYlGnBu).domain([0,maxScore]);
+  const sz=d3.scaleSqrt().domain([0,d3.max(net.nodes,d=>d.of_songs)||1]).range([4,19]);
+  const cx=NW/2,cy=NH/2;
+  const nodeMap={}; net.nodes.forEach(n=>{nodeMap[n.id]=n;});
+
+  const dashBy={InStyleOf:"none",CoverOf:"7,4",InterpolatesFrom:"3,4",
+    DirectlySamples:"1.5,3.5",LyricalReferenceTo:"9,3,2,3"};
+
+  // Filter network to only show comparison artists and their neighbors
+  const keepNodes = new Set(comp);
+  net.links.forEach(lk => {
+    if (comp.includes(lk.source) || comp.includes(lk.target)) {
+      keepNodes.add(lk.source);
+      keepNodes.add(lk.target);
+    }
+  });
+
+  const fNodes = net.nodes.filter(n => keepNodes.has(n.id)).map(n => ({...n}));
+  const fNodeMap = {}; fNodes.forEach(n => fNodeMap[n.id] = n);
+  const fLinks = net.links
+    .filter(lk => keepNodes.has(lk.source) && keepNodes.has(lk.target))
+    .map(lk => ({...lk, source: fNodeMap[lk.source], target: fNodeMap[lk.target]}));
+
+  // Run static force layout to prevent any cut-offs
+  const simulation = d3.forceSimulation(fNodes)
+    .force("link", d3.forceLink(fLinks).distance(60))
+    .force("charge", d3.forceManyBody().strength(-150))
+    .force("center", d3.forceCenter(NW/2, NH/2))
+    .force("collide", d3.forceCollide().radius(d => sz(d.of_songs) + 10))
+    .force("x", d3.forceX(NW/2).strength(d => comp.includes(d.id) ? 0.2 : 0.02))
+    .force("y", d3.forceY(NH/2).strength(d => comp.includes(d.id) ? 0.2 : 0.02));
+
+  simulation.stop();
+  for (let i = 0; i < 300; ++i) simulation.tick();
+
+  // Constrain to bounding box just in case
+  fNodes.forEach(n => {
+    const r = sz(n.of_songs);
+    n.x = Math.max(r + 10, Math.min(NW - r - 10, n.x));
+    n.y = Math.max(r + 10, Math.min(NH - r - 10, n.y));
+  });
+
+  const linkLayer = svg.append("g").attr("class", "link-layer");
+  const nodeLayer = svg.append("g").attr("class", "node-layer");
+  const textLayer = svg.append("g").attr("class", "text-layer");
+
+  fLinks.forEach(lk=>{
+    const s=lk.source, t=lk.target;
+    const dx = t.x - s.x, dy = t.y - s.y;
+    const dr = Math.sqrt(dx * dx + dy * dy) * 2.5; // slight curve
+    linkLayer.append("path").attr("d",`M${s.x},${s.y} A${dr},${dr} 0 0,1 ${t.x},${t.y}`)
+      .attr("fill","none").attr("stroke","#c8cdd6")
+      .attr("stroke-width",Math.min(1.6,.3+lk.weight*.12))
+      .attr("stroke-dasharray",dashBy[lk.type]||"none").attr("opacity",.22)
+      .attr("class","ae-link")
+      .attr("data-source",s.id).attr("data-target",t.id);
+  });
+
+  fNodes.forEach(n=>{
+    const isC=comp.includes(n.id),isP=preds.includes(n.id);
+    const r=sz(n.of_songs), c=cbn[n.id];
+    const g=nodeLayer.append("g").attr("transform",`translate(${n.x},${n.y})`)
+      .attr("class","ae ae-node").attr("data-artist",n.id).style("cursor","pointer")
+      .on("mouseover",ev=>{
+        let h=`<b>${n.id}</b><br>OF: ${n.of_songs}, ${(n.of_notable_ratio*100).toFixed(0)}% notable`;
+        h+=`<br>Inf: out ${n.of_inf_out}, in ${n.of_inf_in}`;
+        if(n.score>0) h+=`<br>Score: ${n.score.toFixed(3)}`;
+        if(isC) h+=`<br><b style="color:${c}">◆ Comparison</b>`;
+        if(isP) h+=`<br><b style="color:${c}">★ Prediction</b>`;
+        showTip(ev,h);
+      }).on("mouseout",hideTip).on("click",()=>setFocus(n.id,{fromNetwork:true}));
+
+    g.append("circle").attr("r",r)
+      .attr("fill", isC ? c : "#e0e3ea")
+      .attr("stroke", isC ? "#fff" : "#c8cdd6")
+      .attr("stroke-width", isC ? 2.5 : 1);
+
+    if(r>5||isC||isP){
+      textLayer.append("text").attr("x",n.x).attr("y",n.y-r-3).attr("text-anchor","middle")
+        .attr("fill",isC||isP?c||"var(--dim)":"var(--dim)")
+        .style("font-size",isC||isP?"10px":"8px")
+        .style("font-weight",isC||isP?"700":"400")
+        .text(n.id.length>18?n.id.slice(0,16)+"…":n.id)
+        .attr("class","ae text-node").attr("data-artist",n.id)
+        .style("pointer-events","none");
+    }
+  });
+
+  // Edge Type Legend
+  const elgY = NH - 20;
+  let elgX = 20;
+  svg.append("text").attr("x",elgX).attr("y",elgY).attr("fill","var(--dim)").style("font-size","9px").style("font-weight","600").text("Influence Types:");
+  elgX += 80;
+  Object.entries(dashBy).forEach(([k,v])=>{
+    svg.append("line").attr("x1",elgX).attr("x2",elgX+20).attr("y1",elgY-3).attr("y2",elgY-3)
+      .attr("stroke","#a0a5b0").attr("stroke-width",1.5).attr("stroke-dasharray",v);
+    svg.append("text").attr("x",elgX+24).attr("y",elgY).attr("fill","var(--dim)").style("font-size","8px").text(k);
+    elgX += Math.max(80, k.length * 6 + 30);
+  });
+
+  const lg=svg.append("g").attr("transform",`translate(${NW-200},${NH-78})`);
+  lg.append("text").attr("y",0).attr("fill","var(--dim)").style("font-size","9px")
+    .style("font-weight","600").text("Edge types:");
+  Object.entries(dashBy).forEach(([type,dash],i)=>{
+    lg.append("line").attr("x1",0).attr("y1",14+i*12).attr("x2",26).attr("y2",14+i*12)
+      .attr("stroke","#888").attr("stroke-dasharray",dash==="none"?"":dash).attr("stroke-width",1.2);
+    lg.append("text").attr("x",32).attr("y",17+i*12)
+      .attr("fill","var(--dim)").style("font-size","8px").text(type);
+  });
+}
+</script>
+</body>
+</html>

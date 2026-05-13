@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/>
+<title>Composite rising-star score over career age</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+  body { font: 13px/1.45 -apple-system,Segoe UI,Roboto,sans-serif; margin: 22px; color:#222; }
+  h1 { font-size: 16px; margin: 0 0 6px; }
+  .sub { color:#666; margin-bottom: 14px; max-width: 820px; }
+  .axis path,.axis line { stroke:#bbb; }
+  .axis text { fill:#555; font-size: 11px; }
+  .tail { fill:none; stroke-linecap:round; }
+  .tooltip {
+    position:absolute; pointer-events:none; background:rgba(20,20,20,.88);
+    color:#fff; padding:4px 8px; border-radius:4px; font-size:11px;
+    transform:translate(-50%, -120%); opacity:0; transition:opacity .12s;
+  }
+  .ctrl label { margin-right:14px; font-size:12px; }
+</style></head><body>
+<h1>Composite rising-star score over career age</h1>
+<div class="sub">
+  One line per named artist; horizontal axis is years since their first
+  Oceanus Folk release. Hover any marker for the exact score and year.
+</div>
+<div class="ctrl">
+  <label><input type="checkbox" id="showBase" checked /> baselines</label>
+  <label><input type="checkbox" id="showCand" checked /> predicted stars</label>
+</div>
+<svg id="chart" width="940" height="540"></svg>
+<div class="tooltip" id="tt"></div>
+<script>
+const DATA=[{"id": 0, "name": "Sailor Shift", "points": [{"age": 0, "score": 0.6232661037671502, "year": 2028}, {"age": 1, "score": 0.5939323749614362, "year": 2029}, {"age": 2, "score": 0.6394329603180907, "year": 2030}, {"age": 3, "score": 0.4712128113555435, "year": 2031}, {"age": 4, "score": 0.45438190246119875, "year": 2032}, {"age": 5, "score": 0.4344659178676125, "year": 2033}, {"age": 6, "score": 0.5150230356710054, "year": 2034}, {"age": 7, "score": 0.497451989417081, "year": 2035}, {"age": 8, "score": 0.6555419129036305, "year": 2036}, {"age": 9, "score": 0.6112232282806684, "year": 2037}, {"age": 10, "score": 0.39615150225303286, "year": 2038}, {"age": 11, "score": 0.3693692124471852, "year": 2039}, {"age": 12, "score": 0.4404519908697063, "year": 2040}]}, {"id": 1, "name": "Embers of Wrath", "points": [{"age": 0, "score": 0.07837589737689786, "year": 2007}, {"age": 1, "score": 0.07231286452642055, "year": 2008}, {"age": 2, "score": 0.04949525430712592, "year": 2009}, {"age": 3, "score": 4.717783723161644e-09, "year": 2010}, {"age": 4, "score": 0.08340812734546628, "year": 2011}, {"age": 5, "score": 0.07728863981721357, "year": 2012}, {"age": 6, "score": 0.09847718113813761, "year": 2013}]}, {"id": 2, "name": "Orla Seabloom", "points": [{"age": 0, "score": 0.914044621291978, "year": 2029}]}, {"id": 3, "name": "Ivy Echos", "points": [{"age": 0, "score": 0.3947786932997716, "year": 2024}, {"age": 1, "score": 0.3878623256864004, "year": 2025}, {"age": 2, "score": 0.604976161604274, "year": 2026}]}, {"id": 4, "name": "Copper Canyon Ghosts", "points": [{"age": 0, "score": 0.6995374574362726, "year": 2034}, {"age": 1, "score": 0.8780420832022664, "year": 2035}]}, {"id": 5, "name": "Daniel O'Connell", "points": [{"age": 0, "score": 0.5714946996783629, "year": 2031}]}, {"id": 6, "name": "Beatrice Albright", "points": [{"age": 0, "score": 0.6614219109283423, "year": 2031}]}], PALETTE={"Sailor Shift": "#1f6f8b", "Embers of Wrath": "#3b6e8f", "Orla Seabloom": "#7a9b76", "Ivy Echos": "#9aa6b2", "Copper Canyon Ghosts": "#d1495b", "Daniel O'Connell": "#edae49", "Beatrice Albright": "#9b5de5"}, CANDIDATES=new Set(["Copper Canyon Ghosts", "Daniel O'Connell", "Beatrice Albright"]);
+const SS_FINAL=0.4405;
+const m={top:26,right:170,bottom:48,left:60};
+const svg=d3.select("#chart"),
+      W=+svg.attr("width")-m.left-m.right,
+      H=+svg.attr("height")-m.top-m.bottom,
+      g=svg.append("g").attr("transform",`translate(${m.left},${m.top})`),
+      tt=d3.select("#tt");
+const allPts=DATA.flatMap(d=>d.points);
+const xS=d3.scaleLinear().domain([0,d3.max(allPts,p=>p.age)+1]).range([0,W]);
+const yS=d3.scaleLinear().domain([0,Math.max(0.55,d3.max(allPts,p=>p.score)*1.1)]).range([H,0]);
+g.append("g").attr("class","axis").attr("transform",`translate(0,${H})`).call(d3.axisBottom(xS));
+g.append("g").attr("class","axis").call(d3.axisLeft(yS));
+g.append("text").attr("x",W/2).attr("y",H+36).attr("text-anchor","middle").style("fill","#444")
+  .text("Career age (years since first Oceanus Folk release)");
+g.append("text").attr("transform","rotate(-90)").attr("x",-H/2).attr("y",-44)
+  .attr("text-anchor","middle").style("fill","#444")
+  .text("Composite rising-star score");
+
+if(SS_FINAL!==null){
+  g.append("line").attr("x1",0).attr("x2",W)
+    .attr("y1",yS(SS_FINAL)).attr("y2",yS(SS_FINAL))
+    .attr("stroke",PALETTE["Sailor Shift"]).attr("stroke-dasharray","4,4").attr("stroke-width",1);
+  g.append("text").attr("x",6).attr("y",yS(SS_FINAL)-4)
+    .attr("fill",PALETTE["Sailor Shift"]).style("font-size","10px").style("opacity",.7)
+    .text("Sailor Shift end-of-career level");
+}
+
+const line=d3.line().x(p=>xS(p.age)).y(p=>yS(p.score));
+const groups=g.selectAll(".artist").data(DATA).enter().append("g").attr("class","artist")
+  .attr("data-name",d=>d.name);
+groups.each(function(d){
+  const sel=d3.select(this), isC=CANDIDATES.has(d.name), col=PALETTE[d.name];
+  if(d.points.length>=2){
+    sel.append("path").attr("class","tail").attr("d",line(d.points))
+       .attr("stroke",col).attr("stroke-width",isC?3.0:2.2);
+  }
+  sel.selectAll("circle").data(d.points).enter().append("circle")
+    .attr("cx",p=>xS(p.age)).attr("cy",p=>yS(p.score))
+    .attr("r",isC?5:3.6).attr("fill",col)
+    .attr("stroke","#fff").attr("stroke-width",1)
+    .on("mousemove",(e,p)=>{tt.style("opacity",1).style("left",e.pageX+"px").style("top",e.pageY+"px")
+        .html(`<b>${d.name}</b> · age ${p.age} · ${p.year}<br>composite ${p.score.toFixed(3)}`);})
+    .on("mouseleave",()=>tt.style("opacity",0));
+  const last=d.points[d.points.length-1];
+  sel.append("text").attr("x",xS(last.age)+10).attr("y",yS(last.score)+4)
+    .attr("fill",col).style("font-size","11px")
+    .style("font-weight",isC?"700":"400")
+    .text(d.name + (isC?"  *":""));
+});
+
+function refresh(){
+  const sb=d3.select("#showBase").property("checked");
+  const sc=d3.select("#showCand").property("checked");
+  d3.selectAll("g.artist").style("display",function(){
+    const n=this.getAttribute("data-name");
+    const c=CANDIDATES.has(n);
+    if(c && !sc) return "none";
+    if(!c && !sb) return "none";
+    return null;
+  });
+}
+d3.selectAll("#showBase,#showCand").on("change",refresh);
+</script></body></html>

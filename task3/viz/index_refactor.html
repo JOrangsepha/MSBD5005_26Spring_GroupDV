@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oceanus Folk: Rising Stars - Refactor</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    :root{--bg:#f7f7f8;--card:#fff;--text:#141827;--muted:#5a6378;--line:#dce1ea;--blue:#2563eb;--purple:#7c3aed;--pink:#db2777;--green:#059669;--orange:#d97706;--red:#dc2626}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.45}
+    nav{position:sticky;top:0;z-index:5;background:#ffffffee;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:16px;padding:10px 20px;font-size:13px;font-weight:600}
+    nav .brand{margin-right:auto;color:#0f172a;font-weight:700} nav a{text-decoration:none;color:var(--muted)} nav a:hover{color:var(--blue)}
+    .wrap{max-width:1240px;margin:0 auto;padding:20px}.hero{background:linear-gradient(180deg,#edf2ff,#f7f7f8);border:1px solid var(--line);border-radius:12px;padding:26px 28px;margin:10px 0 20px}
+    .hero h1{margin:0;font-size:36px}.hero p{margin:8px 0 0;color:var(--muted);max-width:900px}
+    section{margin:0 0 20px}.sec-head{margin:0 0 12px}.sec-head h2{margin:0 0 5px;font-size:25px}.sec-head p{margin:0;color:var(--muted)}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+    @media(max-width:980px){.grid2,.grid3{grid-template-columns:1fr}.hero h1{font-size:28px}}
+    .panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+    .title{margin:0 0 10px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}
+    .pill{display:inline-block;padding:3px 7px;font-size:11px;border-radius:999px;background:#eef2ff;color:#1d4ed8;margin-right:6px;margin-bottom:6px}
+    .card{border:1px solid var(--line);border-radius:9px;padding:12px;background:#fff}.card h3{margin:0 0 4px;font-size:18px}.meta{font-size:13px;color:var(--muted)}
+    .kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}.kv div{text-align:center;border:1px solid var(--line);border-radius:7px;padding:7px 4px}
+    .kv b{display:block;font-size:18px;color:#0f172a}.kv span{font-size:11px;color:var(--muted)}
+    .tbl{width:100%;border-collapse:collapse;font-size:13px}.tbl th,.tbl td{border-bottom:1px solid var(--line);text-align:left;padding:7px 8px}.tbl th{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+    .legend{display:flex;flex-wrap:wrap;gap:9px;font-size:12px;color:var(--muted);margin-bottom:8px}.legend i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:4px;vertical-align:middle}
+    .tooltip{position:fixed;z-index:10;pointer-events:none;background:#111827;color:#fff;border-radius:8px;padding:8px 10px;font-size:12px;line-height:1.35;opacity:0;transition:opacity .1s;max-width:330px}
+    .tooltip.show{opacity:1}.funnel-row{display:flex;align-items:center;gap:8px;margin-bottom:7px}.funnel-label{min-width:160px;font-size:12px;color:var(--muted);text-align:right}.funnel-bar{height:28px;border-radius:6px;color:#fff;font-weight:700;font-size:12px;padding:0 9px;display:flex;align-items:center}
+  </style>
+</head>
+<body>
+  <div class="tooltip" id="tip"></div>
+  <nav>
+    <span class="brand">Oceanus Folk - Rising Stars Refactor</span>
+    <a href="#s1">Rising Star Profile</a>
+    <a href="#s2">Three Career Comparisons</a>
+    <a href="#s3">Predictions (5 Years)</a>
+    <a href="#s4">Genre + Influence Context</a>
+  </nav>
+  <div class="wrap">
+    <header class="hero">
+      <h1>Oceanus Folk: Rising Stars</h1>
+      <p>This refactor focuses on Task 3 directly: define a measurable rising-star profile, compare three artist career trajectories in popularity and influence, and predict the next three Oceanus Folk stars for the next five years.</p>
+    </header>
+    <section id="s1">
+      <div class="sec-head"><h2>1) What Defines a Rising Star</h2><p>Six core dimensions describe artist potential, then a 5-year readiness term adjusts near-term breakout probability.</p></div>
+      <div class="grid2">
+        <div class="panel"><div class="title">Dimension Definition</div><div id="dimension-pills"></div><p class="meta" id="formula-note"></p></div>
+        <div class="panel"><div class="title">Selection Funnel</div><div id="funnel"></div></div>
+      </div>
+      <div class="grid2" style="margin-top:14px">
+        <div class="panel"><div class="title">Top Candidate Ranking (Model Score)</div><div class="legend" id="rank-legend"></div><div id="ranking-chart"></div></div>
+        <div class="panel"><div class="title">Dimension Contribution Matrix (Top 12)</div><div id="matrix-chart"></div></div>
+      </div>
+    </section>
+    <section id="s2">
+      <div class="sec-head"><h2>2) Visualize and Compare Three Careers</h2><p>Popularity is modeled as cumulative song output; influence is modeled as cumulative in/out influence links.</p></div>
+      <div class="grid3" id="comparison-cards"></div>
+      <div class="panel" style="margin-top:14px"><div class="title">Career Trajectories: Popularity vs Influence</div><div class="legend" id="career-legend"></div><div id="career-chart"></div></div>
+      <div class="panel" style="margin-top:14px"><div class="title">Compare and Contrast Summary</div><table class="tbl" id="contrast-table"></table></div>
+    </section>
+    <section id="s3">
+      <div class="sec-head"><h2>3) Predict the Next Oceanus Folk Stars (Next 5 Years)</h2><p>Three predictions are selected from ranked candidates with diversity constraints and evidence-backed explanations.</p></div>
+      <div class="grid3" id="prediction-cards"></div>
+      <div class="grid2" style="margin-top:14px">
+        <div class="panel"><div class="title">Readiness Map</div><div id="readiness-chart"></div></div>
+        <div class="panel"><div class="title">Prediction Rationale</div><div id="rationale-list"></div></div>
+      </div>
+    </section>
+    <section id="s4">
+      <div class="sec-head"><h2>4) Genre and Influence Context (Retained)</h2><p>Chord diagram and influence network are retained as requested to contextualize genre flow and ecosystem positioning.</p></div>
+      <div class="grid2">
+        <div class="panel"><div class="title">Oceanus Folk Timeline</div><div id="timeline-chart"></div></div>
+        <div class="panel"><div class="title">Cross-Genre Influence Flow (Chord)</div><div id="chord-chart"></div></div>
+      </div>
+      <div class="panel" style="margin-top:14px"><div class="title">Influence Network</div><div id="network-chart"></div></div>
+    </section>
+  </div>
+  <script>
+    const tip=d3.select("#tip");
+    const showTip=(e,h)=>{tip.html(h).classed("show",true);let x=e.clientX+10,y=e.clientY-8,n=tip.node();if(x+n.offsetWidth>innerWidth-10)x=e.clientX-n.offsetWidth-10;if(y+n.offsetHeight>innerHeight-10)y=innerHeight-n.offsetHeight-10;if(y<8)y=8;tip.style("left",x+"px").style("top",y+"px")};
+    const hideTip=()=>tip.classed("show",false);
+    const C_COMP=["#2563eb","#7c3aed","#db2777"], C_PRED=["#059669","#d97706","#dc2626"];
+    const EDGE_STYLES={"InStyleOf":{color:"#6366f1",dash:""},"InterpolatesFrom":{color:"#f59e0b",dash:"5 3"},"CoverOf":{color:"#10b981",dash:"2 2"},"DirectlySamples":{color:"#ef4444",dash:"7 3 2 3"},"LyricalReferenceTo":{color:"#8b5cf6",dash:"1 3"}};
+    Promise.all([d3.json("data/artists.json?t="+Date.now()),d3.json("data/timeline.json?t="+Date.now()),d3.json("data/network.json?t="+Date.now())]).then(([ad,td,nd])=>{
+      const colorByName={};ad.comparison.forEach((n,i)=>colorByName[n]=C_COMP[i%C_COMP.length]);ad.predictions.forEach((n,i)=>colorByName[n]=C_PRED[i%C_PRED.length]);
+      const model=ad.dimension_model||{}, dims=model.dimensions||[];const pills=d3.select("#dimension-pills");dims.forEach(d=>pills.append("span").attr("class","pill").text(`${d.label} (w=${d.weight})`));
+      d3.select("#formula-note").text(`Core score uses ${dims.length} normalized dimensions. Final 5-year score adds readiness (${model.readiness_formula||"recency+OF commitment"}).`);
+      const stages=ad.selection_funnel?.stages||[],maxStage=d3.max(stages,d=>d.count)||1,cols=["#64748b","#3b82f6","#0ea5e9","#059669","#d97706"],fct=d3.select("#funnel");
+      stages.forEach((s,i)=>{const row=fct.append("div").attr("class","funnel-row"),w=Math.max(10,(s.count/maxStage)*100);row.append("span").attr("class","funnel-label").text(s.label);row.append("div").attr("class","funnel-bar").style("width",`${w}%`).style("background",cols[i%cols.length]).text(s.count)});
+      const rows=(ad.selection_funnel?.ranking||[]).slice(0,20),W=620,rowH=24,M={t:16,r:20,b:24,l:210},H=M.t+M.b+rowH*rows.length,w=W-M.l-M.r,x=d3.scaleLinear().domain([0,d3.max(rows,d=>d.score)*1.1||1]).range([0,w]);
+      const lg=d3.select("#rank-legend");lg.append("span").html(`<i style="background:#22c55e"></i>Selected prediction`);lg.append("span").html(`<i style="background:#94a3b8"></i>Other candidate`);
+      const svg=d3.select("#ranking-chart").append("svg").attr("viewBox",`0 0 ${W} ${H}`),g=svg.append("g").attr("transform",`translate(${M.l},${M.t})`);
+      rows.forEach((r,i)=>{const y=i*rowH,col=r.selected?(colorByName[r.name]||"#22c55e"):"#94a3b8";g.append("rect").attr("x",0).attr("y",y+3).attr("width",x(r.score)).attr("height",rowH-6).attr("rx",4).attr("fill",col).attr("opacity",r.selected?0.9:0.45).on("mousemove",e=>showTip(e,`<b>#${r.rank} ${r.name}</b><br/>score: <b>${r.score.toFixed(3)}</b><br/>core: ${r.core_score.toFixed(3)} | readiness: ${r.five_year_readiness.toFixed(3)}<br/>OF: ${r.of_songs}/${r.total_songs}<br/>${r.rejection_reason||"selected"}`)).on("mouseout",hideTip);g.append("text").attr("x",-8).attr("y",y+rowH/2+1).attr("text-anchor","end").attr("dominant-baseline","middle").style("font-size","11px").style("fill",r.selected?col:"#334155").style("font-weight",r.selected?700:500).text(`${r.rank}. ${r.name}`)});
+      g.append("g").attr("transform",`translate(0,${rows.length*rowH})`).call(d3.axisBottom(x).ticks(5)).selectAll("text").style("font-size","10px").style("fill","#64748b");
+      const mRows=(ad.selection_funnel?.ranking||[]).slice(0,12),mDims=ad.dimension_model?.dimensions||[],MW=620,mRowH=26,MM={t:34,r:10,b:10,l:210},MH=MM.t+MM.b+mRowH*mRows.length,mw=MW-MM.l-MM.r,colW=mw/Math.max(mDims.length,1),mColor=d3.scaleLinear().domain([0,0.6,1.2]).range(["#e2e8f0","#93c5fd","#1d4ed8"]);
+      const mSvg=d3.select("#matrix-chart").append("svg").attr("viewBox",`0 0 ${MW} ${MH}`),mg=mSvg.append("g").attr("transform",`translate(${MM.l},${MM.t})`);
+      mDims.forEach((d,i)=>mg.append("text").attr("x",i*colW+colW/2).attr("y",-12).attr("text-anchor","middle").style("font-size","9px").style("fill","#64748b").text(d.label));
+      mRows.forEach((r,ri)=>{const y=ri*mRowH;mg.append("text").attr("x",-8).attr("y",y+mRowH/2+1).attr("text-anchor","end").attr("dominant-baseline","middle").style("font-size","11px").style("fill","#334155").text(r.name);mDims.forEach((d,ci)=>{const v=(r.dim_contrib||{})[d.key]||0;mg.append("rect").attr("x",ci*colW+1).attr("y",y+2).attr("width",colW-2).attr("height",mRowH-4).attr("rx",4).attr("fill",mColor(v)).on("mousemove",e=>showTip(e,`<b>${r.name}</b><br/>${d.label}: ${v.toFixed(3)}`)).on("mouseout",hideTip)})});
+      const cardComp=d3.select("#comparison-cards");ad.comparison.forEach(name=>{const p=ad.profiles[name];if(!p)return;const col=colorByName[name]||"#2563eb",c=cardComp.append("div").attr("class","card").style("border-top",`3px solid ${col}`);c.append("h3").style("color",col).text(name);c.append("div").attr("class","meta").text(`Active ${p.first_year}-${p.last_year} • ${p.type}`);const kv=c.append("div").attr("class","kv");kv.append("div").html(`<b>${p.total_songs}</b><span>Songs</span>`);kv.append("div").html(`<b>${(p.notable_ratio*100).toFixed(0)}%</b><span>Notable Ratio</span>`);kv.append("div").html(`<b>${p.influence_out+p.influence_in}</b><span>Total Influence</span>`)});
+      const buildYearSeries=p=>{const years=Object.keys(p.yearly||{}).filter(y=>/^\d+$/.test(y)).map(Number).sort((a,b)=>a-b);let cs=0,ci=0;return years.map(y=>{const d=p.yearly[String(y)];cs+=d.songs||0;ci+=(d.inf_out||0)+(d.inf_in||0);return{year:y,songsCum:cs,infCum:ci}})};
+      const series=ad.comparison.map(n=>({name:n,points:buildYearSeries(ad.profiles[n]||{})})).filter(s=>s.points.length),years=[...new Set(series.flatMap(s=>s.points.map(p=>p.year)))].sort((a,b)=>a-b);
+      const CW=1060,CH=350,CM={t:24,r:58,b:36,l:50},cw=CW-CM.l-CM.r,ch=CH-CM.t-CM.b,xc=d3.scaleLinear().domain(d3.extent(years)).range([0,cw]),yS=d3.scaleLinear().domain([0,d3.max(series.flatMap(s=>s.points),d=>d.songsCum)*1.1||1]).range([ch,0]),yI=d3.scaleLinear().domain([0,d3.max(series.flatMap(s=>s.points),d=>d.infCum)*1.1||1]).range([ch,0]),lineS=d3.line().x(d=>xc(d.year)).y(d=>yS(d.songsCum)).curve(d3.curveMonotoneX),lineI=d3.line().x(d=>xc(d.year)).y(d=>yI(d.infCum)).curve(d3.curveMonotoneX);
+      const csvg=d3.select("#career-chart").append("svg").attr("viewBox",`0 0 ${CW} ${CH}`),cg=csvg.append("g").attr("transform",`translate(${CM.l},${CM.t})`),clg=d3.select("#career-legend");
+      series.forEach(s=>clg.append("span").html(`<i style="background:${colorByName[s.name]}"></i>${s.name}`));clg.append("span").html(`<i style="background:#111827"></i>Solid: popularity, dashed: influence`);
+      yS.ticks(5).forEach(v=>cg.append("line").attr("x1",0).attr("x2",cw).attr("y1",yS(v)).attr("y2",yS(v)).attr("stroke","#eef2f7"));
+      series.forEach(s=>{const col=colorByName[s.name]||"#2563eb";cg.append("path").datum(s.points).attr("d",lineS).attr("fill","none").attr("stroke",col).attr("stroke-width",2.8);cg.append("path").datum(s.points).attr("d",lineI).attr("fill","none").attr("stroke",col).attr("stroke-width",2).attr("stroke-dasharray","6 3").attr("opacity",0.7);const end=s.points[s.points.length-1];cg.append("text").attr("x",xc(end.year)+6).attr("y",yS(end.songsCum)).style("font-size","10px").style("font-weight",700).style("fill",col).text(s.name)});
+      cg.append("g").attr("transform",`translate(0,${ch})`).call(d3.axisBottom(xc).ticks(8).tickFormat(d3.format("d"))).selectAll("text").style("font-size","10px").style("fill","#64748b");cg.append("g").call(d3.axisLeft(yS).ticks(5)).selectAll("text").style("font-size","10px").style("fill","#64748b");cg.append("g").attr("transform",`translate(${cw},0)`).call(d3.axisRight(yI).ticks(5)).selectAll("text").style("font-size","10px").style("fill","#64748b");
+      const rowsTbl=ad.comparison.map(n=>{const p=ad.profiles[n],ys=Object.keys(p.yearly||{}).filter(y=>/^\d+$/.test(y)).map(Number).sort((a,b)=>a-b),recent=ys.slice(-3).reduce((a,y)=>a+(p.yearly[String(y)]?.songs||0),0),early=ys.slice(0,3).reduce((a,y)=>a+(p.yearly[String(y)]?.songs||0),0);return{name:n,songs:p.total_songs,notable:(p.notable_ratio*100).toFixed(0)+"%",influence:p.influence_out+p.influence_in,rise:recent-early}});
+      d3.select("#contrast-table").html(`<thead><tr><th>Artist</th><th>Total Songs</th><th>Notable Ratio</th><th>Total Influence</th><th>Recent-Early Song Lift</th></tr></thead><tbody>${rowsTbl.map(r=>`<tr><td><b>${r.name}</b></td><td>${r.songs}</td><td>${r.notable}</td><td>${r.influence}</td><td>${r.rise}</td></tr>`).join("")}</tbody>`);
+      const pCards=d3.select("#prediction-cards");ad.predictions.forEach(name=>{const p=ad.profiles[name],e=ad.prediction_explanations?.[name],col=colorByName[name]||"#059669",ar=ad.archetype_labels?.[name]||"Predicted Rising Star",mir=ad.archetype_mirrors?.[name],c=pCards.append("div").attr("class","card").style("border-top",`3px solid ${col}`);c.append("h3").style("color",col).text(name);c.append("div").attr("class","meta").text(`${ar}${mir?(" • mirrors "+mir):""}`);const kv=c.append("div").attr("class","kv");kv.append("div").html(`<b>${e?e.score.toFixed(2):"-"}</b><span>Model Score</span>`);kv.append("div").html(`<b>${e?e.five_year_readiness.toFixed(2):"-"}</b><span>5Y Readiness</span>`);kv.append("div").html(`<b>${(p.notable_ratio*100).toFixed(0)}%</b><span>Notable Ratio</span>`)});
+      const rRows=(ad.selection_funnel?.ranking||[]).slice(0,30),RW=560,RH=320,RM={t:16,r:20,b:38,l:48},rw=RW-RM.l-RM.r,rh=RH-RM.t-RM.b,rsvg=d3.select("#readiness-chart").append("svg").attr("viewBox",`0 0 ${RW} ${RH}`),rg=rsvg.append("g").attr("transform",`translate(${RM.l},${RM.t})`),xr=d3.scaleLinear().domain([0,1]).range([0,rw]),yr=d3.scaleLinear().domain([0,1]).range([rh,0]),rr=d3.scaleSqrt().domain([0,d3.max(rRows,d=>d.score)||1]).range([4,13]);
+      rg.append("g").attr("transform",`translate(0,${rh})`).call(d3.axisBottom(xr).ticks(5)).selectAll("text").style("font-size","10px").style("fill","#64748b");rg.append("g").call(d3.axisLeft(yr).ticks(5)).selectAll("text").style("font-size","10px").style("fill","#64748b");
+      rg.append("text").attr("x",rw/2).attr("y",rh+30).attr("text-anchor","middle").style("font-size","11px").style("fill","#475569").text("5-year readiness");rg.append("text").attr("transform","rotate(-90)").attr("x",-rh/2).attr("y",-34).attr("text-anchor","middle").style("font-size","11px").style("fill","#475569").text("Core score (normalized)");
+      rRows.forEach(d=>{const xv=d.five_year_readiness,yv=Math.max(0,Math.min(1,d.core_score/6.0)),col=d.selected?(colorByName[d.name]||"#16a34a"):"#94a3b8";rg.append("circle").attr("cx",xr(xv)).attr("cy",yr(yv)).attr("r",rr(d.score)).attr("fill",col).attr("fill-opacity",d.selected?0.82:0.35).attr("stroke",col).attr("stroke-width",d.selected?2:1).on("mousemove",e=>showTip(e,`<b>${d.name}</b><br/>score: ${d.score.toFixed(3)}<br/>core: ${d.core_score.toFixed(3)}<br/>readiness: ${d.five_year_readiness.toFixed(3)}`)).on("mouseout",hideTip);if(d.selected)rg.append("text").attr("x",xr(xv)+7).attr("y",yr(yv)-7).style("font-size","10px").style("fill",col).style("font-weight",700).text(d.name)});
+      const rl=d3.select("#rationale-list");ad.predictions.forEach(name=>{const e=ad.prediction_explanations?.[name];if(!e)return;const col=colorByName[name]||"#059669",b=rl.append("div").style("margin-bottom","12px").style("padding","10px").style("border","1px solid #e2e8f0").style("border-radius","8px");b.append("div").style("font-weight",700).style("color",col).text(`${name} (#${e.rank}, score ${e.score.toFixed(2)})`);b.append("div").style("font-size","13px").style("color","#475569").style("margin","5px 0").text(e.five_year_outlook);const ul=b.append("ul").style("margin","4px 0 4px 18px").style("padding","0").style("font-size","13px");e.strengths.forEach(s=>ul.append("li").text(`${s.label}: contribution ${s.contribution.toFixed(2)}`));e.risks.forEach(r=>ul.append("li").style("color","#9a3412").text(`Risk: ${r}`))});
+      const tData=(td.oceanus_folk||[]).filter(d=>/^\d+$/.test(String(d.year)));if(tData.length){const TW=560,TH=300,TM={t:18,r:44,b:38,l:44},tw=TW-TM.l-TM.r,th=TH-TM.t-TM.b,xt=d3.scaleBand().domain(tData.map(d=>d.year)).range([0,tw]).padding(0.14),yt=d3.scaleLinear().domain([0,d3.max(tData,d=>d.total)*1.1]).range([th,0]),yt2=d3.scaleLinear().domain([0,d3.max(tData,d=>d.new_artists)*1.5||1]).range([th,0]),tsvg=d3.select("#timeline-chart").append("svg").attr("viewBox",`0 0 ${TW} ${TH}`),tg=tsvg.append("g").attr("transform",`translate(${TM.l},${TM.t})`);tData.forEach(d=>{tg.append("rect").attr("x",xt(d.year)).attr("y",yt(d.total)).attr("width",xt.bandwidth()).attr("height",th-yt(d.total)).attr("fill","#93c5fd");tg.append("rect").attr("x",xt(d.year)).attr("y",yt(d.notable)).attr("width",xt.bandwidth()).attr("height",th-yt(d.notable)).attr("fill","#2563eb").attr("opacity",0.8);tg.append("circle").attr("cx",xt(d.year)+xt.bandwidth()/2).attr("cy",yt2(d.new_artists)).attr("r",Math.max(2,Math.sqrt(d.new_artists)*2)).attr("fill","#db2777").attr("fill-opacity",0.35)});tg.append("g").attr("transform",`translate(0,${th})`).call(d3.axisBottom(xt).tickValues(tData.filter((_,i)=>i%4===0).map(d=>d.year))).selectAll("text").style("font-size","9px").style("fill","#64748b").attr("transform","rotate(-35)").attr("text-anchor","end");tg.append("g").call(d3.axisLeft(yt).ticks(5)).selectAll("text").style("font-size","9px").style("fill","#64748b");tg.append("g").attr("transform",`translate(${tw},0)`).call(d3.axisRight(yt2).ticks(4)).selectAll("text").style("font-size","9px").style("fill","#64748b")}
+      if(td.chord_genres&&td.chord_matrix){const genres=td.chord_genres,matrix=td.chord_matrix,S=480,cx=S/2,cy=S/2,outer=S/2-62,inner=outer-18,csvg2=d3.select("#chord-chart").append("svg").attr("viewBox",`0 0 ${S} ${S}`),cg2=csvg2.append("g").attr("transform",`translate(${cx},${cy})`),color=d3.scaleOrdinal().domain(genres).range(d3.schemeTableau10.concat(d3.schemeSet3)),ch=d3.chord().padAngle(0.04).sortSubgroups(d3.descending)(matrix),arc=d3.arc().innerRadius(inner).outerRadius(outer),rib=d3.ribbon().radius(inner-1);cg2.selectAll(".grp").data(ch.groups).enter().append("path").attr("d",arc).attr("fill",d=>color(genres[d.index])).attr("stroke","#fff").attr("stroke-width",0.6).on("mousemove",(e,d)=>showTip(e,`<b>${genres[d.index]}</b><br/>total influence: ${d.value}`)).on("mouseout",hideTip);cg2.selectAll(".rib").data(ch).enter().append("path").attr("d",rib).attr("fill",d=>color(genres[d.source.index])).attr("stroke","#fff").attr("stroke-width",0.4).attr("opacity",0.6).on("mousemove",(e,d)=>showTip(e,`<b>${genres[d.source.index]} → ${genres[d.target.index]}</b><br/>count: ${d.source.value}`)).on("mouseout",hideTip)}
+      const NW=1120,NH=560,nsvg=d3.select("#network-chart").append("svg").attr("viewBox",`0 0 ${NW} ${NH}`),pad=35,xs=nd.nodes.map(n=>n.x),ys=nd.nodes.map(n=>n.y),xMin=d3.min(xs),xMax=d3.max(xs),yMin=d3.min(ys),yMax=d3.max(ys),xN=d3.scaleLinear().domain([xMin,xMax]).range([pad,NW-pad]),yN=d3.scaleLinear().domain([yMin,yMax]).range([pad,NH-pad]),nodeById={};nd.nodes.forEach(n=>{n.fx=xN(n.x);n.fy=yN(n.y);nodeById[n.id]=n});nd.links.forEach(l=>{if(typeof l.source==="string")l.source=nodeById[l.source];if(typeof l.target==="string")l.target=nodeById[l.target]});
+      const rN=d3.scaleSqrt().domain([0,d3.max(nd.nodes,d=>d.songs)||1]).range([3,19]),nodeColor=d=>colorByName[d.id]||(d.is_comparison?"#2563eb":d.is_prediction?"#059669":"#94a3b8");
+      nsvg.append("g").selectAll("line").data(nd.links.filter(l=>l.source&&l.target)).enter().append("line").attr("x1",d=>d.source.fx).attr("y1",d=>d.source.fy).attr("x2",d=>d.target.fx).attr("y2",d=>d.target.fy).attr("stroke",d=>EDGE_STYLES[d.type]?.color||"#94a3b8").attr("stroke-dasharray",d=>EDGE_STYLES[d.type]?.dash||"").attr("stroke-opacity",0.24).attr("stroke-width",d=>Math.max(0.6,Math.min(3.2,d.weight*0.65)));
+      const ng=nsvg.append("g").selectAll("g").data(nd.nodes).enter().append("g").attr("transform",d=>`translate(${d.fx},${d.fy})`);ng.append("circle").attr("r",d=>rN(d.songs)).attr("fill",d=>nodeColor(d)).attr("fill-opacity",d=>(d.is_comparison||d.is_prediction)?0.88:0.34).attr("stroke",d=>nodeColor(d)).attr("stroke-width",d=>(d.is_comparison||d.is_prediction)?2:0.8);
+      ng.filter(d=>d.is_comparison||d.is_prediction).append("text").attr("x",0).attr("y",d=>rN(d.songs)+11).attr("text-anchor","middle").style("font-size","9px").style("fill",d=>nodeColor(d)).style("font-weight",700).text(d=>d.id);
+      ng.on("mousemove",(e,d)=>{const gs=Object.entries(d.genres||{}).map(([g,c])=>`${g}:${c}`).join(", ");showTip(e,`<b>${d.id}</b><br/>songs: ${d.songs} (${d.of_songs} OF)<br/>influence out/in: ${d.influence_out}/${d.influence_in}<br/>${gs}`)}).on("mouseout",hideTip);
+    });
+  </script>
+</body>
+</html>
