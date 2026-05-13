@@ -1,0 +1,6975 @@
+{
+  "meta": {
+    "center_id": 17255,
+    "center_name": "Sailor Shift",
+    "node_count": 143,
+    "link_count": 190,
+    "notes": [
+      "One directed link per relationship to center.",
+      "direction=out means center influences target.",
+      "direction=in means source influences center.",
+      "first_year/last_year are inferred from evidence work dates."
+    ],
+    "year_range": {
+      "min": 2023,
+      "max": 2039
+    }
+  },
+  "nodes": [
+    {
+      "id": 17255,
+      "name": "Sailor Shift",
+      "node_type": "Person",
+      "role": "center",
+      "influence_out_count": 48,
+      "influence_in_count": 142,
+      "size_score": 190
+    },
+    {
+      "id": 17256,
+      "name": "Maya Jensen",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 10
+    },
+    {
+      "id": 17258,
+      "name": "Jade Thompson",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 8
+    },
+    {
+      "id": 17257,
+      "name": "Lila \"Lilly\" Hartman",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 8
+    },
+    {
+      "id": 17259,
+      "name": "Sophie Ramirez",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 8
+    },
+    {
+      "id": 17041,
+      "name": "Arlo Sterling",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 6
+    },
+    {
+      "id": 17045,
+      "name": "Cassian Rae",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 6
+    },
+    {
+      "id": 17044,
+      "name": "Elara May",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 6
+    },
+    {
+      "id": 17260,
+      "name": "Ivy Echos",
+      "node_type": "MusicalGroup",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 6
+    },
+    {
+      "id": 17042,
+      "name": "Lyra Blaze",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 6
+    },
+    {
+      "id": 17043,
+      "name": "Orion Cruz",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 6
+    },
+    {
+      "id": 17046,
+      "name": "The Brine Choir",
+      "node_type": "MusicalGroup",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 6
+    },
+    {
+      "id": 17189,
+      "name": "Ewan MacCrae",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 4
+    },
+    {
+      "id": 17191,
+      "name": "Freya Lindholm",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 4
+    },
+    {
+      "id": 17226,
+      "name": "Kai Reynolds",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 4
+    },
+    {
+      "id": 17164,
+      "name": "Rusty Riggins",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 4
+    },
+    {
+      "id": 17227,
+      "name": "Aiden Harper",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17190,
+      "name": "Astrid Nørgaard",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 16984,
+      "name": "Axel Blaze",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17349,
+      "name": "Bea Azure",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17296,
+      "name": "Coralia Bellweather",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 16996,
+      "name": "Crimson Carriage",
+      "node_type": "MusicalGroup",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 16993,
+      "name": "Echo Wilde",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17165,
+      "name": "Finn McGraw",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17228,
+      "name": "Finn Morgan",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17206,
+      "name": "Fiona Mercer",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 16959,
+      "name": "Iris Moon",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 16985,
+      "name": "Jade Sky",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17311,
+      "name": "Jonah Calloway",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17355,
+      "name": "Kael Storm",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17309,
+      "name": "Levi Holloway",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17119,
+      "name": "Lia Grant",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17205,
+      "name": "Liam O'Sullivan",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17249,
+      "name": "Lila Rivers",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 16994,
+      "name": "Lucas Bennett",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 16983,
+      "name": "Luna Vibe",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17310,
+      "name": "Marin Thorne",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 16986,
+      "name": "Maverick Storm",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17248,
+      "name": "Mia Waters",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 16995,
+      "name": "Selene Noir",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17120,
+      "name": "Selkie's Hollow",
+      "node_type": "MusicalGroup",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17250,
+      "name": "Siren's Call",
+      "node_type": "MusicalGroup",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17229,
+      "name": "Skylar Brooks",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17230,
+      "name": "The Wave Riders",
+      "node_type": "MusicalGroup",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 16987,
+      "name": "Tidal Reverie",
+      "node_type": "MusicalGroup",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 16960,
+      "name": "Violet Engines",
+      "node_type": "MusicalGroup",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17166,
+      "name": "William Tidewell",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 17118,
+      "name": "Zachary Cole",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 16958,
+      "name": "Zane Cruz",
+      "node_type": "Person",
+      "role": "both",
+      "influence_out_count": 1,
+      "influence_in_count": 1,
+      "size_score": 2
+    },
+    {
+      "id": 9224,
+      "name": " THA PROPHET",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 13018,
+      "name": "Amico Luciani",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14357,
+      "name": "Amy Powell",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 304,
+      "name": "Belinda Knappe",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 12948,
+      "name": "Brooke Olson",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 9227,
+      "name": "Caitlin Miller",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 8026,
+      "name": "Cipriano Peranda",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 12240,
+      "name": "Daniel Mccormick",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 13015,
+      "name": "David Reese",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14353,
+      "name": "Debra Graham",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14355,
+      "name": "Dylan Schwartz",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14354,
+      "name": "Edward Evans",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 13017,
+      "name": "Elmo Calbo",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14895,
+      "name": "Fang Ding",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 3761,
+      "name": "Gang Shao",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 10906,
+      "name": "Guiying Ren",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 9225,
+      "name": "Herbert Mcfarland",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 8208,
+      "name": "Igor Dyś",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14356,
+      "name": "James Henderson",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 12686,
+      "name": "James Medina",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 7029,
+      "name": "Jason Aguirre",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 2705,
+      "name": "Jeremiah Love",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 878,
+      "name": "Jing Kang",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14937,
+      "name": "Joanna Avery",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14359,
+      "name": "Joel Long",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 7028,
+      "name": "John Graves",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 11255,
+      "name": "Joshua Taylor",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 15224,
+      "name": "Juan Shi",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 3882,
+      "name": "Juan Zhou",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14936,
+      "name": "Judy Yang",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 3989,
+      "name": "Jun Qiao",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 934,
+      "name": "Jun Zhou",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 2199,
+      "name": "Kaori Ito",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14894,
+      "name": "Kimberly Estrada",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 12238,
+      "name": "Lei Fu",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 12241,
+      "name": "Lei Jin",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 10907,
+      "name": "Lei Shi",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 12688,
+      "name": "Linda Burns",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 6593,
+      "name": "Lori Massey",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 12687,
+      "name": "Matthew Best",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 7030,
+      "name": "Matthew Lane",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14360,
+      "name": "Michael Nixon",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 457,
+      "name": "Min Cao",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 3760,
+      "name": "Min Long",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 3990,
+      "name": "Ming Huang",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 1335,
+      "name": "Ming Long",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14297,
+      "name": "Ming Qiao",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 76,
+      "name": "Ming Ren",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 15856,
+      "name": "Ming Zhou",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14934,
+      "name": "Miss Jennifer Williams",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14938,
+      "name": "Molly Gonzalez",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14298,
+      "name": "Na Ye",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 2200,
+      "name": "Naoko Sato",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14361,
+      "name": "Nathan Jones",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 16910,
+      "name": "Phantom Roots",
+      "node_type": "MusicalGroup",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 10904,
+      "name": "Ping Jin",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 10017,
+      "name": "Ping Liao",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 3988,
+      "name": "Qiang Liu",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 3763,
+      "name": "Qiang Yuan",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 877,
+      "name": "Qiang Zhou",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 9226,
+      "name": "Rachel Montes",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 9228,
+      "name": "Rebecca Wise",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 2707,
+      "name": "Robert Woods",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 13016,
+      "name": "Ryan Dunlap",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 5213,
+      "name": "Samantha Bullock",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 10021,
+      "name": "Sandra Burke",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 3086,
+      "name": "Sean Jones",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 5575,
+      "name": "Shannon Harvey",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14358,
+      "name": "Shawn Johnson",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 7027,
+      "name": "Sheryl Roman",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 16031,
+      "name": "Simone Säuberlich",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 8880,
+      "name": "Tao Gao",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14108,
+      "name": "Tao Hu",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 10905,
+      "name": "Tao Wen",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 10018,
+      "name": "Trevor Bass",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 16823,
+      "name": "Ursus",
+      "node_type": "MusicalGroup",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 1294,
+      "name": "Urszula Stochmal",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 10908,
+      "name": "Wei Liang",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 3764,
+      "name": "Wei Zhao",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 13590,
+      "name": "Wei Zhao",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 14935,
+      "name": "William Robinson",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 10020,
+      "name": "Xia Yuan",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 3987,
+      "name": "Xiulan Fang",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 10019,
+      "name": "Xiuying Du",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 12239,
+      "name": "Yan Dai",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 10022,
+      "name": "Yan Li",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 2400,
+      "name": "Yan Tang",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 455,
+      "name": "Yang Peng",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 1952,
+      "name": "Yang Wan",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 3883,
+      "name": "Yang Zhao",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 2198,
+      "name": "Yoko Hashimoto",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 1276,
+      "name": "Yong Dong",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 1336,
+      "name": "Yong Lu",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    },
+    {
+      "id": 2706,
+      "name": "Zachary Francis",
+      "node_type": "Person",
+      "role": "influencer",
+      "influence_out_count": 1,
+      "influence_in_count": 0,
+      "size_score": 1
+    }
+  ],
+  "links": [
+    {
+      "source": 17256,
+      "target": 17255,
+      "direction": "in",
+      "weight": 5,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17121,
+          "source_work_name": "Ballads for the Low Tide",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17263,
+          "source_work_name": "Shoreline Sonnets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17262,
+          "source_work_name": "Luminescent Tides",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_group",
+          "source_work_id": null,
+          "source_work_name": null,
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": 17260,
+          "group_name": "Ivy Echos"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2036,
+      "year_count": 4
+    },
+    {
+      "source": 17255,
+      "target": 17256,
+      "direction": "out",
+      "weight": 5,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17121,
+          "source_work_name": "Ballads for the Low Tide",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17263,
+          "source_work_name": "Shoreline Sonnets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17262,
+          "source_work_name": "Luminescent Tides",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_group",
+          "source_work_id": null,
+          "source_work_name": null,
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": 17260,
+          "group_name": "Ivy Echos"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2036,
+      "year_count": 4
+    },
+    {
+      "source": 17259,
+      "target": 17255,
+      "direction": "in",
+      "weight": 4,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17263,
+          "source_work_name": "Shoreline Sonnets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17262,
+          "source_work_name": "Luminescent Tides",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_group",
+          "source_work_id": null,
+          "source_work_name": null,
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": 17260,
+          "group_name": "Ivy Echos"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2025,
+      "year_count": 3
+    },
+    {
+      "source": 17257,
+      "target": 17255,
+      "direction": "in",
+      "weight": 4,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17263,
+          "source_work_name": "Shoreline Sonnets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17262,
+          "source_work_name": "Luminescent Tides",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_group",
+          "source_work_id": null,
+          "source_work_name": null,
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": 17260,
+          "group_name": "Ivy Echos"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2025,
+      "year_count": 3
+    },
+    {
+      "source": 17258,
+      "target": 17255,
+      "direction": "in",
+      "weight": 4,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17263,
+          "source_work_name": "Shoreline Sonnets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17262,
+          "source_work_name": "Luminescent Tides",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_group",
+          "source_work_id": null,
+          "source_work_name": null,
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": 17260,
+          "group_name": "Ivy Echos"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2025,
+      "year_count": 3
+    },
+    {
+      "source": 17255,
+      "target": 17257,
+      "direction": "out",
+      "weight": 4,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17263,
+          "source_work_name": "Shoreline Sonnets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17262,
+          "source_work_name": "Luminescent Tides",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_group",
+          "source_work_id": null,
+          "source_work_name": null,
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": 17260,
+          "group_name": "Ivy Echos"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2025,
+      "year_count": 3
+    },
+    {
+      "source": 17255,
+      "target": 17258,
+      "direction": "out",
+      "weight": 4,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17263,
+          "source_work_name": "Shoreline Sonnets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17262,
+          "source_work_name": "Luminescent Tides",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_group",
+          "source_work_id": null,
+          "source_work_name": null,
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": 17260,
+          "group_name": "Ivy Echos"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2025,
+      "year_count": 3
+    },
+    {
+      "source": 17255,
+      "target": 17259,
+      "direction": "out",
+      "weight": 4,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17263,
+          "source_work_name": "Shoreline Sonnets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17262,
+          "source_work_name": "Luminescent Tides",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_group",
+          "source_work_id": null,
+          "source_work_name": null,
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": 17260,
+          "group_name": "Ivy Echos"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2025,
+      "year_count": 3
+    },
+    {
+      "source": 17260,
+      "target": 17255,
+      "direction": "in",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17263,
+          "source_work_name": "Shoreline Sonnets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17262,
+          "source_work_name": "Luminescent Tides",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2025,
+      "year_count": 3
+    },
+    {
+      "source": 17041,
+      "target": 17255,
+      "direction": "in",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17047,
+          "source_work_name": "Drifting Between the Stars and the Sea",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17048,
+          "source_work_name": "Artificial Sunsets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 3
+    },
+    {
+      "source": 17042,
+      "target": 17255,
+      "direction": "in",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17047,
+          "source_work_name": "Drifting Between the Stars and the Sea",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17048,
+          "source_work_name": "Artificial Sunsets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 3
+    },
+    {
+      "source": 17043,
+      "target": 17255,
+      "direction": "in",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17047,
+          "source_work_name": "Drifting Between the Stars and the Sea",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17048,
+          "source_work_name": "Artificial Sunsets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 3
+    },
+    {
+      "source": 17044,
+      "target": 17255,
+      "direction": "in",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17047,
+          "source_work_name": "Drifting Between the Stars and the Sea",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17048,
+          "source_work_name": "Artificial Sunsets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 3
+    },
+    {
+      "source": 17045,
+      "target": 17255,
+      "direction": "in",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17047,
+          "source_work_name": "Drifting Between the Stars and the Sea",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17048,
+          "source_work_name": "Artificial Sunsets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 3
+    },
+    {
+      "source": 17046,
+      "target": 17255,
+      "direction": "in",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17047,
+          "source_work_name": "Drifting Between the Stars and the Sea",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17048,
+          "source_work_name": "Artificial Sunsets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 3
+    },
+    {
+      "source": 17255,
+      "target": 17041,
+      "direction": "out",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17047,
+          "source_work_name": "Drifting Between the Stars and the Sea",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17048,
+          "source_work_name": "Artificial Sunsets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 3
+    },
+    {
+      "source": 17255,
+      "target": 17042,
+      "direction": "out",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17047,
+          "source_work_name": "Drifting Between the Stars and the Sea",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17048,
+          "source_work_name": "Artificial Sunsets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 3
+    },
+    {
+      "source": 17255,
+      "target": 17043,
+      "direction": "out",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17047,
+          "source_work_name": "Drifting Between the Stars and the Sea",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17048,
+          "source_work_name": "Artificial Sunsets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 3
+    },
+    {
+      "source": 17255,
+      "target": 17044,
+      "direction": "out",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17047,
+          "source_work_name": "Drifting Between the Stars and the Sea",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17048,
+          "source_work_name": "Artificial Sunsets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 3
+    },
+    {
+      "source": 17255,
+      "target": 17045,
+      "direction": "out",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17047,
+          "source_work_name": "Drifting Between the Stars and the Sea",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17048,
+          "source_work_name": "Artificial Sunsets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 3
+    },
+    {
+      "source": 17255,
+      "target": 17046,
+      "direction": "out",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17047,
+          "source_work_name": "Drifting Between the Stars and the Sea",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17048,
+          "source_work_name": "Artificial Sunsets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 3
+    },
+    {
+      "source": 17255,
+      "target": 17260,
+      "direction": "out",
+      "weight": 3,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17263,
+          "source_work_name": "Shoreline Sonnets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17262,
+          "source_work_name": "Luminescent Tides",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2025,
+      "year_count": 3
+    },
+    {
+      "source": 17164,
+      "target": 17255,
+      "direction": "in",
+      "weight": 2,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17263,
+          "source_work_name": "Shoreline Sonnets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2025,
+      "year_count": 2
+    },
+    {
+      "source": 17189,
+      "target": 17255,
+      "direction": "in",
+      "weight": 2,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17277,
+          "source_work_name": "Oceanbound",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 2
+    },
+    {
+      "source": 17191,
+      "target": 17255,
+      "direction": "in",
+      "weight": 2,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17277,
+          "source_work_name": "Oceanbound",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 2
+    },
+    {
+      "source": 17226,
+      "target": 17255,
+      "direction": "in",
+      "weight": 2,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17410,
+          "source_work_name": "Seashell Serenade",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2028,
+      "last_year": 2030,
+      "year_count": 2
+    },
+    {
+      "source": 17255,
+      "target": 17164,
+      "direction": "out",
+      "weight": 2,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17263,
+          "source_work_name": "Shoreline Sonnets",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2025,
+      "year_count": 2
+    },
+    {
+      "source": 17255,
+      "target": 17189,
+      "direction": "out",
+      "weight": 2,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17277,
+          "source_work_name": "Oceanbound",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 2
+    },
+    {
+      "source": 17255,
+      "target": 17191,
+      "direction": "out",
+      "weight": 2,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17277,
+          "source_work_name": "Oceanbound",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2037,
+      "year_count": 2
+    },
+    {
+      "source": 17255,
+      "target": 17226,
+      "direction": "out",
+      "weight": 2,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        },
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17410,
+          "source_work_name": "Seashell Serenade",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2028,
+      "last_year": 2030,
+      "year_count": 2
+    },
+    {
+      "source": 878,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17277,
+          "source_work_name": "Oceanbound",
+          "target_work_id": 876,
+          "target_work_name": "Bold Without Apology",
+          "edge_type": "LyricalReferenceTo",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "LyricalReferenceTo",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 76,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17290,
+          "source_work_name": "Fog & Fiddle",
+          "target_work_id": 12237,
+          "target_work_name": "Provence Aria",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 12238,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17290,
+          "source_work_name": "Fog & Fiddle",
+          "target_work_id": 12237,
+          "target_work_name": "Provence Aria",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 12239,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17290,
+          "source_work_name": "Fog & Fiddle",
+          "target_work_id": 12237,
+          "target_work_name": "Provence Aria",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 12240,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17290,
+          "source_work_name": "Fog & Fiddle",
+          "target_work_id": 12237,
+          "target_work_name": "Provence Aria",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 12241,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17290,
+          "source_work_name": "Fog & Fiddle",
+          "target_work_id": 12237,
+          "target_work_name": "Provence Aria",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 5213,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17273,
+          "source_work_name": "Salty Dreams",
+          "target_work_id": 9848,
+          "target_work_name": "Partisan's Lament",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Pop"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2029,
+      "last_year": 2029,
+      "year_count": 1
+    },
+    {
+      "source": 3086,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17273,
+          "source_work_name": "Salty Dreams",
+          "target_work_id": 9848,
+          "target_work_name": "Partisan's Lament",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Pop"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2029,
+      "last_year": 2029,
+      "year_count": 1
+    },
+    {
+      "source": 3883,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17273,
+          "source_work_name": "Salty Dreams",
+          "target_work_id": 3881,
+          "target_work_name": "Susurros de Pasión",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2029,
+      "last_year": 2029,
+      "year_count": 1
+    },
+    {
+      "source": 304,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": 16312,
+          "target_work_name": "Harvest Dance at Ler Valley",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Psychedelic Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2033,
+      "last_year": 2033,
+      "year_count": 1
+    },
+    {
+      "source": 1952,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": 15855,
+          "target_work_name": "Sacred Fragments",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2033,
+      "last_year": 2033,
+      "year_count": 1
+    },
+    {
+      "source": 934,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17273,
+          "source_work_name": "Salty Dreams",
+          "target_work_id": 3881,
+          "target_work_name": "Susurros de Pasión",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2029,
+      "last_year": 2029,
+      "year_count": 1
+    },
+    {
+      "source": 1294,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17279,
+          "source_work_name": "High Tide Heartbeat",
+          "target_work_id": 14658,
+          "target_work_name": "Addicted to Your Heartache",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Album",
+          "target_work_genre": "Southern Gothic Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 16910,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": 14893,
+          "target_work_name": "Twilight's Threshold",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 1335,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": 14893,
+          "target_work_name": "Twilight's Threshold",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 1336,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": 14893,
+          "target_work_name": "Twilight's Threshold",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 10017,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17350,
+          "source_work_name": "Tidesworn Ballads",
+          "target_work_id": 10016,
+          "target_work_name": "Dreamscape of Judgment",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Symphonic Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 10018,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17350,
+          "source_work_name": "Tidesworn Ballads",
+          "target_work_id": 10016,
+          "target_work_name": "Dreamscape of Judgment",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Symphonic Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 10019,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17350,
+          "source_work_name": "Tidesworn Ballads",
+          "target_work_id": 10016,
+          "target_work_name": "Dreamscape of Judgment",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Symphonic Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 10020,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17350,
+          "source_work_name": "Tidesworn Ballads",
+          "target_work_id": 10016,
+          "target_work_name": "Dreamscape of Judgment",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Symphonic Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 10021,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17350,
+          "source_work_name": "Tidesworn Ballads",
+          "target_work_id": 10016,
+          "target_work_name": "Dreamscape of Judgment",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Symphonic Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 10022,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17350,
+          "source_work_name": "Tidesworn Ballads",
+          "target_work_id": 10016,
+          "target_work_name": "Dreamscape of Judgment",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Symphonic Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 14895,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": 14893,
+          "target_work_name": "Twilight's Threshold",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 14894,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": 14893,
+          "target_work_name": "Twilight's Threshold",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 7027,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": 7026,
+          "target_work_name": "Reflejo Interior",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 7028,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": 7026,
+          "target_work_name": "Reflejo Interior",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 7029,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": 7026,
+          "target_work_name": "Reflejo Interior",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 7030,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": 7026,
+          "target_work_name": "Reflejo Interior",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 2400,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17277,
+          "source_work_name": "Oceanbound",
+          "target_work_id": 3986,
+          "target_work_name": "Altitude of Mistakes",
+          "edge_type": "LyricalReferenceTo",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "LyricalReferenceTo",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 3988,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17277,
+          "source_work_name": "Oceanbound",
+          "target_work_id": 3986,
+          "target_work_name": "Altitude of Mistakes",
+          "edge_type": "LyricalReferenceTo",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "LyricalReferenceTo",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 1276,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17277,
+          "source_work_name": "Oceanbound",
+          "target_work_id": 3986,
+          "target_work_name": "Altitude of Mistakes",
+          "edge_type": "LyricalReferenceTo",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "LyricalReferenceTo",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 12948,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": 14107,
+          "target_work_name": "Folklore's Heartbeat",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Blues Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 457,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": 15855,
+          "target_work_name": "Sacred Fragments",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2033,
+      "last_year": 2033,
+      "year_count": 1
+    },
+    {
+      "source": 16031,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": 16312,
+          "target_work_name": "Harvest Dance at Ler Valley",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Psychedelic Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2033,
+      "last_year": 2033,
+      "year_count": 1
+    },
+    {
+      "source": 2706,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17280,
+          "source_work_name": "Electric Eel Love",
+          "target_work_id": 10534,
+          "target_work_name": "Twelve Bells of Augsburg",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Psychedelic Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 877,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17277,
+          "source_work_name": "Oceanbound",
+          "target_work_id": 876,
+          "target_work_name": "Bold Without Apology",
+          "edge_type": "LyricalReferenceTo",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "LyricalReferenceTo",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 3987,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17277,
+          "source_work_name": "Oceanbound",
+          "target_work_id": 3986,
+          "target_work_name": "Altitude of Mistakes",
+          "edge_type": "LyricalReferenceTo",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "LyricalReferenceTo",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 3989,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17277,
+          "source_work_name": "Oceanbound",
+          "target_work_id": 3986,
+          "target_work_name": "Altitude of Mistakes",
+          "edge_type": "LyricalReferenceTo",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "LyricalReferenceTo",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 3990,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17277,
+          "source_work_name": "Oceanbound",
+          "target_work_id": 3986,
+          "target_work_name": "Altitude of Mistakes",
+          "edge_type": "LyricalReferenceTo",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "LyricalReferenceTo",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 455,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": 15855,
+          "target_work_name": "Sacred Fragments",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2033,
+      "last_year": 2033,
+      "year_count": 1
+    },
+    {
+      "source": 6593,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17292,
+          "source_work_name": "Stormsong",
+          "target_work_id": 6592,
+          "target_work_name": "When the Bar Lights Go Up",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Emo/Pop Punk"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2038,
+      "last_year": 2038,
+      "year_count": 1
+    },
+    {
+      "source": 15856,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": 15855,
+          "target_work_name": "Sacred Fragments",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2033,
+      "last_year": 2033,
+      "year_count": 1
+    },
+    {
+      "source": 15224,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": 15855,
+          "target_work_name": "Sacred Fragments",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2033,
+      "last_year": 2033,
+      "year_count": 1
+    },
+    {
+      "source": 3760,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17273,
+          "source_work_name": "Salty Dreams",
+          "target_work_id": 3881,
+          "target_work_name": "Susurros de Pasión",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2029,
+      "last_year": 2029,
+      "year_count": 1
+    },
+    {
+      "source": 3761,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17273,
+          "source_work_name": "Salty Dreams",
+          "target_work_id": 3881,
+          "target_work_name": "Susurros de Pasión",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2029,
+      "last_year": 2029,
+      "year_count": 1
+    },
+    {
+      "source": 3763,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17273,
+          "source_work_name": "Salty Dreams",
+          "target_work_id": 3881,
+          "target_work_name": "Susurros de Pasión",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2029,
+      "last_year": 2029,
+      "year_count": 1
+    },
+    {
+      "source": 3764,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17273,
+          "source_work_name": "Salty Dreams",
+          "target_work_id": 3881,
+          "target_work_name": "Susurros de Pasión",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2029,
+      "last_year": 2029,
+      "year_count": 1
+    },
+    {
+      "source": 16823,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17273,
+          "source_work_name": "Salty Dreams",
+          "target_work_id": 3881,
+          "target_work_name": "Susurros de Pasión",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2029,
+      "last_year": 2029,
+      "year_count": 1
+    },
+    {
+      "source": 8208,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17285,
+          "source_work_name": "Driftwood Lullaby",
+          "target_work_id": 8207,
+          "target_work_name": "Echoes of Forgotten Light",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Alternative Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 14298,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": 14296,
+          "target_work_name": "The Long Way Home",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Album",
+          "target_work_genre": "Dream Pop"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 8880,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17287,
+          "source_work_name": "Moon Over the Tide",
+          "target_work_id": 13589,
+          "target_work_name": "Silent Steps in the Forest's Embrace",
+          "edge_type": "LyricalReferenceTo",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Avant-Garde Folk"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "LyricalReferenceTo",
+      "first_year": 2034,
+      "last_year": 2034,
+      "year_count": 1
+    },
+    {
+      "source": 9224,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": 9223,
+          "target_work_name": "Für uns alle zusammen",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Alternative Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2023,
+      "last_year": 2023,
+      "year_count": 1
+    },
+    {
+      "source": 9225,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": 9223,
+          "target_work_name": "Für uns alle zusammen",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Alternative Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2023,
+      "last_year": 2023,
+      "year_count": 1
+    },
+    {
+      "source": 9226,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": 9223,
+          "target_work_name": "Für uns alle zusammen",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Alternative Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2023,
+      "last_year": 2023,
+      "year_count": 1
+    },
+    {
+      "source": 9227,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": 9223,
+          "target_work_name": "Für uns alle zusammen",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Alternative Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2023,
+      "last_year": 2023,
+      "year_count": 1
+    },
+    {
+      "source": 9228,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": 9223,
+          "target_work_name": "Für uns alle zusammen",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Alternative Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2023,
+      "last_year": 2023,
+      "year_count": 1
+    },
+    {
+      "source": 14934,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17280,
+          "source_work_name": "Electric Eel Love",
+          "target_work_id": 14933,
+          "target_work_name": "The Crown We Wear",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14935,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17280,
+          "source_work_name": "Electric Eel Love",
+          "target_work_id": 14933,
+          "target_work_name": "The Crown We Wear",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14936,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17280,
+          "source_work_name": "Electric Eel Love",
+          "target_work_id": 14933,
+          "target_work_name": "The Crown We Wear",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14937,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17280,
+          "source_work_name": "Electric Eel Love",
+          "target_work_id": 14933,
+          "target_work_name": "The Crown We Wear",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14938,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17280,
+          "source_work_name": "Electric Eel Love",
+          "target_work_id": 14933,
+          "target_work_name": "The Crown We Wear",
+          "edge_type": "CoverOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "CoverOf",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 2705,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17280,
+          "source_work_name": "Electric Eel Love",
+          "target_work_id": 10534,
+          "target_work_name": "Twelve Bells of Augsburg",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Psychedelic Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 2707,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17280,
+          "source_work_name": "Electric Eel Love",
+          "target_work_id": 10534,
+          "target_work_name": "Twelve Bells of Augsburg",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Psychedelic Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 13018,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17292,
+          "source_work_name": "Stormsong",
+          "target_work_id": 13014,
+          "target_work_name": "Exoskeleton Dissolve",
+          "edge_type": "DirectlySamples",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "DirectlySamples",
+      "first_year": 2038,
+      "last_year": 2038,
+      "year_count": 1
+    },
+    {
+      "source": 13015,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17292,
+          "source_work_name": "Stormsong",
+          "target_work_id": 13014,
+          "target_work_name": "Exoskeleton Dissolve",
+          "edge_type": "DirectlySamples",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "DirectlySamples",
+      "first_year": 2038,
+      "last_year": 2038,
+      "year_count": 1
+    },
+    {
+      "source": 13016,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17292,
+          "source_work_name": "Stormsong",
+          "target_work_id": 13014,
+          "target_work_name": "Exoskeleton Dissolve",
+          "edge_type": "DirectlySamples",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "DirectlySamples",
+      "first_year": 2038,
+      "last_year": 2038,
+      "year_count": 1
+    },
+    {
+      "source": 13017,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17292,
+          "source_work_name": "Stormsong",
+          "target_work_id": 13014,
+          "target_work_name": "Exoskeleton Dissolve",
+          "edge_type": "DirectlySamples",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "DirectlySamples",
+      "first_year": 2038,
+      "last_year": 2038,
+      "year_count": 1
+    },
+    {
+      "source": 8026,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17292,
+          "source_work_name": "Stormsong",
+          "target_work_id": 13014,
+          "target_work_name": "Exoskeleton Dissolve",
+          "edge_type": "DirectlySamples",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "DirectlySamples",
+      "first_year": 2038,
+      "last_year": 2038,
+      "year_count": 1
+    },
+    {
+      "source": 14108,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17049,
+          "source_work_name": "Electric Reverie",
+          "target_work_id": 14107,
+          "target_work_name": "Folklore's Heartbeat",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Blues Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2037,
+      "last_year": 2037,
+      "year_count": 1
+    },
+    {
+      "source": 14353,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": 14352,
+          "target_work_name": "Weathered Miles",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Doom Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14354,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": 14352,
+          "target_work_name": "Weathered Miles",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Doom Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14355,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": 14352,
+          "target_work_name": "Weathered Miles",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Doom Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14356,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": 14352,
+          "target_work_name": "Weathered Miles",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Doom Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14357,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": 14352,
+          "target_work_name": "Weathered Miles",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Doom Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14358,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": 14352,
+          "target_work_name": "Weathered Miles",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Doom Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14359,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": 14352,
+          "target_work_name": "Weathered Miles",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Doom Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14360,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": 14352,
+          "target_work_name": "Weathered Miles",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Doom Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14361,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": 14352,
+          "target_work_name": "Weathered Miles",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Doom Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 14297,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": 14296,
+          "target_work_name": "The Long Way Home",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Album",
+          "target_work_genre": "Dream Pop"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 2200,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": 2197,
+          "target_work_name": "Hallowed Transaction",
+          "edge_type": "DirectlySamples",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Album",
+          "target_work_genre": "Doom Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "DirectlySamples",
+      "first_year": 2023,
+      "last_year": 2023,
+      "year_count": 1
+    },
+    {
+      "source": 2198,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": 2197,
+          "target_work_name": "Hallowed Transaction",
+          "edge_type": "DirectlySamples",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Album",
+          "target_work_genre": "Doom Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "DirectlySamples",
+      "first_year": 2023,
+      "last_year": 2023,
+      "year_count": 1
+    },
+    {
+      "source": 2199,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": 2197,
+          "target_work_name": "Hallowed Transaction",
+          "edge_type": "DirectlySamples",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Album",
+          "target_work_genre": "Doom Metal"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "DirectlySamples",
+      "first_year": 2023,
+      "last_year": 2023,
+      "year_count": 1
+    },
+    {
+      "source": 3882,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17273,
+          "source_work_name": "Salty Dreams",
+          "target_work_id": 3881,
+          "target_work_name": "Susurros de Pasión",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2029,
+      "last_year": 2029,
+      "year_count": 1
+    },
+    {
+      "source": 10904,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17286,
+          "source_work_name": "Saltwater Hymn",
+          "target_work_id": 10903,
+          "target_work_name": "Parallel Memories",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Dream Pop"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 10905,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17286,
+          "source_work_name": "Saltwater Hymn",
+          "target_work_id": 10903,
+          "target_work_name": "Parallel Memories",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Dream Pop"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 10906,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17286,
+          "source_work_name": "Saltwater Hymn",
+          "target_work_id": 10903,
+          "target_work_name": "Parallel Memories",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Dream Pop"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 10907,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17286,
+          "source_work_name": "Saltwater Hymn",
+          "target_work_id": 10903,
+          "target_work_name": "Parallel Memories",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Dream Pop"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 10908,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17286,
+          "source_work_name": "Saltwater Hymn",
+          "target_work_id": 10903,
+          "target_work_name": "Parallel Memories",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Dream Pop"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 13590,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17287,
+          "source_work_name": "Moon Over the Tide",
+          "target_work_id": 13589,
+          "target_work_name": "Silent Steps in the Forest's Embrace",
+          "edge_type": "LyricalReferenceTo",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Avant-Garde Folk"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "LyricalReferenceTo",
+      "first_year": 2034,
+      "last_year": 2034,
+      "year_count": 1
+    },
+    {
+      "source": 11255,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17287,
+          "source_work_name": "Moon Over the Tide",
+          "target_work_id": 11254,
+          "target_work_name": "Divergent Memories",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Folk"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2034,
+      "last_year": 2034,
+      "year_count": 1
+    },
+    {
+      "source": 5575,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17289,
+          "source_work_name": "Barnacle Heart",
+          "target_work_id": 5574,
+          "target_work_name": "Our Inevitable Path",
+          "edge_type": "InStyleOf",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Indie Folk"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InStyleOf",
+      "first_year": 2034,
+      "last_year": 2034,
+      "year_count": 1
+    },
+    {
+      "source": 12688,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17290,
+          "source_work_name": "Fog & Fiddle",
+          "target_work_id": 12685,
+          "target_work_name": "Coastal Whispers of Biscay",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Alternative Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 12686,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17290,
+          "source_work_name": "Fog & Fiddle",
+          "target_work_id": 12685,
+          "target_work_name": "Coastal Whispers of Biscay",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Alternative Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 12687,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "work_reference",
+          "source_work_id": 17290,
+          "source_work_name": "Fog & Fiddle",
+          "target_work_id": 12685,
+          "target_work_name": "Coastal Whispers of Biscay",
+          "edge_type": "InterpolatesFrom",
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Song",
+          "source_work_genre": "Oceanus Folk",
+          "target_work_type": "Song",
+          "target_work_genre": "Alternative Rock"
+        }
+      ],
+      "dominant_kind": "work_reference",
+      "dominant_edge_type": "InterpolatesFrom",
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 16960,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16961,
+          "source_work_name": "Neon Heartbeat",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 16958,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16961,
+          "source_work_name": "Neon Heartbeat",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 16959,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16961,
+          "source_work_name": "Neon Heartbeat",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 16983,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16989,
+          "source_work_name": "Ballads for the End of Time",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 16984,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16989,
+          "source_work_name": "Ballads for the End of Time",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 16985,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16989,
+          "source_work_name": "Ballads for the End of Time",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 16986,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16989,
+          "source_work_name": "Ballads for the End of Time",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 16987,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16989,
+          "source_work_name": "Ballads for the End of Time",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 16993,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 16994,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 16995,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 16996,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 17120,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17121,
+          "source_work_name": "Ballads for the Low Tide",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 17118,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17121,
+          "source_work_name": "Ballads for the Low Tide",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 17119,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17121,
+          "source_work_name": "Ballads for the Low Tide",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 17165,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2023,
+      "year_count": 1
+    },
+    {
+      "source": 17166,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2023,
+      "year_count": 1
+    },
+    {
+      "source": 17190,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2033,
+      "year_count": 1
+    },
+    {
+      "source": 17205,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17272,
+          "source_work_name": "Tidal Pop Waves",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2027,
+      "last_year": 2027,
+      "year_count": 1
+    },
+    {
+      "source": 17206,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17272,
+          "source_work_name": "Tidal Pop Waves",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2027,
+      "last_year": 2027,
+      "year_count": 1
+    },
+    {
+      "source": 17227,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 17228,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 17229,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 17230,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 17248,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17252,
+          "source_work_name": "Hidden Depths",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 17249,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17252,
+          "source_work_name": "Hidden Depths",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 17250,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17252,
+          "source_work_name": "Hidden Depths",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 17296,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17276,
+          "source_work_name": "Tides & Ballads",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2035,
+      "last_year": 2035,
+      "year_count": 1
+    },
+    {
+      "source": 17309,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17276,
+          "source_work_name": "Tides & Ballads",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2035,
+      "last_year": 2035,
+      "year_count": 1
+    },
+    {
+      "source": 17311,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17278,
+          "source_work_name": "Echoes of the Deep",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2039,
+      "last_year": 2039,
+      "year_count": 1
+    },
+    {
+      "source": 17310,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17278,
+          "source_work_name": "Echoes of the Deep",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2039,
+      "last_year": 2039,
+      "year_count": 1
+    },
+    {
+      "source": 17349,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17350,
+          "source_work_name": "Tidesworn Ballads",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 17355,
+      "target": 17255,
+      "direction": "in",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17356,
+          "source_work_name": "Submerged Sonatas",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 16960,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16961,
+          "source_work_name": "Neon Heartbeat",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 16958,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16961,
+          "source_work_name": "Neon Heartbeat",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 16959,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16961,
+          "source_work_name": "Neon Heartbeat",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Synthwave"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 16983,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16989,
+          "source_work_name": "Ballads for the End of Time",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 16984,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16989,
+          "source_work_name": "Ballads for the End of Time",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 16985,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16989,
+          "source_work_name": "Ballads for the End of Time",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 16986,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16989,
+          "source_work_name": "Ballads for the End of Time",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 16987,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16989,
+          "source_work_name": "Ballads for the End of Time",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 16993,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 16994,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 16995,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 16996,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 16999,
+          "source_work_name": "Melancholy Circuitry",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Americana"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2032,
+      "last_year": 2032,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17120,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17121,
+          "source_work_name": "Ballads for the Low Tide",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17118,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17121,
+          "source_work_name": "Ballads for the Low Tide",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17119,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17121,
+          "source_work_name": "Ballads for the Low Tide",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2036,
+      "last_year": 2036,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17165,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2023,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17166,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17261,
+          "source_work_name": "The Kelp Forest Canticles",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2023,
+      "last_year": 2023,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17190,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17275,
+          "source_work_name": "Coral Beats",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2033,
+      "last_year": 2033,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17205,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17272,
+          "source_work_name": "Tidal Pop Waves",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2027,
+      "last_year": 2027,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17206,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17272,
+          "source_work_name": "Tidal Pop Waves",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2027,
+      "last_year": 2027,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17227,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17228,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17229,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17230,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17231,
+          "source_work_name": "Tides of Echos",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2028,
+      "last_year": 2028,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17248,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17252,
+          "source_work_name": "Hidden Depths",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17249,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17252,
+          "source_work_name": "Hidden Depths",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17250,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17252,
+          "source_work_name": "Hidden Depths",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17296,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17276,
+          "source_work_name": "Tides & Ballads",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2035,
+      "last_year": 2035,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17309,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17276,
+          "source_work_name": "Tides & Ballads",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2035,
+      "last_year": 2035,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17311,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17278,
+          "source_work_name": "Echoes of the Deep",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2039,
+      "last_year": 2039,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17310,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17278,
+          "source_work_name": "Echoes of the Deep",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2039,
+      "last_year": 2039,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17349,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17350,
+          "source_work_name": "Tidesworn Ballads",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    },
+    {
+      "source": 17255,
+      "target": 17355,
+      "direction": "out",
+      "weight": 1,
+      "evidence": [
+        {
+          "kind": "collaboration_work",
+          "source_work_id": 17356,
+          "source_work_name": "Submerged Sonatas",
+          "target_work_id": null,
+          "target_work_name": null,
+          "edge_type": null,
+          "group_id": null,
+          "group_name": null,
+          "source_work_type": "Album",
+          "source_work_genre": "Oceanus Folk"
+        }
+      ],
+      "dominant_kind": "collaboration_work",
+      "dominant_edge_type": null,
+      "first_year": 2030,
+      "last_year": 2030,
+      "year_count": 1
+    }
+  ]
+}

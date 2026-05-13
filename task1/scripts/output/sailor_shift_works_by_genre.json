@@ -1,0 +1,630 @@
+{
+  "name": "Sailor Shift",
+  "person_ids": [
+    17255
+  ],
+  "works_by_genre": {
+    "Americana": [
+      {
+        "work_id": 16999,
+        "title": "Melancholy Circuitry",
+        "node_type": "Album",
+        "genre": "Americana",
+        "year": 2033,
+        "roles": [
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      }
+    ],
+    "Oceanus Folk": [
+      {
+        "work_id": 17265,
+        "title": "Dancer of the Dappled Light",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2024,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "via Ivy Echos"
+        ]
+      },
+      {
+        "work_id": 17264,
+        "title": "Sunken Bell Song",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2024,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "via Ivy Echos"
+        ]
+      },
+      {
+        "work_id": 17261,
+        "title": "The Kelp Forest Canticles",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2024,
+        "roles": [
+          "Performer",
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit",
+          "via Ivy Echos"
+        ]
+      },
+      {
+        "work_id": 17266,
+        "title": "Whispers in the Fronds",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2024,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "via Ivy Echos"
+        ]
+      },
+      {
+        "work_id": 17268,
+        "title": "Deepsea Fireflies",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2025,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "via Ivy Echos"
+        ]
+      },
+      {
+        "work_id": 17262,
+        "title": "Luminescent Tides",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2025,
+        "roles": [
+          "Performer",
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit",
+          "via Ivy Echos"
+        ]
+      },
+      {
+        "work_id": 17267,
+        "title": "The Angler's Lantern",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2025,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "via Ivy Echos"
+        ]
+      },
+      {
+        "work_id": 17270,
+        "title": "Salt-Kissed Rhymes",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2026,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "via Ivy Echos"
+        ]
+      },
+      {
+        "work_id": 17269,
+        "title": "Sandpiper's Serenade",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2026,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "via Ivy Echos"
+        ]
+      },
+      {
+        "work_id": 17263,
+        "title": "Shoreline Sonnets",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2026,
+        "roles": [
+          "Performer",
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit",
+          "via Ivy Echos"
+        ]
+      },
+      {
+        "work_id": 17271,
+        "title": "Tidepool Epigrams",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2026,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "via Ivy Echos"
+        ]
+      },
+      {
+        "work_id": 17282,
+        "title": "Chord of the Deep",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2028,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17280,
+        "title": "Electric Eel Love",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2028,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17279,
+        "title": "High Tide Heartbeat",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2028,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17281,
+        "title": "Sun-Drenched Daydream",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2028,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17272,
+        "title": "Tidal Pop Waves",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2028,
+        "roles": [
+          "Performer",
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17231,
+        "title": "Tides of Echos",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2029,
+        "roles": [
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17285,
+        "title": "Driftwood Lullaby",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2030,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17283,
+        "title": "Heart of the Habitat",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2030,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17284,
+        "title": "Reef Rhythm",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2030,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17273,
+        "title": "Salty Dreams",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2030,
+        "roles": [
+          "Performer",
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17410,
+        "title": "Seashell Serenade",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2030,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17252,
+        "title": "Hidden Depths",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2031,
+        "roles": [
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17356,
+        "title": "Submerged Sonatas",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2031,
+        "roles": [
+          "Performer",
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17350,
+        "title": "Tidesworn Ballads",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2031,
+        "roles": [
+          "Performer",
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17286,
+        "title": "Saltwater Hymn",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2032,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17274,
+        "title": "The Current & The Chord",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2032,
+        "roles": [
+          "Performer",
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 16989,
+        "title": "Ballads for the End of Time",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2033,
+        "roles": [
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17289,
+        "title": "Barnacle Heart",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2034,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17275,
+        "title": "Coral Beats",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2034,
+        "roles": [
+          "Performer",
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17047,
+        "title": "Drifting Between the Stars and the Sea",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2034,
+        "roles": [
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17288,
+        "title": "Into the Current",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2034,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17287,
+        "title": "Moon Over the Tide",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2034,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17048,
+        "title": "Artificial Sunsets",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2035,
+        "roles": [
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17290,
+        "title": "Fog & Fiddle",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2036,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17291,
+        "title": "The Fisherman's Prayer",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2036,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17276,
+        "title": "Tides & Ballads",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2036,
+        "roles": [
+          "Performer",
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17121,
+        "title": "Ballads for the Low Tide",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2037,
+        "roles": [
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17049,
+        "title": "Electric Reverie",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2038,
+        "roles": [
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17277,
+        "title": "Oceanbound",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2038,
+        "roles": [
+          "Performer",
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17292,
+        "title": "Stormsong",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2038,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17278,
+        "title": "Echoes of the Deep",
+        "node_type": "Album",
+        "genre": "Oceanus Folk",
+        "year": 2040,
+        "roles": [
+          "Performer",
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17293,
+        "title": "Salt in My Veins",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2040,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      },
+      {
+        "work_id": 17294,
+        "title": "The Last Mariner",
+        "node_type": "Song",
+        "genre": "Oceanus Folk",
+        "year": 2040,
+        "roles": [
+          "Performer"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      }
+    ],
+    "Synthwave": [
+      {
+        "work_id": 16961,
+        "title": "Neon Heartbeat",
+        "node_type": "Album",
+        "genre": "Synthwave",
+        "year": 2031,
+        "roles": [
+          "Lyricist"
+        ],
+        "credit_paths": [
+          "direct credit"
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "works_total": 46
+  }
+}

@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sailor Shift Influence Network</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0f172a;
+      --panel: #111827;
+      --muted: #94a3b8;
+      --text: #e2e8f0;
+      --border: #334155;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      min-height: 100vh;
+    }
+    .sidebar {
+      border-right: 1px solid var(--border);
+      background: var(--panel);
+      padding: 14px;
+      overflow: auto;
+    }
+    .main {
+      position: relative;
+      padding: 8px;
+    }
+    h1 { font-size: 18px; margin: 0 0 10px; }
+    h2 { font-size: 14px; margin: 14px 0 6px; color: var(--accent); }
+    .small { font-size: 12px; color: var(--muted); }
+    .row { margin-bottom: 10px; }
+    .row label { display: block; font-size: 12px; margin-bottom: 4px; color: var(--muted); }
+    input[type="text"], input[type="range"] {
+      width: 100%;
+    }
+    .chip {
+      display: inline-block;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 2px 8px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      font-size: 11px;
+    }
+    #chart {
+      width: 100%;
+      height: calc(100vh - 16px);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: radial-gradient(circle at center, #111827 0%, #0b1020 100%);
+    }
+    .legend-item {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+      display: inline-block;
+    }
+    .tooltip {
+      position: absolute;
+      pointer-events: none;
+      background: #020617;
+      color: #e2e8f0;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px;
+      font-size: 12px;
+      max-width: 380px;
+      opacity: 0;
+      z-index: 10;
+      white-space: pre-wrap;
+    }
+    .error {
+      background: #7f1d1d;
+      border: 1px solid #ef4444;
+      border-radius: 6px;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    ul { margin: 6px 0; padding-left: 18px; }
+    .work-chip-btn {
+      display: inline-block;
+      margin: 3px 5px 3px 0;
+      padding: 2px 7px;
+      font-size: 11px;
+      border-radius: 999px;
+      border: 1px solid #475569;
+      color: #e2e8f0;
+      background: #1e293b;
+      cursor: pointer;
+    }
+    .work-chip-btn:hover { background: #334155; }
+    .work-chip-btn.active {
+      border-color: #22d3ee;
+      background: #164e63;
+      color: #cffafe;
+    }
+    .clear-work-btn {
+      border: 1px solid #64748b;
+      background: transparent;
+      color: #cbd5e1;
+      border-radius: 6px;
+      padding: 2px 6px;
+      font-size: 11px;
+      cursor: pointer;
+      margin-top: 6px;
+    }
+    .zoom-controls {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      z-index: 5;
+      display: flex;
+      gap: 6px;
+    }
+    .zoom-btn {
+      border: 1px solid #64748b;
+      background: rgba(2, 6, 23, 0.85);
+      color: #e2e8f0;
+      border-radius: 6px;
+      padding: 4px 8px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .zoom-btn:hover { background: rgba(30, 41, 59, 0.95); }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Sailor Shift Influence Network</h1>
+      <div id="meta" class="small">Loading data...</div>
+
+      <h2>Filters</h2>
+      <div class="row">
+        <label for="search">Search name</label>
+        <input id="search" type="text" placeholder="Type a node name..." />
+      </div>
+      <div class="row">
+        <label for="minWeight">Minimum link evidence weight: <span id="minWeightValue">1</span></label>
+        <input id="minWeight" type="range" min="1" max="10" step="1" value="1" />
+      </div>
+      <div class="row">
+        <label for="maxYear">Show links up to year: <span id="maxYearValue">-</span></label>
+        <input id="maxYear" type="range" min="1900" max="2100" step="1" value="2100" />
+        <div style="margin-top:6px; display:flex; gap:6px;">
+          <button id="timelinePlayBtn" class="zoom-btn" type="button">Play</button>
+          <button id="timelineResetBtn" class="zoom-btn" type="button">Reset Year</button>
+        </div>
+      </div>
+      <div class="row small">
+        <label><input id="includeUnknownYear" type="checkbox" /> Include links without date</label>
+      </div>
+      <div class="row">
+        <label for="nodeColorMode">Node color mode</label>
+        <select id="nodeColorMode">
+          <option value="node_type">Node type</option>
+          <option value="genre">Predominant genre</option>
+        </select>
+      </div>
+
+      <h2 id="nodeLegendTitle">Node Type Colors</h2>
+      <div id="nodeLegend"></div>
+
+      <h2>Influence Type Colors</h2>
+      <div id="edgeLegend"></div>
+
+      <h2>How to use</h2>
+      <ul class="small">
+        <li>Center node is Sailor Shift.</li>
+        <li>Left side = influenced_by (incoming to center).</li>
+        <li>Right side = influences (outgoing from center).</li>
+        <li>Node size reflects total influence evidence.</li>
+        <li>Hover nodes/links for details; click node for a focused summary.</li>
+      </ul>
+
+      <h2>Selected Node</h2>
+      <div id="details" class="small">Click a node to inspect relationship evidence.</div>
+
+      <div id="errorBox" class="error" style="display:none;"></div>
+    </aside>
+    <main class="main">
+      <div class="zoom-controls">
+        <button id="zoomInBtn" class="zoom-btn" type="button">+</button>
+        <button id="zoomOutBtn" class="zoom-btn" type="button">-</button>
+        <button id="zoomFitBtn" class="zoom-btn" type="button">Fit</button>
+        <button id="zoomResetBtn" class="zoom-btn" type="button">Reset</button>
+      </div>
+      <svg id="chart"></svg>
+      <div id="tooltip" class="tooltip"></div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script>
+    const DATA_PATH = "sailor_shift_network.json";
+    const nodeTypeColor = {
+      Person: "#22c55e",
+      MusicalGroup: "#a78bfa",
+      RecordLabel: "#f59e0b",
+      Song: "#f43f5e",
+      Album: "#06b6d4"
+    };
+    const edgeKindColor = {
+      work_reference: "#f59e0b",
+      collaboration_work: "#38bdf8",
+      collaboration_group: "#c084fc",
+      unknown: "#64748b"
+    };
+    const edgeKindLabel = {
+      work_reference: "Referenced another work",
+      collaboration_work: "Collaborated on same work",
+      collaboration_group: "Same musical group collaboration"
+    };
+
+    const svg = d3.select("#chart");
+    const tooltip = d3.select("#tooltip");
+    const details = d3.select("#details");
+    const meta = d3.select("#meta");
+    const errorBox = d3.select("#errorBox");
+    const searchInput = document.getElementById("search");
+    const minWeightInput = document.getElementById("minWeight");
+    const minWeightValue = document.getElementById("minWeightValue");
+    const maxYearInput = document.getElementById("maxYear");
+    const maxYearValue = document.getElementById("maxYearValue");
+    const timelinePlayBtn = document.getElementById("timelinePlayBtn");
+    const timelineResetBtn = document.getElementById("timelineResetBtn");
+    const includeUnknownYearInput = document.getElementById("includeUnknownYear");
+    const nodeColorModeInput = document.getElementById("nodeColorMode");
+    const zoomInBtn = document.getElementById("zoomInBtn");
+    const zoomOutBtn = document.getElementById("zoomOutBtn");
+    const zoomFitBtn = document.getElementById("zoomFitBtn");
+    const zoomResetBtn = document.getElementById("zoomResetBtn");
+    const nodeLegendTitle = document.getElementById("nodeLegendTitle");
+    let cachedData = null;
+    let animatedMaxYear = null;
+    let yearAnimationTimer = null;
+    let timelinePlayTimer = null;
+    let timelineIsPlaying = false;
+    const YEAR_STEP_MS = 100;
+    const TIMELINE_TICK_MS = 200;
+
+    function setupLegends() {
+      renderNodeLegend("node_type");
+      renderEdgeLegend();
+    }
+
+    function renderNodeLegend(mode, activeNodes = [], genreColor = null) {
+      const nodeLegend = d3.select("#nodeLegend");
+      nodeLegend.selectAll("*").remove();
+      if (mode === "genre") {
+        nodeLegendTitle.textContent = "Predominant Genre Colors";
+        const genres = [...new Set(activeNodes.map((n) => n.predominant_genre).filter(Boolean))].sort();
+        if (!genres.length || !genreColor) {
+          nodeLegend.append("div").attr("class", "small").text("No genre information for current filters.");
+          return;
+        }
+        genres.forEach((genre) => {
+          const row = nodeLegend.append("div").attr("class", "legend-item");
+          row.append("span").attr("class", "swatch").style("background", genreColor(genre));
+          row.append("span").text(genre);
+        });
+        return;
+      }
+
+      nodeLegendTitle.textContent = "Node Type Colors";
+      Object.entries(nodeTypeColor).forEach(([label, color]) => {
+        const row = nodeLegend.append("div").attr("class", "legend-item");
+        row.append("span").attr("class", "swatch").style("background", color);
+        row.append("span").text(label);
+      });
+    }
+
+    function renderEdgeLegend() {
+      const edgeLegend = d3.select("#edgeLegend");
+      edgeLegend.selectAll("*").remove();
+      Object.entries(edgeKindColor).forEach(([label, color]) => {
+        const row = edgeLegend.append("div").attr("class", "legend-item");
+        row.append("span").attr("class", "swatch").style("background", color);
+        row.append("span").text(edgeKindLabel[label] || label);
+      });
+    }
+
+    function showError(message) {
+      errorBox.style("display", "block").text(message);
+    }
+
+    function nodeFill(d) {
+      return nodeTypeColor[d.node_type] || "#64748b";
+    }
+
+    function nodeRadius(scale, d) {
+      // Keep center prominent but prevent it from flattening everyone else.
+      if (d.role === "center") return 28;
+      return scale(d.size_score || 1);
+    }
+
+    function roleTargetX(width, role) {
+      if (role === "center") return width * 0.5;
+      if (role === "influencer") return width * 0.25;
+      if (role === "influenced") return width * 0.75;
+      if (role === "both") return width * 0.5;
+      return width * 0.5;
+    }
+
+    function formatKindLabel(kind) {
+      if (kind === "work_reference") return "Work reference influence";
+      if (kind === "collaboration_work") return "Collaboration on the same work";
+      if (kind === "collaboration_group") return "Collaboration via group membership";
+      return "Influence evidence";
+    }
+
+    function render(raw) {
+      const width = svg.node().clientWidth;
+      const height = svg.node().clientHeight;
+      svg.selectAll("*").remove();
+
+      const nodes = raw.nodes.map((d) => ({ ...d }));
+      const links = raw.links.map((d) => ({ ...d }));
+      const genreCountsByNode = new Map(nodes.map((n) => [n.id, new Map()]));
+      links.forEach((link) => {
+        const sourceId = link.source;
+        const targetId = link.target;
+        (link.evidence || []).forEach((ev) => {
+          const sourceGenre = ev.source_work_genre || ev.target_work_genre;
+          const targetGenre = ev.target_work_genre || ev.source_work_genre;
+          if (sourceGenre && genreCountsByNode.has(sourceId)) {
+            const counts = genreCountsByNode.get(sourceId);
+            counts.set(sourceGenre, (counts.get(sourceGenre) || 0) + 1);
+          }
+          if (targetGenre && genreCountsByNode.has(targetId)) {
+            const counts = genreCountsByNode.get(targetId);
+            counts.set(targetGenre, (counts.get(targetGenre) || 0) + 1);
+          }
+        });
+      });
+      nodes.forEach((n) => {
+        const counts = genreCountsByNode.get(n.id);
+        if (!counts || counts.size === 0) {
+          n.predominant_genre = null;
+          return;
+        }
+        const topGenre = [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0];
+        n.predominant_genre = topGenre;
+      });
+
+      const yearMin = raw.meta?.year_range?.min ?? (d3.min(links, (d) => d.first_year) || 1900);
+      const yearMax = raw.meta?.year_range?.max ?? (d3.max(links, (d) => d.first_year) || 2100);
+
+      meta.text(
+        `Center: ${raw.meta.center_name} | Nodes: ${raw.meta.node_count} | Links: ${raw.meta.link_count} | Year range: ${yearMin}-${yearMax}`
+      );
+
+      const maxWeight = d3.max(links, (d) => d.weight) || 10;
+      minWeightInput.max = String(Math.max(1, maxWeight));
+      minWeightInput.value = "1";
+      minWeightValue.textContent = "1";
+      maxYearInput.min = String(yearMin);
+      maxYearInput.max = String(yearMax);
+      maxYearInput.value = String(yearMax);
+      maxYearValue.textContent = String(yearMax);
+      animatedMaxYear = yearMax;
+      timelineIsPlaying = false;
+      timelinePlayBtn.textContent = "Play";
+      if (timelinePlayTimer) {
+        clearTimeout(timelinePlayTimer);
+        timelinePlayTimer = null;
+      }
+      includeUnknownYearInput.checked = false;
+
+      const nodeById = new Map(nodes.map((n) => [n.id, n]));
+      // Use a direct value-based scale on non-center nodes so each score
+      // maps consistently (e.g. score 2 and 6 will not collapse to same size).
+      const nonCenterMax = d3.max(
+        nodes.filter((d) => d.role !== "center"),
+        (d) => d.size_score || 1
+      ) || 1;
+      const sizeScale = d3.scaleSqrt()
+        .domain([1, Math.max(2, nonCenterMax)])
+        .range([4, 30]);
+      let updateTemporalVisibility = null;
+
+      function currentFiltered(skipYearFilter = false) {
+        const q = searchInput.value.trim().toLowerCase();
+        const minW = Number(minWeightInput.value);
+        const maxY = Number.isFinite(animatedMaxYear)
+          ? Number(animatedMaxYear)
+          : Number(maxYearInput.value);
+        const includeUnknown = includeUnknownYearInput.checked;
+        const filteredLinks = links.filter((l) => {
+          if (l.weight < minW) return false;
+          if (skipYearFilter) return true;
+          if (l.first_year == null) return includeUnknown;
+          return l.first_year <= maxY;
+        });
+        const nodeIds = new Set();
+        filteredLinks.forEach((l) => {
+          nodeIds.add(l.source);
+          nodeIds.add(l.target);
+        });
+        const filteredNodes = nodes.filter((n) => nodeIds.has(n.id));
+        const qNodes = q
+          ? filteredNodes.filter((n) => (n.name || "").toLowerCase().includes(q))
+          : filteredNodes;
+
+        const qIds = new Set(qNodes.map((n) => n.id));
+        const qLinks = filteredLinks.filter((l) => qIds.has(l.source) || qIds.has(l.target));
+        qLinks.forEach((l) => { qIds.add(l.source); qIds.add(l.target); });
+        return {
+          nodes: nodes.filter((n) => qIds.has(n.id)),
+          links: qLinks
+        };
+      }
+
+      function draw() {
+        svg.selectAll("*").remove();
+        const filtered = currentFiltered(true);
+        const fNodes = filtered.nodes.map((n) => ({ ...n }));
+        const fLinks = filtered.links.map((l) => ({
+          ...l,
+          source: nodeById.get(l.source)?.id ?? l.source,
+          target: nodeById.get(l.target)?.id ?? l.target
+        }));
+        const zoomLayer = svg.append("g").attr("class", "zoom-layer");
+        const genreDomain = [...new Set(fNodes.map((n) => n.predominant_genre).filter(Boolean))].sort();
+        const genreColor = d3.scaleOrdinal()
+          .domain(genreDomain)
+          .range(d3.schemeTableau10.concat(d3.schemeSet3, d3.schemePaired));
+        const currentColorMode = nodeColorModeInput.value;
+        const dynamicNodeFill = (d) => {
+          if (currentColorMode === "genre") {
+            if (d.role === "center") return "#f8fafc";
+            return d.predominant_genre ? genreColor(d.predominant_genre) : "#64748b";
+          }
+          return nodeFill(d);
+        };
+        renderNodeLegend(currentColorMode, fNodes, genreColor);
+
+        const sim = d3.forceSimulation(fNodes)
+          .force("link", d3.forceLink(fLinks).id((d) => d.id).distance((d) => 120 + (20 / Math.max(1, d.weight))))
+          .force("charge", d3.forceManyBody().strength(-120))
+          .force("x", d3.forceX((d) => roleTargetX(width, d.role)).strength(0.25))
+          .force("y", d3.forceY(height * 0.5).strength(0.08))
+          .force("collide", d3.forceCollide((d) => nodeRadius(sizeScale, d) + 2));
+
+        const laneLabels = zoomLayer.append("g");
+        laneLabels.append("text")
+          .attr("x", width * 0.22).attr("y", height * 0.5)
+          .attr("text-anchor", "start")
+          .attr("dominant-baseline", "middle")
+          .attr("fill", "#93c5fd").attr("font-size", 12).text("Influenced Sailor Shift");
+        laneLabels.append("text")
+          .attr("x", width * 0.78).attr("y", height * 0.5)
+          .attr("text-anchor", "end")
+          .attr("dominant-baseline", "middle")
+          .attr("fill", "#fca5a5").attr("font-size", 12).text("Influenced by Sailor Shift");
+
+        const link = zoomLayer.append("g")
+          .attr("stroke-opacity", 0.8)
+          .selectAll("line")
+          .data(fLinks)
+          .join("line")
+          .attr("stroke", (d) => edgeKindColor[d.dominant_kind] || edgeKindColor.unknown)
+          .attr("stroke-width", (d) => 1 + Math.sqrt(d.weight));
+
+        const node = zoomLayer.append("g")
+          .selectAll("circle")
+          .data(fNodes)
+          .join("circle")
+          .attr("r", (d) => nodeRadius(sizeScale, d))
+          .attr("fill", dynamicNodeFill)
+          .attr("stroke", (d) => d.role === "center" ? "#ffffff" : "#0b1020")
+          .attr("stroke-width", (d) => d.role === "center" ? 2.5 : 1)
+          .call(d3.drag()
+            .on("start", (event, d) => {
+              if (!event.active) sim.alphaTarget(0.3).restart();
+              d.fx = d.x;
+              d.fy = d.y;
+            })
+            .on("drag", (event, d) => {
+              d.fx = event.x;
+              d.fy = event.y;
+            })
+            .on("end", (event, d) => {
+              if (!event.active) sim.alphaTarget(0);
+              if (d.role !== "center") {
+                d.fx = null;
+                d.fy = null;
+              }
+            }));
+
+        const label = zoomLayer.append("g")
+          .selectAll("text")
+          .data(fNodes)
+          .join("text")
+          .attr("font-size", 11)
+          .attr("fill", "#cbd5e1")
+          .attr("text-anchor", "middle")
+          .text((d) => d.name);
+        let selectedNodeId = null;
+        let selectedWorkId = null;
+
+        function linkHasWork(linkData, workId) {
+          if (!workId || !linkData?.evidence) return false;
+          return linkData.evidence.some((ev) => (
+            String(ev.source_work_id) === String(workId) ||
+            String(ev.target_work_id) === String(workId)
+          ));
+        }
+
+        function evidenceTraceHtml(evidence) {
+          if (!evidence || evidence.length === 0) {
+            return "<div class='small'>No detailed evidence available.</div>";
+          }
+          const rows = evidence.slice(0, 10).map((ev, idx) => {
+            const parts = [];
+            if (ev.kind) parts.push(`Evidence type: ${formatKindLabel(ev.kind)}`);
+            if (ev.edge_type) parts.push(`Reference relation: ${ev.edge_type}`);
+            if (ev.source_work_name) {
+              const srcClass = selectedWorkId != null && String(selectedWorkId) === String(ev.source_work_id) ? "work-chip-btn active" : "work-chip-btn";
+              parts.push(
+                `Source work: <button class="${srcClass}" data-work-id="${ev.source_work_id}">${ev.source_work_name}</button>${ev.source_work_type ? ` (${ev.source_work_type})` : ""}`
+              );
+            }
+            if (ev.target_work_name) {
+              const tgtClass = selectedWorkId != null && String(selectedWorkId) === String(ev.target_work_id) ? "work-chip-btn active" : "work-chip-btn";
+              parts.push(
+                `Referenced work: <button class="${tgtClass}" data-work-id="${ev.target_work_id}">${ev.target_work_name}</button>${ev.target_work_type ? ` (${ev.target_work_type})` : ""}`
+              );
+            }
+            if (ev.kind === "collaboration_work" && ev.source_work_type) {
+              parts.push(`Collaboration work type: ${ev.source_work_type}`);
+            }
+            if (ev.group_name) parts.push(`Shared group: ${ev.group_name}`);
+            return `<li><b>Evidence ${idx + 1}</b><br/>${parts.join("<br/>")}</li>`;
+          }).join("");
+          return `<ul>${rows}</ul>`;
+        }
+
+        function applyHighlight() {
+          if (!selectedNodeId && !selectedWorkId) {
+            link.attr("stroke-opacity", 0.8);
+            node.attr("opacity", 1);
+            label.attr("opacity", 1);
+            return;
+          }
+          const connected = new Set();
+          if (selectedNodeId) connected.add(selectedNodeId);
+          link.attr("stroke-opacity", (l) => {
+            const sourceId = l.source.id ?? l.source;
+            const targetId = l.target.id ?? l.target;
+            const nodeMatch = !selectedNodeId || sourceId === selectedNodeId || targetId === selectedNodeId;
+            const workMatch = !selectedWorkId || linkHasWork(l, selectedWorkId);
+            const visible = nodeMatch && workMatch;
+            if (visible) {
+              connected.add(sourceId);
+              connected.add(targetId);
+            }
+            return visible ? 0.95 : 0.06;
+          });
+          node.attr("opacity", (n) => (connected.has(n.id) ? 1 : 0.15));
+          label.attr("opacity", (n) => (connected.has(n.id) ? 1 : 0.12));
+        }
+
+        function isLinkVisibleForYear(linkData, maxY, includeUnknown) {
+          if (linkData.first_year == null) return includeUnknown;
+          return linkData.first_year <= maxY;
+        }
+
+        updateTemporalVisibility = (animate = true) => {
+          const maxY = Number.isFinite(animatedMaxYear)
+            ? Number(animatedMaxYear)
+            : Number(maxYearInput.value);
+          const includeUnknown = includeUnknownYearInput.checked;
+          const activeNodeIds = new Set();
+
+          if (animate) {
+            link.interrupt();
+            node.interrupt();
+            label.interrupt();
+          }
+
+          link.each(function (l) {
+            const visible = isLinkVisibleForYear(l, maxY, includeUnknown);
+            const sourceId = l.source.id ?? l.source;
+            const targetId = l.target.id ?? l.target;
+            if (visible) {
+              activeNodeIds.add(sourceId);
+              activeNodeIds.add(targetId);
+            }
+            d3.select(this).style("display", visible ? null : "none");
+          });
+
+          node.each(function (n) {
+            const visible = activeNodeIds.has(n.id);
+            const sel = d3.select(this).style("display", visible ? null : "none");
+            if (animate) sel.attr("opacity", visible ? 0 : 1).transition().duration(140).attr("opacity", visible ? 1 : 0);
+          });
+          label.each(function (n) {
+            const visible = activeNodeIds.has(n.id);
+            const sel = d3.select(this).style("display", visible ? null : "none");
+            if (animate) sel.attr("opacity", visible ? 0 : 1).transition().duration(140).attr("opacity", visible ? 1 : 0);
+          });
+
+          applyHighlight();
+        };
+
+        function renderNodeDetails(d) {
+          const related = fLinks.filter((l) => l.source.id === d.id || l.target.id === d.id);
+          const relatedFiltered = selectedWorkId
+            ? related.filter((l) => linkHasWork(l, selectedWorkId))
+            : related;
+          const top = relatedFiltered.slice(0, 8).map((l) => {
+            const other = l.source.id === d.id ? l.target : l.source;
+            const directionLabel = l.source.id === d.id
+              ? "Selected node influences this connection"
+              : "This connection influences selected node";
+            return (
+              `<li><b>${other.name || other.id}</b><br/>` +
+              `${directionLabel}<br/>` +
+              `Strength: ${l.weight} evidence item(s)<br/>` +
+              `First year observed: ${l.first_year ?? "Unknown"}<br/>` +
+              `Main pattern: ${formatKindLabel(l.dominant_kind)}` +
+              `${evidenceTraceHtml(l.evidence)}</li>`
+            );
+          }).join("");
+          const workFilterBanner = selectedWorkId
+            ? `<div class="small">Focused on one work (ID: ${selectedWorkId}). Only relationships involving this work are shown below.</div><button class="clear-work-btn" data-clear-work="1">Show all works again</button><br/><br/>`
+            : "";
+          details.html(
+            `<b>${d.name}</b><br/>Type: ${d.node_type}<br/>Role: ${d.role}<br/>` +
+            `Predominant genre: ${d.predominant_genre || "Unknown"}<br/>` +
+            `Out: ${d.influence_out_count}, In: ${d.influence_in_count}<br/><br/>` +
+            workFilterBanner +
+            `<b>Relationship Trace (Detailed Work Evidence)</b><br/>` +
+            `<span class="small">Click a work chip to focus on that work only.</span><ul>${top || "<li>No visible relationships under current filters.</li>"}</ul>`
+          );
+        }
+
+        node.on("mousemove", (event, d) => {
+          tooltip.style("opacity", 1)
+            .style("left", `${event.offsetX + 14}px`)
+            .style("top", `${event.offsetY + 12}px`)
+            .text(
+              `Name: ${d.name}\nType: ${d.node_type}\nRole: ${d.role}\nPredominant genre: ${d.predominant_genre || "Unknown"}\nScore: ${d.size_score}\nOut: ${d.influence_out_count} | In: ${d.influence_in_count}`
+            );
+        }).on("mouseleave", () => tooltip.style("opacity", 0));
+
+        link.on("mousemove", (event, d) => {
+          const ev = d.evidence?.[0] || {};
+          tooltip.style("opacity", 1)
+            .style("left", `${event.offsetX + 14}px`)
+            .style("top", `${event.offsetY + 12}px`)
+            .text(
+              `Direction: ${d.direction}\nWeight: ${d.weight}\nKind: ${d.dominant_kind || "unknown"}\nEdge Type: ${d.dominant_edge_type || "n/a"}\nExample work: ${ev.source_work_name || ev.group_name || "n/a"}`
+              + `\nYear: ${d.first_year ?? "unknown"}`
+            );
+        }).on("mouseleave", () => tooltip.style("opacity", 0));
+
+        node.on("click", (_, d) => {
+          selectedNodeId = d.id;
+          selectedWorkId = null;
+          applyHighlight();
+          renderNodeDetails(d);
+        });
+
+        details.on("click", (event) => {
+          const workBtn = event.target.closest("[data-work-id]");
+          const clearBtn = event.target.closest("[data-clear-work]");
+          if (clearBtn) {
+            selectedWorkId = null;
+          } else if (workBtn) {
+            selectedWorkId = workBtn.getAttribute("data-work-id");
+          } else {
+            return;
+          }
+          if (!selectedNodeId) return;
+          const selectedNode = fNodes.find((n) => n.id === selectedNodeId);
+          applyHighlight();
+          if (selectedNode) renderNodeDetails(selectedNode);
+        });
+
+        svg.on("dblclick", () => {
+          selectedNodeId = null;
+          selectedWorkId = null;
+          applyHighlight();
+          details.html("Click a node to inspect relationship evidence.");
+        });
+
+        const zoomBehavior = d3.zoom()
+          .scaleExtent([0.35, 4.5])
+          .on("zoom", (event) => {
+            zoomLayer.attr("transform", event.transform);
+          });
+        svg.call(zoomBehavior);
+
+        function fitToVisibleNodes(animate = true) {
+          if (!fNodes.length) {
+            const op = animate ? svg.transition().duration(220) : svg;
+            op.call(zoomBehavior.transform, d3.zoomIdentity);
+            return;
+          }
+          const xs = fNodes.map((n) => n.x).filter((v) => Number.isFinite(v));
+          const ys = fNodes.map((n) => n.y).filter((v) => Number.isFinite(v));
+          if (!xs.length || !ys.length) {
+            const op = animate ? svg.transition().duration(220) : svg;
+            op.call(zoomBehavior.transform, d3.zoomIdentity);
+            return;
+          }
+
+          const minX = d3.min(xs);
+          const maxX = d3.max(xs);
+          const minY = d3.min(ys);
+          const maxY = d3.max(ys);
+          const boundsWidth = Math.max(1, maxX - minX);
+          const boundsHeight = Math.max(1, maxY - minY);
+          const padding = 46;
+
+          const scale = Math.max(
+            0.35,
+            Math.min(
+              4.5,
+              Math.min(
+                (width - padding * 2) / boundsWidth,
+                (height - padding * 2) / boundsHeight
+              )
+            )
+          );
+
+          const centerX = (minX + maxX) / 2;
+          const centerY = (minY + maxY) / 2;
+          const tx = width / 2 - scale * centerX;
+          const ty = height / 2 - scale * centerY;
+          const transform = d3.zoomIdentity.translate(tx, ty).scale(scale);
+          const op = animate ? svg.transition().duration(280) : svg;
+          op.call(zoomBehavior.transform, transform);
+        }
+
+        // Rebind to the latest draw cycle groups.
+        zoomInBtn.onclick = () => svg.transition().duration(180).call(zoomBehavior.scaleBy, 1.2);
+        zoomOutBtn.onclick = () => svg.transition().duration(180).call(zoomBehavior.scaleBy, 0.83);
+        zoomFitBtn.onclick = () => fitToVisibleNodes(true);
+        zoomResetBtn.onclick = () => svg.transition().duration(220).call(zoomBehavior.transform, d3.zoomIdentity);
+
+        sim.on("tick", () => {
+          link
+            .attr("x1", (d) => d.source.x)
+            .attr("y1", (d) => d.source.y)
+            .attr("x2", (d) => d.target.x)
+            .attr("y2", (d) => d.target.y);
+          node
+            .attr("cx", (d) => d.x)
+            .attr("cy", (d) => d.y);
+          label
+            .attr("x", (d) => d.x)
+            .attr("y", (d) => d.y - nodeRadius(sizeScale, d) - 6);
+        });
+
+        updateTemporalVisibility(false);
+        // Fit once after simulation stabilizes a bit.
+        setTimeout(() => fitToVisibleNodes(true), 220);
+      }
+
+      searchInput.oninput = () => {
+        stopTimelinePlayback();
+        draw();
+      };
+      minWeightInput.oninput = () => {
+        stopTimelinePlayback();
+        minWeightValue.textContent = minWeightInput.value;
+        draw();
+      };
+      function stopTimelinePlayback() {
+        timelineIsPlaying = false;
+        timelinePlayBtn.textContent = "Play";
+        if (timelinePlayTimer) {
+          clearTimeout(timelinePlayTimer);
+          timelinePlayTimer = null;
+        }
+      }
+
+      function animateYearTransition(targetYear, onDone = null) {
+        if (!Number.isFinite(targetYear)) return;
+        if (yearAnimationTimer) {
+          clearTimeout(yearAnimationTimer);
+          yearAnimationTimer = null;
+        }
+        if (animatedMaxYear == null) {
+          animatedMaxYear = targetYear;
+          maxYearValue.textContent = String(animatedMaxYear);
+          if (updateTemporalVisibility) updateTemporalVisibility(true);
+          else draw();
+          if (typeof onDone === "function") onDone();
+          return;
+        }
+        if (animatedMaxYear === targetYear) {
+          maxYearValue.textContent = String(animatedMaxYear);
+          if (updateTemporalVisibility) updateTemporalVisibility(true);
+          else draw();
+          if (typeof onDone === "function") onDone();
+          return;
+        }
+
+        const direction = targetYear > animatedMaxYear ? 1 : -1;
+        const step = () => {
+          if (animatedMaxYear === targetYear) {
+            yearAnimationTimer = null;
+            if (typeof onDone === "function") onDone();
+            return;
+          }
+          animatedMaxYear += direction;
+          maxYearValue.textContent = String(animatedMaxYear);
+          if (updateTemporalVisibility) updateTemporalVisibility(true);
+          else draw();
+          yearAnimationTimer = setTimeout(step, YEAR_STEP_MS);
+        };
+        step();
+      }
+
+      function stepTimelinePlayback() {
+        if (!timelineIsPlaying) return;
+        const currentYear = Number.isFinite(animatedMaxYear) ? Number(animatedMaxYear) : yearMin;
+        if (currentYear >= yearMax) {
+          stopTimelinePlayback();
+          return;
+        }
+        const nextYear = currentYear + 1;
+        maxYearInput.value = String(nextYear);
+        animateYearTransition(nextYear, () => {
+          if (!timelineIsPlaying) return;
+          timelinePlayTimer = setTimeout(stepTimelinePlayback, TIMELINE_TICK_MS);
+        });
+      }
+
+      function startTimelinePlayback() {
+        if (timelineIsPlaying) return;
+        timelineIsPlaying = true;
+        timelinePlayBtn.textContent = "Pause";
+        if ((animatedMaxYear ?? yearMin) >= yearMax) {
+          animatedMaxYear = yearMin;
+          maxYearInput.value = String(yearMin);
+          maxYearValue.textContent = String(yearMin);
+          if (updateTemporalVisibility) updateTemporalVisibility(true);
+          else draw();
+        }
+        stepTimelinePlayback();
+      }
+
+      maxYearInput.oninput = () => {
+        stopTimelinePlayback();
+        const targetYear = Number(maxYearInput.value);
+        animateYearTransition(targetYear);
+      };
+      includeUnknownYearInput.oninput = () => {
+        stopTimelinePlayback();
+        draw();
+      };
+      nodeColorModeInput.oninput = () => {
+        stopTimelinePlayback();
+        draw();
+      };
+      timelinePlayBtn.onclick = () => {
+        if (timelineIsPlaying) stopTimelinePlayback();
+        else startTimelinePlayback();
+      };
+      timelineResetBtn.onclick = () => {
+        stopTimelinePlayback();
+        maxYearInput.value = String(yearMin);
+        animateYearTransition(yearMin);
+      };
+      draw();
+    }
+
+    async function boot() {
+      setupLegends();
+      try {
+        const response = await fetch(DATA_PATH);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        cachedData = data;
+        render(data);
+      } catch (err) {
+        showError(
+          `Failed to load ${DATA_PATH}. Start a local server from project root:\n` +
+          `python3 -m http.server 8000\n` +
+          `Then open http://localhost:8000/index.html\n\n` +
+          `Error: ${err.message}`
+        );
+      }
+    }
+
+    boot();
+    window.addEventListener("resize", () => {
+      if (cachedData) render(cachedData);
+    });
+  </script>
+</body>
+</html>

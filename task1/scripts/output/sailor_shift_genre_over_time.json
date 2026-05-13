@@ -1,0 +1,555 @@
+{
+  "meta": {
+    "artist_name": "Sailor Shift",
+    "person_id": 17255,
+    "work_definition": "Song or Album with at least one creator edge from this person",
+    "creator_edge_types": [
+      "ComposerOf",
+      "LyricistOf",
+      "PerformerOf",
+      "ProducerOf"
+    ],
+    "year_field": "release_date year, else written_date year",
+    "unique_works": 38,
+    "works_without_usable_year": 0
+  },
+  "genre_totals": {
+    "Oceanus Folk": 36,
+    "Synthwave": 1,
+    "Americana": 1
+  },
+  "by_year": [
+    {
+      "year": 2024,
+      "total_works": 1,
+      "by_genre": {
+        "Oceanus Folk": 1
+      }
+    },
+    {
+      "year": 2025,
+      "total_works": 1,
+      "by_genre": {
+        "Oceanus Folk": 1
+      }
+    },
+    {
+      "year": 2026,
+      "total_works": 1,
+      "by_genre": {
+        "Oceanus Folk": 1
+      }
+    },
+    {
+      "year": 2028,
+      "total_works": 5,
+      "by_genre": {
+        "Oceanus Folk": 5
+      }
+    },
+    {
+      "year": 2029,
+      "total_works": 1,
+      "by_genre": {
+        "Oceanus Folk": 1
+      }
+    },
+    {
+      "year": 2030,
+      "total_works": 5,
+      "by_genre": {
+        "Oceanus Folk": 5
+      }
+    },
+    {
+      "year": 2031,
+      "total_works": 4,
+      "by_genre": {
+        "Oceanus Folk": 3,
+        "Synthwave": 1
+      }
+    },
+    {
+      "year": 2032,
+      "total_works": 2,
+      "by_genre": {
+        "Oceanus Folk": 2
+      }
+    },
+    {
+      "year": 2033,
+      "total_works": 2,
+      "by_genre": {
+        "Oceanus Folk": 1,
+        "Americana": 1
+      }
+    },
+    {
+      "year": 2034,
+      "total_works": 5,
+      "by_genre": {
+        "Oceanus Folk": 5
+      }
+    },
+    {
+      "year": 2035,
+      "total_works": 1,
+      "by_genre": {
+        "Oceanus Folk": 1
+      }
+    },
+    {
+      "year": 2036,
+      "total_works": 3,
+      "by_genre": {
+        "Oceanus Folk": 3
+      }
+    },
+    {
+      "year": 2037,
+      "total_works": 1,
+      "by_genre": {
+        "Oceanus Folk": 1
+      }
+    },
+    {
+      "year": 2038,
+      "total_works": 3,
+      "by_genre": {
+        "Oceanus Folk": 3
+      }
+    },
+    {
+      "year": 2040,
+      "total_works": 3,
+      "by_genre": {
+        "Oceanus Folk": 3
+      }
+    }
+  ],
+  "by_year_cumulative": [
+    {
+      "year": 2024,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 1
+      },
+      "cumulative_total": 1
+    },
+    {
+      "year": 2025,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 2
+      },
+      "cumulative_total": 2
+    },
+    {
+      "year": 2026,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 3
+      },
+      "cumulative_total": 3
+    },
+    {
+      "year": 2028,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 8
+      },
+      "cumulative_total": 8
+    },
+    {
+      "year": 2029,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 9
+      },
+      "cumulative_total": 9
+    },
+    {
+      "year": 2030,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 14
+      },
+      "cumulative_total": 14
+    },
+    {
+      "year": 2031,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 17,
+        "Synthwave": 1
+      },
+      "cumulative_total": 18
+    },
+    {
+      "year": 2032,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 19,
+        "Synthwave": 1
+      },
+      "cumulative_total": 20
+    },
+    {
+      "year": 2033,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 20,
+        "Synthwave": 1,
+        "Americana": 1
+      },
+      "cumulative_total": 22
+    },
+    {
+      "year": 2034,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 25,
+        "Synthwave": 1,
+        "Americana": 1
+      },
+      "cumulative_total": 27
+    },
+    {
+      "year": 2035,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 26,
+        "Synthwave": 1,
+        "Americana": 1
+      },
+      "cumulative_total": 28
+    },
+    {
+      "year": 2036,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 29,
+        "Synthwave": 1,
+        "Americana": 1
+      },
+      "cumulative_total": 31
+    },
+    {
+      "year": 2037,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 30,
+        "Synthwave": 1,
+        "Americana": 1
+      },
+      "cumulative_total": 32
+    },
+    {
+      "year": 2038,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 33,
+        "Synthwave": 1,
+        "Americana": 1
+      },
+      "cumulative_total": 35
+    },
+    {
+      "year": 2040,
+      "cumulative_by_genre": {
+        "Oceanus Folk": 36,
+        "Synthwave": 1,
+        "Americana": 1
+      },
+      "cumulative_total": 38
+    }
+  ],
+  "works_sample": [
+    {
+      "id": 16961,
+      "name": "Neon Heartbeat",
+      "node_type": "Album",
+      "genre": "Synthwave",
+      "release_year": 2031,
+      "written_year": 2030,
+      "year_used": 2031,
+      "release_date": "2031"
+    },
+    {
+      "id": 16989,
+      "name": "Ballads for the End of Time",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2033,
+      "written_year": 2032,
+      "year_used": 2033,
+      "release_date": "2033"
+    },
+    {
+      "id": 16999,
+      "name": "Melancholy Circuitry",
+      "node_type": "Album",
+      "genre": "Americana",
+      "release_year": 2033,
+      "written_year": 2032,
+      "year_used": 2033,
+      "release_date": "2033"
+    },
+    {
+      "id": 17047,
+      "name": "Drifting Between the Stars and the Sea",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2034,
+      "written_year": 2033,
+      "year_used": 2034,
+      "release_date": "2034"
+    },
+    {
+      "id": 17048,
+      "name": "Artificial Sunsets",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2035,
+      "written_year": 2034,
+      "year_used": 2035,
+      "release_date": "2035"
+    },
+    {
+      "id": 17049,
+      "name": "Electric Reverie",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2038,
+      "written_year": 2037,
+      "year_used": 2038,
+      "release_date": "2038"
+    },
+    {
+      "id": 17121,
+      "name": "Ballads for the Low Tide",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2037,
+      "written_year": 2036,
+      "year_used": 2037,
+      "release_date": "2037"
+    },
+    {
+      "id": 17231,
+      "name": "Tides of Echos",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2029,
+      "written_year": 2028,
+      "year_used": 2029,
+      "release_date": "2029"
+    },
+    {
+      "id": 17252,
+      "name": "Hidden Depths",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2031,
+      "written_year": 2030,
+      "year_used": 2031,
+      "release_date": "2031"
+    },
+    {
+      "id": 17261,
+      "name": "The Kelp Forest Canticles",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2024,
+      "written_year": 2023,
+      "year_used": 2024,
+      "release_date": "2024"
+    },
+    {
+      "id": 17262,
+      "name": "Luminescent Tides",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2025,
+      "written_year": 2024,
+      "year_used": 2025,
+      "release_date": "2025"
+    },
+    {
+      "id": 17263,
+      "name": "Shoreline Sonnets",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2026,
+      "written_year": 2025,
+      "year_used": 2026,
+      "release_date": "2026"
+    },
+    {
+      "id": 17272,
+      "name": "Tidal Pop Waves",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2028,
+      "written_year": 2027,
+      "year_used": 2028,
+      "release_date": "2028"
+    },
+    {
+      "id": 17273,
+      "name": "Salty Dreams",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2030,
+      "written_year": 2029,
+      "year_used": 2030,
+      "release_date": "2030"
+    },
+    {
+      "id": 17274,
+      "name": "The Current & The Chord",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2032,
+      "written_year": 2031,
+      "year_used": 2032,
+      "release_date": "2032"
+    },
+    {
+      "id": 17275,
+      "name": "Coral Beats",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2034,
+      "written_year": 2033,
+      "year_used": 2034,
+      "release_date": "2034"
+    },
+    {
+      "id": 17276,
+      "name": "Tides & Ballads",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2036,
+      "written_year": 2035,
+      "year_used": 2036,
+      "release_date": "2036"
+    },
+    {
+      "id": 17277,
+      "name": "Oceanbound",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2038,
+      "written_year": 2037,
+      "year_used": 2038,
+      "release_date": "2038"
+    },
+    {
+      "id": 17278,
+      "name": "Echoes of the Deep",
+      "node_type": "Album",
+      "genre": "Oceanus Folk",
+      "release_year": 2040,
+      "written_year": 2039,
+      "year_used": 2040,
+      "release_date": "2040"
+    },
+    {
+      "id": 17279,
+      "name": "High Tide Heartbeat",
+      "node_type": "Song",
+      "genre": "Oceanus Folk",
+      "release_year": 2028,
+      "written_year": null,
+      "year_used": 2028,
+      "release_date": "2028"
+    },
+    {
+      "id": 17280,
+      "name": "Electric Eel Love",
+      "node_type": "Song",
+      "genre": "Oceanus Folk",
+      "release_year": 2028,
+      "written_year": null,
+      "year_used": 2028,
+      "release_date": "2028"
+    },
+    {
+      "id": 17281,
+      "name": "Sun-Drenched Daydream",
+      "node_type": "Song",
+      "genre": "Oceanus Folk",
+      "release_year": 2028,
+      "written_year": null,
+      "year_used": 2028,
+      "release_date": "2028"
+    },
+    {
+      "id": 17282,
+      "name": "Chord of the Deep",
+      "node_type": "Song",
+      "genre": "Oceanus Folk",
+      "release_year": 2028,
+      "written_year": null,
+      "year_used": 2028,
+      "release_date": "2028"
+    },
+    {
+      "id": 17283,
+      "name": "Heart of the Habitat",
+      "node_type": "Song",
+      "genre": "Oceanus Folk",
+      "release_year": 2030,
+      "written_year": null,
+      "year_used": 2030,
+      "release_date": "2030"
+    },
+    {
+      "id": 17284,
+      "name": "Reef Rhythm",
+      "node_type": "Song",
+      "genre": "Oceanus Folk",
+      "release_year": 2030,
+      "written_year": null,
+      "year_used": 2030,
+      "release_date": "2030"
+    },
+    {
+      "id": 17285,
+      "name": "Driftwood Lullaby",
+      "node_type": "Song",
+      "genre": "Oceanus Folk",
+      "release_year": 2030,
+      "written_year": null,
+      "year_used": 2030,
+      "release_date": "2030"
+    },
+    {
+      "id": 17286,
+      "name": "Saltwater Hymn",
+      "node_type": "Song",
+      "genre": "Oceanus Folk",
+      "release_year": 2032,
+      "written_year": null,
+      "year_used": 2032,
+      "release_date": "2032"
+    },
+    {
+      "id": 17287,
+      "name": "Moon Over the Tide",
+      "node_type": "Song",
+      "genre": "Oceanus Folk",
+      "release_year": 2034,
+      "written_year": null,
+      "year_used": 2034,
+      "release_date": "2034"
+    },
+    {
+      "id": 17288,
+      "name": "Into the Current",
+      "node_type": "Song",
+      "genre": "Oceanus Folk",
+      "release_year": 2034,
+      "written_year": null,
+      "year_used": 2034,
+      "release_date": "2034"
+    },
+    {
+      "id": 17289,
+      "name": "Barnacle Heart",
+      "node_type": "Song",
+      "genre": "Oceanus Folk",
+      "release_year": 2034,
+      "written_year": null,
+      "year_used": 2034,
+      "release_date": "2034"
+    }
+  ]
+}
