@@ -1,0 +1,270 @@
+{
+  "oceanus_folk": [
+    {
+      "year": "1993",
+      "total": 2,
+      "notable": 1,
+      "artist_count": 1,
+      "new_artists": 1
+    },
+    {
+      "year": "1994",
+      "total": 2,
+      "notable": 1,
+      "artist_count": 5,
+      "new_artists": 4
+    },
+    {
+      "year": "1995",
+      "total": 3,
+      "notable": 0,
+      "artist_count": 2,
+      "new_artists": 1
+    },
+    {
+      "year": "1997",
+      "total": 1,
+      "notable": 0,
+      "artist_count": 1,
+      "new_artists": 0
+    },
+    {
+      "year": "1999",
+      "total": 1,
+      "notable": 0,
+      "artist_count": 1,
+      "new_artists": 0
+    },
+    {
+      "year": "2001",
+      "total": 2,
+      "notable": 0,
+      "artist_count": 1,
+      "new_artists": 0
+    },
+    {
+      "year": "2004",
+      "total": 6,
+      "notable": 6,
+      "artist_count": 17,
+      "new_artists": 17
+    },
+    {
+      "year": "2005",
+      "total": 2,
+      "notable": 0,
+      "artist_count": 1,
+      "new_artists": 1
+    },
+    {
+      "year": "2007",
+      "total": 3,
+      "notable": 2,
+      "artist_count": 14,
+      "new_artists": 10
+    },
+    {
+      "year": "2008",
+      "total": 1,
+      "notable": 0,
+      "artist_count": 1,
+      "new_artists": 0
+    },
+    {
+      "year": "2009",
+      "total": 2,
+      "notable": 1,
+      "artist_count": 9,
+      "new_artists": 9
+    },
+    {
+      "year": "2010",
+      "total": 9,
+      "notable": 8,
+      "artist_count": 36,
+      "new_artists": 24
+    },
+    {
+      "year": "2011",
+      "total": 1,
+      "notable": 1,
+      "artist_count": 6,
+      "new_artists": 1
+    },
+    {
+      "year": "2013",
+      "total": 18,
+      "notable": 14,
+      "artist_count": 63,
+      "new_artists": 53
+    },
+    {
+      "year": "2014",
+      "total": 2,
+      "notable": 2,
+      "artist_count": 11,
+      "new_artists": 7
+    },
+    {
+      "year": "2016",
+      "total": 1,
+      "notable": 1,
+      "artist_count": 3,
+      "new_artists": 3
+    },
+    {
+      "year": "2017",
+      "total": 14,
+      "notable": 12,
+      "artist_count": 55,
+      "new_artists": 52
+    },
+    {
+      "year": "2019",
+      "total": 1,
+      "notable": 1,
+      "artist_count": 7,
+      "new_artists": 7
+    },
+    {
+      "year": "2020",
+      "total": 17,
+      "notable": 17,
+      "artist_count": 63,
+      "new_artists": 60
+    },
+    {
+      "year": "2021",
+      "total": 2,
+      "notable": 2,
+      "artist_count": 9,
+      "new_artists": 9
+    },
+    {
+      "year": "2022",
+      "total": 3,
+      "notable": 3,
+      "artist_count": 12,
+      "new_artists": 12
+    },
+    {
+      "year": "2023",
+      "total": 32,
+      "notable": 32,
+      "artist_count": 158,
+      "new_artists": 149
+    },
+    {
+      "year": "2024",
+      "total": 10,
+      "notable": 7,
+      "artist_count": 31,
+      "new_artists": 29
+    },
+    {
+      "year": "2025",
+      "total": 8,
+      "notable": 6,
+      "artist_count": 25,
+      "new_artists": 19
+    },
+    {
+      "year": "2026",
+      "total": 22,
+      "notable": 19,
+      "artist_count": 76,
+      "new_artists": 64
+    },
+    {
+      "year": "2027",
+      "total": 5,
+      "notable": 5,
+      "artist_count": 17,
+      "new_artists": 17
+    },
+    {
+      "year": "2028",
+      "total": 8,
+      "notable": 3,
+      "artist_count": 13,
+      "new_artists": 13
+    },
+    {
+      "year": "2029",
+      "total": 13,
+      "notable": 12,
+      "artist_count": 30,
+      "new_artists": 24
+    },
+    {
+      "year": "2030",
+      "total": 7,
+      "notable": 4,
+      "artist_count": 17,
+      "new_artists": 12
+    },
+    {
+      "year": "2031",
+      "total": 10,
+      "notable": 8,
+      "artist_count": 4,
+      "new_artists": 2
+    },
+    {
+      "year": "2032",
+      "total": 2,
+      "notable": 0,
+      "artist_count": 2,
+      "new_artists": 0
+    },
+    {
+      "year": "2033",
+      "total": 2,
+      "notable": 1,
+      "artist_count": 3,
+      "new_artists": 3
+    },
+    {
+      "year": "2034",
+      "total": 8,
+      "notable": 5,
+      "artist_count": 3,
+      "new_artists": 2
+    },
+    {
+      "year": "2035",
+      "total": 5,
+      "notable": 2,
+      "artist_count": 3,
+      "new_artists": 0
+    },
+    {
+      "year": "2036",
+      "total": 2,
+      "notable": 1,
+      "artist_count": 1,
+      "new_artists": 0
+    },
+    {
+      "year": "2037",
+      "total": 4,
+      "notable": 1,
+      "artist_count": 1,
+      "new_artists": 1
+    },
+    {
+      "year": "2038",
+      "total": 2,
+      "notable": 1,
+      "artist_count": 2,
+      "new_artists": 0
+    },
+    {
+      "year": "2040",
+      "total": 2,
+      "notable": 0,
+      "artist_count": 1,
+      "new_artists": 0
+    }
+  ]
+}

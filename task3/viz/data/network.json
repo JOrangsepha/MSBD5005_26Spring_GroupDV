@@ -1,0 +1,3229 @@
+{
+  "nodes": [
+    {
+      "id": "Xiuying Yin (#2566)",
+      "eid": 2566,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 1,
+      "of_inf_in": 1,
+      "type": "Person",
+      "genres": {
+        "Space Rock": 3,
+        "Psychedelic Rock": 2,
+        "Dream Pop": 1,
+        "Doom Metal": 1,
+        "Synthwave": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 481.8,
+      "y": 117.9
+    },
+    {
+      "id": "Ann Anderson",
+      "eid": 8715,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 4,
+      "of_inf_in": 1,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2025,
+      "of_last_year": 2025,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 324.0,
+      "y": 191.3
+    },
+    {
+      "id": "Ann Holland",
+      "eid": 13326,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 0,
+      "of_inf_in": 23,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2004,
+      "of_last_year": 2004,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 529.2,
+      "y": 368.0
+    },
+    {
+      "id": "Igor Dyś",
+      "eid": 8208,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Alternative Rock": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 710.5,
+      "y": 102.5
+    },
+    {
+      "id": "Synaptic Stream",
+      "eid": 16913,
+      "of_songs": 3,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 1,
+      "of_inf_in": 10,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 3
+      },
+      "of_first_year": 2004,
+      "of_last_year": 2010,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 415.8,
+      "y": 30
+    },
+    {
+      "id": "Xia Zhu",
+      "eid": 8726,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 4,
+      "of_inf_in": 1,
+      "type": "Person",
+      "genres": {
+        "Dream Pop": 1,
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2023,
+      "of_last_year": 2023,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 261.4,
+      "y": 311.0
+    },
+    {
+      "id": "Cardboard Twenty-Five",
+      "eid": 16939,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 5,
+      "of_inf_in": 1,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 1,
+        "Space Rock": 1
+      },
+      "of_first_year": 2030,
+      "of_last_year": 2030,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 61.3,
+      "y": 140.8
+    },
+    {
+      "id": "Jing Cui (#1074)",
+      "eid": 1074,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 18,
+      "of_inf_in": 9,
+      "type": "Person",
+      "genres": {
+        "Americana": 3,
+        "Doom Metal": 3,
+        "Jazz Surf Rock": 2,
+        "Psychedelic Rock": 1,
+        "Synthpop": 1,
+        "Darkwave": 1,
+        "Synthwave": 1,
+        "Dream Pop": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 548.9,
+      "y": 301.0
+    },
+    {
+      "id": "Rebekka Lehmann",
+      "eid": 2101,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Symphonic Metal": 3,
+        "Doom Metal": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 257.8,
+      "y": 356.2
+    },
+    {
+      "id": "Ninetta Spinelli",
+      "eid": 12868,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Indie Rock": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 664.8,
+      "y": 69.3
+    },
+    {
+      "id": "Nout Zijlmans",
+      "eid": 10820,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Space Rock": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 667.8,
+      "y": 386.4
+    },
+    {
+      "id": "Ming Xiao",
+      "eid": 11338,
+      "of_songs": 1,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 6,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Synthwave": 1,
+        "Oceanus Folk": 1,
+        "Dream Pop": 1
+      },
+      "of_first_year": 2026,
+      "of_last_year": 2026,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 321.2,
+      "y": 124.9
+    },
+    {
+      "id": "Ming Ren",
+      "eid": 76,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 3,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Americana": 1,
+        "Indie Folk": 1,
+        "Indie Rock": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 763.8,
+      "y": 235.2
+    },
+    {
+      "id": "Xiulan Shen",
+      "eid": 592,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 4,
+      "of_inf_in": 4,
+      "type": "Person",
+      "genres": {
+        "Dream Pop": 3,
+        "Synthwave": 1,
+        "Darkwave": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 256.1,
+      "y": 152.5
+    },
+    {
+      "id": "Li Lei",
+      "eid": 593,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 6,
+      "of_inf_in": 5,
+      "type": "Person",
+      "genres": {
+        "Dream Pop": 2,
+        "Darkwave": 2,
+        "Synthwave": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 662.6,
+      "y": 321.6
+    },
+    {
+      "id": "Miss Jennifer Williams",
+      "eid": 14934,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Indie Rock": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 596.2,
+      "y": 441.0
+    },
+    {
+      "id": "Tidal Reverie",
+      "eid": 16987,
+      "of_songs": 3,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 3,
+      "of_inf_in": 0,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 3
+      },
+      "of_first_year": 2033,
+      "of_last_year": 2035,
+      "score": 0.0197,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 476.6,
+      "y": 490.8
+    },
+    {
+      "id": "Samantha Bullock",
+      "eid": 5213,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Avant-Garde Folk": 2,
+        "Indie Pop": 2,
+        "Alternative Rock": 1,
+        "Southern Gothic Rock": 1,
+        "Blues Rock": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 385.2,
+      "y": 345.7
+    },
+    {
+      "id": "Matthew Hancock",
+      "eid": 2659,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 11,
+      "of_inf_in": 9,
+      "type": "Person",
+      "genres": {
+        "Dream Pop": 10,
+        "Alternative Rock": 4,
+        "Jazz Surf Rock": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 696.8,
+      "y": 370.3
+    },
+    {
+      "id": "Na Jia",
+      "eid": 7791,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 4,
+      "of_inf_in": 4,
+      "type": "Person",
+      "genres": {
+        "Dream Pop": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 736.7,
+      "y": 319.3
+    },
+    {
+      "id": "Lisa Martin",
+      "eid": 2171,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 1,
+      "of_inf_in": 5,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2026,
+      "of_last_year": 2026,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 553.1,
+      "y": 74.7
+    },
+    {
+      "id": "Cassette Future",
+      "eid": 17022,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 2,
+      "of_inf_in": 0,
+      "type": "MusicalGroup",
+      "genres": {
+        "Lo-Fi Electronica": 5
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 262.2,
+      "y": 216.3
+    },
+    {
+      "id": "Min Liang",
+      "eid": 13439,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 4,
+      "of_inf_in": 3,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2019,
+      "of_last_year": 2019,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 137.2,
+      "y": 170.5
+    },
+    {
+      "id": "Silver Veil",
+      "eid": 17032,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 3,
+      "of_inf_in": 0,
+      "type": "MusicalGroup",
+      "genres": {
+        "Indie Pop": 5
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 174.3,
+      "y": 207.7
+    },
+    {
+      "id": "Xia Wu",
+      "eid": 141,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 4,
+      "of_inf_in": 4,
+      "type": "Person",
+      "genres": {
+        "Emo/Pop Punk": 3,
+        "Southern Gothic Rock": 2,
+        "Speed Metal": 1,
+        "Lo-Fi Electronica": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 514.9,
+      "y": 236.5
+    },
+    {
+      "id": "Jeremiah Love",
+      "eid": 2705,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Americana": 1,
+        "Psychedelic Rock": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 349.6,
+      "y": 148.7
+    },
+    {
+      "id": "The Brine Choir",
+      "eid": 17046,
+      "of_songs": 4,
+      "of_notable_ratio": 0.25,
+      "of_inf_out": 5,
+      "of_inf_in": 0,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 4
+      },
+      "of_first_year": 2034,
+      "of_last_year": 2038,
+      "score": 0.0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 299.4,
+      "y": 552.8
+    },
+    {
+      "id": "Tao Wen",
+      "eid": 10905,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Dream Pop": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 499.7,
+      "y": 322.3
+    },
+    {
+      "id": "Stephen Allen",
+      "eid": 8860,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 2,
+      "of_inf_in": 3,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2026,
+      "of_last_year": 2026,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 183.3,
+      "y": 434.5
+    },
+    {
+      "id": "The Phantom Operators",
+      "eid": 17063,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 4,
+      "of_inf_in": 0,
+      "type": "MusicalGroup",
+      "genres": {
+        "Jazz Surf Rock": 3
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 230.6,
+      "y": 236.6
+    },
+    {
+      "id": "Tao Gao",
+      "eid": 8880,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Lo-Fi Electronica": 4,
+        "Indie Folk": 1,
+        "Avant-Garde Folk": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 717.3,
+      "y": 351.7
+    },
+    {
+      "id": "Jun Xu",
+      "eid": 8883,
+      "of_songs": 2,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 1,
+      "of_inf_in": 9,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 2
+      },
+      "of_first_year": 2017,
+      "of_last_year": 2020,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 462.8,
+      "y": 379.7
+    },
+    {
+      "id": "Kimberly Snyder",
+      "eid": 1716,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 22,
+      "of_inf_in": 17,
+      "type": "Person",
+      "genres": {
+        "Dream Pop": 11,
+        "Synthwave": 6,
+        "Indie Rock": 3,
+        "Symphonic Metal": 1,
+        "Post-Apocalyptic Folk": 1,
+        "Space Rock": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 619.9,
+      "y": 389.8
+    },
+    {
+      "id": "Ming Du",
+      "eid": 7877,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 6,
+      "of_inf_in": 2,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2027,
+      "of_last_year": 2027,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 300.0,
+      "y": 105.7
+    },
+    {
+      "id": "Jun Xia",
+      "eid": 1227,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 5,
+      "of_inf_in": 6,
+      "type": "Person",
+      "genres": {
+        "Dream Pop": 3,
+        "Psychedelic Rock": 2,
+        "Southern Gothic Rock": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 350.9,
+      "y": 213.9
+    },
+    {
+      "id": "Lindsey Broeshart",
+      "eid": 14032,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Indie Folk": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 244.4,
+      "y": 538.8
+    },
+    {
+      "id": "The Hollow Monarchs",
+      "eid": 17110,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 7,
+      "of_inf_in": 0,
+      "type": "MusicalGroup",
+      "genres": {
+        "Post-Apocalyptic Folk": 4
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 664.4,
+      "y": 240.3
+    },
+    {
+      "id": "David Reese",
+      "eid": 13015,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Indie Rock": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 569.0,
+      "y": 254.2
+    },
+    {
+      "id": "Selkie's Hollow",
+      "eid": 17120,
+      "of_songs": 4,
+      "of_notable_ratio": 0.25,
+      "of_inf_out": 6,
+      "of_inf_in": 0,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 4
+      },
+      "of_first_year": 2037,
+      "of_last_year": 2037,
+      "score": 0.0232,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 712.3,
+      "y": 259.7
+    },
+    {
+      "id": "Donald Medina",
+      "eid": 5858,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 3,
+      "of_inf_in": 3,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1,
+        "Indie Folk": 1
+      },
+      "of_first_year": 2023,
+      "of_last_year": 2023,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 300.4,
+      "y": 267.8
+    },
+    {
+      "id": "Michael Rivera",
+      "eid": 13028,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 7,
+      "of_inf_in": 2,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2026,
+      "of_last_year": 2026,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 504.6,
+      "y": 185.7
+    },
+    {
+      "id": "Cassian Storm",
+      "eid": 17126,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 4,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Avant-Garde Folk": 5
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 537.8,
+      "y": 466.8
+    },
+    {
+      "id": "Rhonda Brown",
+      "eid": 758,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 2,
+      "of_inf_in": 4,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2023,
+      "of_last_year": 2023,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 389.8,
+      "y": 151.9
+    },
+    {
+      "id": "Yong Dong",
+      "eid": 1276,
+      "of_songs": 3,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 1,
+      "of_inf_in": 2,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 3,
+        "Indie Folk": 2,
+        "Synthpop": 1,
+        "Americana": 1,
+        "Dream Pop": 1,
+        "Synthwave": 1
+      },
+      "of_first_year": 2013,
+      "of_last_year": 2017,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 825.5,
+      "y": 268.5
+    },
+    {
+      "id": "Claire Holmes",
+      "eid": 17155,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 7,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Synthpop": 5
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 223.1,
+      "y": 120.2
+    },
+    {
+      "id": "Walter White",
+      "eid": 267,
+      "of_songs": 2,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 3,
+      "of_inf_in": 2,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 2,
+        "Synthwave": 1
+      },
+      "of_first_year": 2009,
+      "of_last_year": 2010,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 177.9,
+      "y": 358.8
+    },
+    {
+      "id": "Urszula Stochmal",
+      "eid": 1294,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 24,
+      "of_inf_in": 21,
+      "type": "Person",
+      "genres": {
+        "Southern Gothic Rock": 9,
+        "Indie Pop": 3,
+        "Avant-Garde Folk": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 625.7,
+      "y": 244.5
+    },
+    {
+      "id": "Rüdiger Graf",
+      "eid": 1304,
+      "of_songs": 2,
+      "of_notable_ratio": 0.5,
+      "of_inf_out": 2,
+      "of_inf_in": 2,
+      "type": "Person",
+      "genres": {
+        "Lo-Fi Electronica": 3,
+        "Dream Pop": 2,
+        "Oceanus Folk": 2,
+        "Southern Gothic Rock": 1,
+        "Space Rock": 1,
+        "Jazz Surf Rock": 1
+      },
+      "of_first_year": 2017,
+      "of_last_year": 2024,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 172.9,
+      "y": 240.3
+    },
+    {
+      "id": "Isabella Farinelli",
+      "eid": 3360,
+      "of_songs": 3,
+      "of_notable_ratio": 0.6667,
+      "of_inf_out": 0,
+      "of_inf_in": 7,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 3,
+        "Dream Pop": 2,
+        "Indie Folk": 1
+      },
+      "of_first_year": 2007,
+      "of_last_year": 2013,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 851.7,
+      "y": 316.5
+    },
+    {
+      "id": "Cheryl Delgado",
+      "eid": 14113,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 8,
+      "of_inf_in": 1,
+      "type": "Person",
+      "genres": {
+        "Darkwave": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 827.0,
+      "y": 481.1
+    },
+    {
+      "id": "Fang Wu",
+      "eid": 13090,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 1,
+      "of_inf_in": 10,
+      "type": "Person",
+      "genres": {
+        "Symphonic Metal": 1,
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2017,
+      "of_last_year": 2017,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 129.4,
+      "y": 382.3
+    },
+    {
+      "id": "Trevor Bass",
+      "eid": 10018,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Symphonic Metal": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 581.9,
+      "y": 333.4
+    },
+    {
+      "id": "Gang Yang (#12070)",
+      "eid": 12070,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 3,
+      "of_inf_in": 3,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2024,
+      "of_last_year": 2024,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 342.2,
+      "y": 391.9
+    },
+    {
+      "id": "Madeleine Pineau",
+      "eid": 3368,
+      "of_songs": 2,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 5,
+      "of_inf_in": 3,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 2
+      },
+      "of_first_year": 2023,
+      "of_last_year": 2025,
+      "score": 0.1093,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 182.5,
+      "y": 273.4
+    },
+    {
+      "id": "The Fiddle & The Fjord",
+      "eid": 17192,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 4,
+      "type": "MusicalGroup",
+      "genres": {
+        "Celtic Folk": 9
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 403.2,
+      "y": 479.5
+    },
+    {
+      "id": "Jing Long",
+      "eid": 7984,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 2,
+      "of_inf_in": 4,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2024,
+      "of_last_year": 2024,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 772.9,
+      "y": 185.8
+    },
+    {
+      "id": "Chao Tan",
+      "eid": 1843,
+      "of_songs": 3,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 6,
+      "of_inf_in": 15,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 3,
+        "Indie Folk": 1
+      },
+      "of_first_year": 2017,
+      "of_last_year": 2023,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 467.9,
+      "y": 157.1
+    },
+    {
+      "id": "Wayfinder's Lament",
+      "eid": 17207,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 2,
+      "type": "MusicalGroup",
+      "genres": {
+        "Acoustic Folk": 14
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 691.3,
+      "y": 483.7
+    },
+    {
+      "id": "Cristian Bonilla",
+      "eid": 314,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 3,
+      "of_inf_in": 5,
+      "type": "Person",
+      "genres": {
+        "Synthwave": 2,
+        "Dream Pop": 1,
+        "Indie Rock": 1,
+        "Indie Folk": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 376.9,
+      "y": 417.8
+    },
+    {
+      "id": "Xiulan Ren (#829)",
+      "eid": 829,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 13,
+      "of_inf_in": 7,
+      "type": "Person",
+      "genres": {
+        "Lo-Fi Electronica": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 529.5,
+      "y": 140.7
+    },
+    {
+      "id": "The Wave Riders",
+      "eid": 17230,
+      "of_songs": 2,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 6,
+      "of_inf_in": 0,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 2
+      },
+      "of_first_year": 2029,
+      "of_last_year": 2032,
+      "score": 0.0976,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 618.1,
+      "y": 332.8
+    },
+    {
+      "id": "Xavier Leclerc",
+      "eid": 2383,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 7,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Indie Folk": 1,
+        "Synthpop": 1,
+        "Doom Metal": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 664.5,
+      "y": 286.8
+    },
+    {
+      "id": "Genevieve Bell",
+      "eid": 17235,
+      "of_songs": 2,
+      "of_notable_ratio": 0.5,
+      "of_inf_out": 5,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 2
+      },
+      "of_first_year": 2027,
+      "of_last_year": 2031,
+      "score": 0.1301,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 111.8,
+      "y": 228.3
+    },
+    {
+      "id": "Wei Gao",
+      "eid": 1878,
+      "of_songs": 2,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 1,
+      "of_inf_in": 10,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 2,
+        "Dream Pop": 1
+      },
+      "of_first_year": 2017,
+      "of_last_year": 2023,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 83.5,
+      "y": 509.1
+    },
+    {
+      "id": "Mariner's Refrain",
+      "eid": 17243,
+      "of_songs": 2,
+      "of_notable_ratio": 0.5,
+      "of_inf_out": 6,
+      "of_inf_in": 1,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 2
+      },
+      "of_first_year": 2028,
+      "of_last_year": 2030,
+      "score": 0.1403,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 623.8,
+      "y": 470.2
+    },
+    {
+      "id": "Siren's Call",
+      "eid": 17250,
+      "of_songs": 2,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 4,
+      "of_inf_in": 0,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 2
+      },
+      "of_first_year": 2028,
+      "of_last_year": 2031,
+      "score": 0.0525,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 341.5,
+      "y": 75.0
+    },
+    {
+      "id": "Juan Yin",
+      "eid": 355,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 11,
+      "type": "Person",
+      "genres": {
+        "Americana": 2,
+        "Doom Metal": 1,
+        "Space Rock": 1,
+        "Dream Pop": 1,
+        "Post-Apocalyptic Folk": 1,
+        "Symphonic Metal": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 673.3,
+      "y": 519.1
+    },
+    {
+      "id": "Sailor Shift",
+      "eid": 17255,
+      "of_songs": 17,
+      "of_notable_ratio": 0.2941,
+      "of_inf_out": 19,
+      "of_inf_in": 7,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 17
+      },
+      "of_first_year": 2028,
+      "of_last_year": 2040,
+      "score": 0,
+      "is_comparison": true,
+      "is_prediction": false,
+      "x": 450.4,
+      "y": 272.9
+    },
+    {
+      "id": "Ivy Echos",
+      "eid": 17260,
+      "of_songs": 8,
+      "of_notable_ratio": 0.125,
+      "of_inf_out": 6,
+      "of_inf_in": 14,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 8
+      },
+      "of_first_year": 2024,
+      "of_last_year": 2026,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 379.2,
+      "y": 294.5
+    },
+    {
+      "id": "Jing Kang",
+      "eid": 878,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 16,
+      "of_inf_in": 27,
+      "type": "Person",
+      "genres": {
+        "Indie Rock": 11,
+        "Lo-Fi Electronica": 4
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 588.5,
+      "y": 136.6
+    },
+    {
+      "id": "Crimson Theorem",
+      "eid": 16753,
+      "of_songs": 2,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 2,
+      "of_inf_in": 6,
+      "type": "MusicalGroup",
+      "genres": {
+        "Desert Rock": 3,
+        "Oceanus Folk": 2,
+        "Synthwave": 1,
+        "Indie Folk": 1
+      },
+      "of_first_year": 2023,
+      "of_last_year": 2026,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 456.2,
+      "y": 335.4
+    },
+    {
+      "id": "Tao Cui",
+      "eid": 372,
+      "of_songs": 2,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 6,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 2,
+        "Synthwave": 1
+      },
+      "of_first_year": 2026,
+      "of_last_year": 2029,
+      "score": 0.1592,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 347.8,
+      "y": 464.8
+    },
+    {
+      "id": "Juan Qiao",
+      "eid": 3957,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 2,
+      "of_inf_in": 4,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2023,
+      "of_last_year": 2023,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 419.8,
+      "y": 120.3
+    },
+    {
+      "id": "Joker's Smile",
+      "eid": 16758,
+      "of_songs": 3,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 0,
+      "of_inf_in": 7,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 3,
+        "Americana": 1,
+        "Doom Metal": 1,
+        "Dream Pop": 1
+      },
+      "of_first_year": 2004,
+      "of_last_year": 2011,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 486.3,
+      "y": 442.3
+    },
+    {
+      "id": "Fiesta Nocturna",
+      "eid": 16760,
+      "of_songs": 3,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 1,
+      "of_inf_in": 2,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 3,
+        "Indie Folk": 1
+      },
+      "of_first_year": 2013,
+      "of_last_year": 2017,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 208.8,
+      "y": 184.2
+    },
+    {
+      "id": "James Clark",
+      "eid": 6526,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 0,
+      "of_inf_in": 6,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2014,
+      "of_last_year": 2014,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 808.5,
+      "y": 366.9
+    },
+    {
+      "id": "Juan Gu (#14721)",
+      "eid": 14721,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 2,
+      "of_inf_in": 6,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2023,
+      "of_last_year": 2023,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 412.2,
+      "y": 318.3
+    },
+    {
+      "id": "Xiulan Zhou",
+      "eid": 9091,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 7,
+      "of_inf_in": 1,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2028,
+      "of_last_year": 2028,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 177.6,
+      "y": 143.4
+    },
+    {
+      "id": "James Medina",
+      "eid": 12686,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Alternative Rock": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 335.9,
+      "y": 342.8
+    },
+    {
+      "id": "The Saltwater Weavers",
+      "eid": 17299,
+      "of_songs": 5,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 3,
+      "of_inf_in": 15,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 5
+      },
+      "of_first_year": 1995,
+      "of_last_year": 2001,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 329.1,
+      "y": 250.2
+    },
+    {
+      "id": "Prisma Flux",
+      "eid": 16794,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 1,
+      "of_inf_in": 6,
+      "type": "MusicalGroup",
+      "genres": {
+        "Desert Rock": 1,
+        "Oceanus Folk": 1,
+        "Dream Pop": 1
+      },
+      "of_first_year": 2014,
+      "of_last_year": 2014,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 90.6,
+      "y": 350.2
+    },
+    {
+      "id": "Loro",
+      "eid": 16797,
+      "of_songs": 3,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 7,
+      "of_inf_in": 7,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 3,
+        "Synthwave": 1
+      },
+      "of_first_year": 2021,
+      "of_last_year": 2026,
+      "score": 0.0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 211.5,
+      "y": 495.3
+    },
+    {
+      "id": "The Tide Singer's Knot",
+      "eid": 17314,
+      "of_songs": 5,
+      "of_notable_ratio": 0.2,
+      "of_inf_out": 0,
+      "of_inf_in": 13,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 5
+      },
+      "of_first_year": 1993,
+      "of_last_year": 1995,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 537.3,
+      "y": 218.5
+    },
+    {
+      "id": "Tao Ren",
+      "eid": 3490,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 1,
+      "of_inf_in": 20,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1,
+        "Dream Pop": 1
+      },
+      "of_first_year": 2013,
+      "of_last_year": 2013,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 298.1,
+      "y": 398.9
+    },
+    {
+      "id": "Cosmic Drift",
+      "eid": 16802,
+      "of_songs": 2,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 3,
+      "of_inf_in": 9,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 2,
+        "Indie Folk": 1
+      },
+      "of_first_year": 2022,
+      "of_last_year": 2029,
+      "score": 0.0452,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 236.0,
+      "y": 76.0
+    },
+    {
+      "id": "Jun Zhou",
+      "eid": 934,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Dream Pop": 3,
+        "Synthwave": 2
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 772.4,
+      "y": 310.1
+    },
+    {
+      "id": "Drowned Harbor",
+      "eid": 17327,
+      "of_songs": 8,
+      "of_notable_ratio": 0.125,
+      "of_inf_out": 6,
+      "of_inf_in": 13,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 8
+      },
+      "of_first_year": 2005,
+      "of_last_year": 2013,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 408.2,
+      "y": 362.8
+    },
+    {
+      "id": "Zacharie Martins",
+      "eid": 3504,
+      "of_songs": 4,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 1,
+      "of_inf_in": 4,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 4,
+        "Doom Metal": 3,
+        "Indie Folk": 1
+      },
+      "of_first_year": 2007,
+      "of_last_year": 2013,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 653.5,
+      "y": 163.0
+    },
+    {
+      "id": "Jason Vaughn",
+      "eid": 13233,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 6,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2027,
+      "of_last_year": 2027,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 169.1,
+      "y": 302.7
+    },
+    {
+      "id": "Lei Qian",
+      "eid": 6579,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 5,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Jazz Surf Rock": 1,
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2029,
+      "of_last_year": 2029,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 478.6,
+      "y": 287.3
+    },
+    {
+      "id": "Orla Seabloom",
+      "eid": 17340,
+      "of_songs": 7,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 10,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 7
+      },
+      "of_first_year": 2029,
+      "of_last_year": 2029,
+      "score": 0,
+      "is_comparison": true,
+      "is_prediction": false,
+      "x": 502.1,
+      "y": 366.8
+    },
+    {
+      "id": "Juan Fu",
+      "eid": 8129,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 3,
+      "of_inf_in": 5,
+      "type": "Person",
+      "genres": {
+        "Dream Pop": 2
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 827.3,
+      "y": 101.6
+    },
+    {
+      "id": "Lori Massey",
+      "eid": 6593,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Emo/Pop Punk": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 375.1,
+      "y": 249.7
+    },
+    {
+      "id": "Beatrice Albright",
+      "eid": 17349,
+      "of_songs": 4,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 12,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 4
+      },
+      "of_first_year": 2031,
+      "of_last_year": 2031,
+      "score": 0.1601,
+      "is_comparison": false,
+      "is_prediction": true,
+      "x": 620.9,
+      "y": 201.6
+    },
+    {
+      "id": "Yang Peng",
+      "eid": 455,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 7,
+      "of_inf_in": 5,
+      "type": "Person",
+      "genres": {
+        "Synthwave": 5
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 220.5,
+      "y": 291.0
+    },
+    {
+      "id": "Shannon Harvey",
+      "eid": 5575,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Indie Folk": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 399.0,
+      "y": 209.3
+    },
+    {
+      "id": "Daniel O'Connell",
+      "eid": 17355,
+      "of_songs": 4,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 2,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 4
+      },
+      "of_first_year": 2031,
+      "of_last_year": 2031,
+      "score": 0.1702,
+      "is_comparison": false,
+      "is_prediction": true,
+      "x": 339.4,
+      "y": 498.8
+    },
+    {
+      "id": "Yan Luo",
+      "eid": 12749,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 4,
+      "of_inf_in": 1,
+      "type": "Person",
+      "genres": {
+        "Synthwave": 1,
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2026,
+      "of_last_year": 2026,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 433.7,
+      "y": 443.8
+    },
+    {
+      "id": "Copper Canyon Ghosts",
+      "eid": 17361,
+      "of_songs": 5,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 9,
+      "of_inf_in": 0,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 5
+      },
+      "of_first_year": 2034,
+      "of_last_year": 2035,
+      "score": 0.4581,
+      "is_comparison": false,
+      "is_prediction": true,
+      "x": 455.8,
+      "y": 85.7
+    },
+    {
+      "id": "Sandra Smith",
+      "eid": 3026,
+      "of_songs": 1,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 2,
+      "of_inf_in": 39,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2017,
+      "of_last_year": 2017,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 624.1,
+      "y": 424.0
+    },
+    {
+      "id": "Kelli Turner",
+      "eid": 6612,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 0,
+      "of_inf_in": 7,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2013,
+      "of_last_year": 2013,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 731.2,
+      "y": 466.0
+    },
+    {
+      "id": "Filippo Pelli",
+      "eid": 2006,
+      "of_songs": 5,
+      "of_notable_ratio": 0.8,
+      "of_inf_out": 2,
+      "of_inf_in": 2,
+      "type": "Person",
+      "genres": {
+        "Oceanus Folk": 5,
+        "Dream Pop": 2,
+        "Americana": 2,
+        "Doom Metal": 1,
+        "Indie Folk": 1
+      },
+      "of_first_year": 2007,
+      "of_last_year": 2014,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 739.0,
+      "y": 146.2
+    },
+    {
+      "id": "Xia Zeng",
+      "eid": 6622,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 3,
+      "of_inf_in": 2,
+      "type": "Person",
+      "genres": {
+        "Dream Pop": 2,
+        "Indie Folk": 1,
+        "Indie Rock": 1,
+        "Oceanus Folk": 1
+      },
+      "of_first_year": 2023,
+      "of_last_year": 2023,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 445.2,
+      "y": 212.0
+    },
+    {
+      "id": "Electric Twist",
+      "eid": 16869,
+      "of_songs": 1,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 3,
+      "of_inf_in": 8,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 1,
+        "Desert Rock": 1
+      },
+      "of_first_year": 2017,
+      "of_last_year": 2017,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 378.8,
+      "y": 55.2
+    },
+    {
+      "id": "Joshua Taylor",
+      "eid": 11255,
+      "of_songs": 0,
+      "of_notable_ratio": 0.0,
+      "of_inf_out": 0,
+      "of_inf_in": 0,
+      "type": "Person",
+      "genres": {
+        "Indie Folk": 1
+      },
+      "of_first_year": null,
+      "of_last_year": null,
+      "score": 0,
+      "is_comparison": false,
+      "is_prediction": false,
+      "x": 370.2,
+      "y": 543.1
+    },
+    {
+      "id": "Embers of Wrath",
+      "eid": 16892,
+      "of_songs": 3,
+      "of_notable_ratio": 1.0,
+      "of_inf_out": 5,
+      "of_inf_in": 30,
+      "type": "MusicalGroup",
+      "genres": {
+        "Oceanus Folk": 3
+      },
+      "of_first_year": 2007,
+      "of_last_year": 2013,
+      "score": 0,
+      "is_comparison": true,
+      "is_prediction": false,
+      "x": 259.4,
+      "y": 452.5
+    }
+  ],
+  "links": [
+    {
+      "source": "Rhonda Brown",
+      "target": "Chao Tan",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Juan Yin",
+      "target": "Trevor Bass",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Jing Kang",
+      "target": "Xia Wu",
+      "weight": 3,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 2,
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Sandra Smith",
+      "target": "Tao Ren",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Yong Dong",
+      "target": "Jing Cui (#1074)",
+      "weight": 2,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1,
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Urszula Stochmal",
+      "target": "Igor Dyś",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Shannon Harvey",
+      "target": "Rebekka Lehmann",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Xia Zeng",
+      "target": "Walter White",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Xia Zeng",
+      "target": "James Clark",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Chao Tan",
+      "target": "Ann Holland",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Ming Du",
+      "target": "Sandra Smith",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Ming Du",
+      "target": "Jun Xu",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Jing Long",
+      "target": "James Clark",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Ann Anderson",
+      "target": "Kelli Turner",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Ann Anderson",
+      "target": "Tao Ren",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Stephen Allen",
+      "target": "Tao Ren",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Xiulan Zhou",
+      "target": "Xia Zeng",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Filippo Pelli",
+      "target": "Isabella Farinelli",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Tao Cui",
+      "target": "Sandra Smith",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Tao Cui",
+      "target": "Tao Ren",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Tao Cui",
+      "target": "Gang Yang (#12070)",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Kimberly Snyder",
+      "target": "Juan Yin",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Nout Zijlmans",
+      "target": "Ming Ren",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Tao Wen",
+      "target": "Jun Xu",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Tao Wen",
+      "target": "Jun Xia",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Tao Wen",
+      "target": "Donald Medina",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Tao Gao",
+      "target": "Jing Kang",
+      "weight": 3,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1,
+        "InterpolatesFrom": 1,
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Tao Gao",
+      "target": "Xia Wu",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Tao Gao",
+      "target": "Samantha Bullock",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Xiulan Shen",
+      "target": "Yang Peng",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Xiulan Shen",
+      "target": "Li Lei",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Gang Yang (#12070)",
+      "target": "Sandra Smith",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Gang Yang (#12070)",
+      "target": "Ann Holland",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Jing Cui (#1074)",
+      "target": "Juan Yin",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Jing Cui (#1074)",
+      "target": "Xiulan Shen",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Lei Qian",
+      "target": "Jun Xu",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Lei Qian",
+      "target": "Kelli Turner",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Ming Xiao",
+      "target": "Juan Qiao",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Ming Xiao",
+      "target": "Chao Tan",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Ming Xiao",
+      "target": "Donald Medina",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Ming Xiao",
+      "target": "Madeleine Pineau",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Jason Vaughn",
+      "target": "Ann Holland",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Jason Vaughn",
+      "target": "Lisa Martin",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Jason Vaughn",
+      "target": "Fang Wu",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Xiuying Yin (#2566)",
+      "target": "Fang Wu",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Min Liang",
+      "target": "Ann Holland",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Rüdiger Graf",
+      "target": "Jing Kang",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Rüdiger Graf",
+      "target": "Xia Wu",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Xavier Leclerc",
+      "target": "Kimberly Snyder",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Juan Gu (#14721)",
+      "target": "Tao Ren",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Na Jia",
+      "target": "Sandra Smith",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Fang Wu",
+      "target": "Donald Medina",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Yan Luo",
+      "target": "Zacharie Martins",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Yan Luo",
+      "target": "Tao Ren",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Donald Medina",
+      "target": "Chao Tan",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Cristian Bonilla",
+      "target": "Sandra Smith",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Tidal Reverie",
+      "target": "The Saltwater Weavers",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Tidal Reverie",
+      "target": "The Tide Singer's Knot",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Cassette Future",
+      "target": "Ivy Echos",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Cassette Future",
+      "target": "Sailor Shift",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Silver Veil",
+      "target": "Drowned Harbor",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Silver Veil",
+      "target": "Sailor Shift",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "The Brine Choir",
+      "target": "Drowned Harbor",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "The Phantom Operators",
+      "target": "The Saltwater Weavers",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "The Phantom Operators",
+      "target": "Sailor Shift",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "The Phantom Operators",
+      "target": "Xiuying Yin (#2566)",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "The Hollow Monarchs",
+      "target": "Sailor Shift",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "The Hollow Monarchs",
+      "target": "Ivy Echos",
+      "weight": 2,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1,
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "The Hollow Monarchs",
+      "target": "Kimberly Snyder",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Selkie's Hollow",
+      "target": "Ivy Echos",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Selkie's Hollow",
+      "target": "The Tide Singer's Knot",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Cassian Storm",
+      "target": "Sailor Shift",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Cassian Storm",
+      "target": "The Tide Singer's Knot",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Cassian Storm",
+      "target": "Juan Yin",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Claire Holmes",
+      "target": "Drowned Harbor",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Claire Holmes",
+      "target": "Sailor Shift",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Claire Holmes",
+      "target": "Kimberly Snyder",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "The Wave Riders",
+      "target": "Drowned Harbor",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Genevieve Bell",
+      "target": "Ivy Echos",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Genevieve Bell",
+      "target": "The Tide Singer's Knot",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Mariner's Refrain",
+      "target": "The Saltwater Weavers",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Mariner's Refrain",
+      "target": "Ivy Echos",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Siren's Call",
+      "target": "Drowned Harbor",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Siren's Call",
+      "target": "The Tide Singer's Knot",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Ivy Echos",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "The Saltwater Weavers",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Drowned Harbor",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "The Fiddle & The Fjord",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Jun Zhou",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Samantha Bullock",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Urszula Stochmal",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Miss Jennifer Williams",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Jeremiah Love",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Igor Dyś",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Tao Wen",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Tao Gao",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Joshua Taylor",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Shannon Harvey",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "James Medina",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Ming Ren",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "David Reese",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Lori Massey",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Sailor Shift",
+      "target": "Trevor Bass",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Ivy Echos",
+      "target": "The Tide Singer's Knot",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Ivy Echos",
+      "target": "The Saltwater Weavers",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Ivy Echos",
+      "target": "The Fiddle & The Fjord",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Ivy Echos",
+      "target": "Xiulan Ren (#829)",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "The Saltwater Weavers",
+      "target": "The Fiddle & The Fjord",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Orla Seabloom",
+      "target": "The Fiddle & The Fjord",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Orla Seabloom",
+      "target": "Wayfinder's Lament",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Orla Seabloom",
+      "target": "The Saltwater Weavers",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Orla Seabloom",
+      "target": "Ninetta Spinelli",
+      "weight": 1,
+      "type": "InterpolatesFrom",
+      "types": {
+        "InterpolatesFrom": 1
+      }
+    },
+    {
+      "source": "Orla Seabloom",
+      "target": "Rebekka Lehmann",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Orla Seabloom",
+      "target": "Lindsey Broeshart",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Orla Seabloom",
+      "target": "Xiuying Yin (#2566)",
+      "weight": 1,
+      "type": "CoverOf",
+      "types": {
+        "CoverOf": 1
+      }
+    },
+    {
+      "source": "Orla Seabloom",
+      "target": "Nout Zijlmans",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Beatrice Albright",
+      "target": "Ivy Echos",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Beatrice Albright",
+      "target": "Drowned Harbor",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Beatrice Albright",
+      "target": "Chao Tan",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Daniel O'Connell",
+      "target": "Wayfinder's Lament",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    },
+    {
+      "source": "Daniel O'Connell",
+      "target": "The Tide Singer's Knot",
+      "weight": 1,
+      "type": "LyricalReferenceTo",
+      "types": {
+        "LyricalReferenceTo": 1
+      }
+    },
+    {
+      "source": "Copper Canyon Ghosts",
+      "target": "Sailor Shift",
+      "weight": 1,
+      "type": "DirectlySamples",
+      "types": {
+        "DirectlySamples": 1
+      }
+    },
+    {
+      "source": "Copper Canyon Ghosts",
+      "target": "Ivy Echos",
+      "weight": 1,
+      "type": "InStyleOf",
+      "types": {
+        "InStyleOf": 1
+      }
+    }
+  ]
+}
